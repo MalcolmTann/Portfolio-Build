@@ -1,0 +1,476 @@
+/*
+|------------------------------------------
+|  Global
+|------------------------------------------
+*/
+body {
+    background: rgb(22,22,30);
+    background: linear-gradient(90deg, rgba(22,22,30,1) 35%, rgba(38,38,40,1) 100%);
+    color: #fff;
+    font-family: 'Poppins';
+}
+
+main .intro, .projects, .bio, .sm {
+    padding: 2em 1.5em;
+    z-index: 2;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/*
+|------------------------------------------
+|  Helper Classes
+|------------------------------------------
+*/
+
+span {
+    color: #9bd8f5;
+}
+
+.is-flex {
+    display: flex;
+    justify-content: center;
+}
+
+.is-active {
+    color: #9bd8f5;
+}
+
+img {
+    cursor: pointer;
+}
+
+/*
+|------------------------------------------
+|  Typography
+|------------------------------------------
+*/
+h1 {
+    font-weight: 600;
+}
+
+main h2 {
+    font-size: 4em;
+    font-weight: 300;
+    margin-bottom: 0.5em;
+    opacity: 0.2;
+}
+
+a {
+    text-decoration: none;
+    display: block;  
+    color: #fff; 
+}
+
+p {
+    font-weight: 300;
+}
+
+/*
+|------------------------------------------
+|  HEADER
+|------------------------------------------
+*/
+header {
+    padding: 1.1em 1.5em;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    align-items: center;
+    transition: .3s ease;
+    background-color: rgb(13, 13, 18);
+}
+
+header h2 {
+    font-size: 2em;
+    font-weight: 200;
+}
+
+/*
+|------------------------------------------
+|  Nav
+|------------------------------------------
+*/
+
+.gn {
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    width: 100%;
+    display: none;
+}
+
+.gn-trig {
+    position: relative;
+    width: 30px;
+    height: 20px;
+    border: none;
+    background: transparent;
+    display: flex;        
+    justify-content: flex-end;
+    flex-basis: 100%;
+    max-width: 100%;
+}
+
+.gn-items {
+    position: absolute;
+    right: 0px;
+    top: 15px;
+    height: 100vh;
+    min-width: 100%;
+    background-color: rgb(13, 13, 18);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.gn a {
+    text-decoration: none;
+    margin-top: -50px;
+    font-size: 1.3em;
+    font-weight: 300;
+}
+
+.gn img {
+    padding: 0 1em;
+    height: 1.5em;
+}
+
+/*
+|------------------------------------------
+|  Burger
+|------------------------------------------
+*/
+
+.burger {
+    position: absolute;
+    background: #fff;
+    width: 20px;
+    height: 2.5px;
+    right: 0px;
+    top: 50%;
+}
+
+.burger:before, .burger:after {
+    content: '';
+    display: block;
+    position: absolute;
+    background: #fff;
+    width: 30px;
+    height: 2.5px;
+    right: 0;
+} 
+
+.burger:before {
+    top: 8px;
+}
+
+.burger:after {
+    bottom: 8px;
+}
+
+.burger, .burger:before, .burger:after {
+    transition-property: transform, top, background;
+    transition-duration: .45s;
+}
+
+
+.gn-trig.is-active .burger:before {
+    transform: rotate(45deg) ;
+    background-color: #9bd8f5;
+    top: -2px;
+}
+
+.gn-trig.is-active .burger:after {
+    transform: rotate(-45deg);
+    background-color: #9bd8f5;
+    top: -2px;
+}
+
+.gn-trig.is-active .burger {
+    background: rgba(117, 111, 102, 0);
+}
+
+/*
+|------------------------------------------
+|  Intro - Home
+|------------------------------------------
+*/
+.intro {
+    min-height: 90vh;
+    flex-direction: column;
+}
+
+.intro h1 {
+    font-size: 1.7em;
+    line-height: 1.7;
+}
+
+/*
+|------------------------------------------
+|  Projects — Home
+|------------------------------------------
+*/
+.projects {
+    min-height: 100vh;
+    background-color: rgb(242, 242, 242);
+    color: black;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.artifact img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.artifact .col {
+    margin-top: 1em;
+}
+
+.col .title {
+    font-size: 1.3rem;
+    margin-bottom: 0.4em;
+}
+
+
+.projects .image-desc {
+     /* Color subject to change depending on project */
+    color: rgb(140, 140, 140); 
+}
+
+/*
+|------------------------------------------
+|  Bio - About
+|------------------------------------------
+*/
+
+.bio {
+    min-height: 100vh;
+}
+
+.bio img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 3em;
+}
+
+.bio p {
+    line-height: 1.7;
+}
+
+.bio p:nth-last-of-type(1) {
+    margin-top: 2em;
+}
+
+.bio p:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 20%;
+    height: 2.5px;
+    background-color: #ffffff;
+    bottom: 65%;
+    left: 40%;
+}
+
+.bio .btn {
+    margin-top: 2em;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #9bd8f5;
+    color: #9bd8f5;
+    width: fit-content;
+    padding: 0;
+    font-size: 1.3em;
+}
+
+/*
+|------------------------------------------
+|  Social Media - Home
+|------------------------------------------
+*/
+
+.sm {
+    min-height: 20em; 
+    align-items: center;
+}
+
+.sm img {
+    height: 4.5em;
+    padding: 1.5em 1em;
+}
+
+.sm p {
+    font-weight: 600;
+    font-size: 1.3em;
+}
+
+/*
+|------------------------------------------
+|  Footer
+|------------------------------------------
+*/
+
+footer {
+    background-color: rgb(13, 13, 18);
+    text-align: center;
+    padding: 1.2em 1.5em;
+    font-size: 0.9em;
+}
+
+footer .to-top {
+    padding-bottom: 2em;
+    font-size: 0.75em;
+}
+
+footer img {
+    height: 5em;
+    padding-bottom: 1em;
+}
+
+/*
+|------------------------------------------
+|  Media Queries
+|------------------------------------------
+*/
+
+@media only screen and (min-width: 320px) {
+
+    p {
+        font-size: 1.2em;
+    }
+
+    .bio img {
+        margin-bottom: 4em;
+    }
+
+    .bio p:after {
+        bottom: 57.5%;
+        height: 3.5px;
+    }
+
+    .sm p {
+        font-size: 1.6em;
+    }
+
+    .sm img {
+        height: 5.5em;
+        padding-top: 2em;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+
+    header {
+        padding: 1.5em 2em;
+    }
+
+    main .intro, .projects, .bio, .sm {
+        padding: 3em 2em 1.5em;
+    }
+
+    .bio img {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .bio p:first-of-type {
+        margin-top: 4em;
+    }
+
+    .bio p:before {
+        bottom: 52%;
+        height: 5px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1em 3em;
+        font-size: 0.75em;
+    }
+
+    footer .to-top {
+        padding-bottom: 0em;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    .gn {
+        display: block;
+        position: static;
+    }
+
+    .gn-trig {
+        display: none;
+    }
+
+    .gn-items {
+       flex-direction: row;
+       position: static;
+       height: 5vh;
+       justify-content: flex-end;
+    }
+
+    .gn a {
+        margin-top: 0;
+        padding: 0em 1.6em;
+        font-size: 1em;
+    }
+
+    .gn a:last-child {
+        padding-right: 0;
+    }
+
+    .gn img {
+        padding: 0;
+        margin-bottom: 4px;
+        height: 1.2em;
+    }
+
+    .gn .is-flex li:nth-child(1) {
+        display: none;
+    }
+
+    .projects {
+        min-height: 100vh;
+        justify-content: left;
+        justify-content: space-evenly;
+    }
+
+    .projects .artifact {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0;
+    }
+
+    .projects .artifact:nth-of-type(2) {
+        flex-direction: row-reverse;
+    }
+
+    .artifact .col {
+        flex-basis: 50%;
+        max-width: 50%;
+        text-align: center;
+        align-items: center;
+        margin-top: 0;
+    }
+
+
+    .bio img {
+        width: 50%;
+    }
+    
+}
