@@ -19,8 +19,6 @@
             <?php include('partials/projects-home.php'); ?>
             
             <?php include('partials/about-home.php'); ?>
-
-            <?php include('partials/my-socials.php'); ?>
         </main> 
         <?php include('partials/footer.php'); ?>
     </body>
