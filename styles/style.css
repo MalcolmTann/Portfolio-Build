@@ -8,13 +8,18 @@ body {
     font-family: 'Poppins';
 }
 
-main .intro, .projects, .bio, .sm {
-    padding: 1em 1.5em;
+header footer {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.intro, .projects, .bio {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    position: relative;
-    overflow: hidden;
+    padding: 0 1.5em;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 /*
@@ -23,17 +28,9 @@ main .intro, .projects, .bio, .sm {
 |------------------------------------------
 */
 
-span {
-    color: #9bd8f5;
-}
-
 .is-flex {
     display: flex;
     justify-content: center;
-}
-
-.is-active {
-    color: #9bd8f5;
 }
 
 img {
@@ -66,7 +63,7 @@ p {
 
 /*
 |------------------------------------------
-|  HEADER
+|  Header
 |------------------------------------------
 */
 header {
@@ -80,11 +77,12 @@ header {
     align-items: center;
     transition: .3s ease;
     background-color: #fff;
+    justify-content: center;
 }
 
 header h2 {
     font-size: 1.5rem;
-    font-weight: 200;
+    font-weight: 300;
     color: #000;
 }
 
@@ -93,12 +91,11 @@ header h2 {
 |  Nav
 |------------------------------------------
 */
-
 .gn {
     position: absolute;
     top: 50px;
-    left: 0px;
-    width: 100%;
+    right: 0;
+    width: 50%;
     display: none;
 }
 
@@ -117,7 +114,7 @@ header h2 {
 .gn-items {
     position: absolute;
     right: 0px;
-    top: 5px;
+    top: -50px;
     height: 100vh;
     min-width: 100%;
     display: flex;
@@ -125,14 +122,14 @@ header h2 {
     justify-content: space-evenly;
     align-items: center;
     overflow-x: hidden;
-    background-color: #fff;
+    background-color: #dddddd;
 }
 
 .gn a {
     text-decoration: none;
     margin-top: -50px;
     font-size: 1.3rem;
-    font-weight: 200;
+    font-weight: 300;
     color: #000;
 }
 
@@ -140,13 +137,11 @@ header h2 {
     padding: 0 0.5em;
     height: 1em;
 }
-
 /*
 |------------------------------------------
 |  Burger
 |------------------------------------------
 */
-
 .burger {
     position: absolute;
     background: #000;
@@ -154,6 +149,7 @@ header h2 {
     height: 2px;
     right: 0px;
     top: 50%;
+    z-index: 1;
 }
 
 .burger:before, .burger:after {
@@ -179,16 +175,15 @@ header h2 {
     transition-duration: .45s;
 }
 
-
 .gn-trig.is-active .burger:before {
     transform: rotate(45deg) ;
-    background-color: #b5b5b5;
+    background-color: #fff;
     top: -2px;
 }
 
 .gn-trig.is-active .burger:after {
     transform: rotate(-45deg);
-    background-color: #b5b5b5;
+    background-color: #fff;
     top: -2px;
 }
 
@@ -202,13 +197,14 @@ header h2 {
 |------------------------------------------
 */
 .intro {
-    min-height: 90vh;
-    flex-direction: column;
+    min-height: 100vh;
+    flex-direction: column-reverse;
 }
 
 .intro h1 {
     font-size: 1.7rem;
     line-height: 1.7;
+    position: relative;
 }
 
 /*
@@ -217,23 +213,18 @@ header h2 {
 |------------------------------------------
 */
 .projects {
-    min-height: 100vh;
+    height: max-content;
     flex-direction: column;
     justify-content: space-evenly;
+    gap: 3em;
 }
 
 .artifact img {
     width: 100%;
     border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    z-index: 2;
 }
-
-.projects .artifact {
-    margin-bottom: 3em;
-}
-
-/* .projects .artifact:last-of-type {
-    margin-bottom: 0;
-} */
 
 .artifact .col-2 {
     margin-top: 1.5em;
@@ -257,26 +248,32 @@ header h2 {
 */
 
 .bio {
-    min-height: 100vh;
+    height: max-content;
+    margin-top: 4em;
+    margin-bottom: 4em;
+    gap: 2.5em;
 }
 
 .bio .is-flex {
     flex-direction: column;
+    gap: 2em;
+}
+
+.bio .col-1 {
+    text-align: center;
+    /* position: relative; */
 }
 
 .bio img {
-    width: 100%;
-    border-radius: 8px;
-    margin-bottom: 3em;
+    width: 15em;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+
 }
 
 .bio p {
     line-height: 2;
     position: relative;
-}
-
-.bio p:nth-last-of-type(1) {
-    margin-top: 2em;
 }
 
 .bio p:nth-child(1)::before {
@@ -286,7 +283,7 @@ header h2 {
     width: 30%;
     height: 1px;
     background-color: #b5b5b5;
-    top: -22px;
+    top: -16px;
     left: 35%;
 }
 
@@ -295,9 +292,8 @@ header h2 {
     border: none;
     border-bottom: 0.5px solid #b5b5b5;
     width: fit-content;
-    margin: 2em 0;
     padding: 0;
-    font-size: 1.1rem;
+    position: relative;
 }
 
 /*
@@ -308,20 +304,16 @@ header h2 {
 
 footer {
     display: flex;
-    min-height: 6em;
+    min-height: 4em;
     justify-content: space-between;
-    align-items: flex-end;
     flex-direction: column;
-    padding: 1em;
+    padding-bottom: 1em;
+    text-align: center;
 }
 
 footer img {
-    height: 1.5em;
-    padding: 0 0.8em;
-}
-
-footer p, .is-flex {
-    margin: 0 auto;
+    height: 1.3em;
+    padding: 0 0.5em;
 }
 
 footer p {
@@ -336,29 +328,16 @@ footer p {
 
 @media only screen and (min-width: 320px) {
 
-    p {
-        font-size: 1.2em;
-    }
-
     .intro h1 {
         font-size: 2rem;
     }
 
-    .bio img {
-        margin-bottom: 4em;
+    .bio {
+        gap: 3em;
     }
 
     .bio p:nth-child(1)::before {
-        top: -34px;
-    }
-
-    .sm p {
-        font-size: 1.6rem;
-    }
-
-    .sm img {
-        height: 5.5em;
-        padding-top: 2em;
+        top: -20px;
     }
 }
 
@@ -368,53 +347,60 @@ footer p {
         padding: 1em 2em;
     }
 
-    main .intro, .projects, .bio, .sm {
-        padding: 4em 2em;
+    .intro, .projects, .bio {
+        padding: 0 2em;
     }
 
     .projects .artifact {
-        margin-bottom: 3em;
+        margin-bottom: 4em;
     }
 
     .artifact .title {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
-    .bio .col-1 {
-        text-align: center;
+    .bio {
+        margin-top: 2em;
     }
 
     .bio img {
-        width: 60%;
-        margin-bottom: 1em;
+        width: 20em;
     }
 
-    .bio p {
+    .bio .col-2 {
         width: 80%;
         margin: 0 auto;
     }
 
     .bio p:nth-child(1)::before {
-        top: -30px;
+        top: -23px;
+        left: 40%;
+        width: 20%;
     }
-
-    .bio p:first-of-type {
-        margin-top: 3em;
-    }
-    
 
     footer {
         flex-direction: row-reverse;
-        padding: 0 3em;
-        font-size: 0.75rem;
+        align-items: flex-end;
+        justify-content: space-between;
+        padding: 1em 2em;
     }
 
-    footer .to-top {
-        padding-bottom: 0em;
+    footer p {
+        font-size: 1rem;
     }
+
+
 }
 
 @media only screen and (min-width: 768px) {
+
+    header {
+        padding: 1em 3em;
+    }
+
+    .intro, .projects, .bio {
+        padding: 0 3em;
+    }
 
     .gn {
         display: block;
@@ -436,6 +422,7 @@ footer p {
         margin-top: 0;
         padding: 0em 1.6em;
         font-size: 1em;
+        font-weight: 300;
     }
 
     .gn a:last-child {
@@ -452,104 +439,107 @@ footer p {
         display: none;
     }
 
-    .intro h1 {
-        font-size: 2em;
-    }
-
     .projects {
         justify-content: left;
         justify-content: space-evenly;
+        gap: 4em;
+        text-align: center;
     }
 
     .projects .artifact {
         display: flex;
         align-items: center;
-        margin-bottom: 4em;
     }
 
     .projects .artifact:nth-of-type(2) {
         flex-direction: row-reverse;
     }
 
-    .artifact .col {
-        flex-basis: 50%;
-        max-width: 50%;
-        text-align: center;
-        align-items: center;
-        margin-top: 0;
+    .artifact .col-1 {
+        flex-basis: 55%;
+        max-width: 55;
     }
 
-    .bio img {
-        width: 50%;
+    .artifact .col-2 {
+        flex-basis: 45%;
+        max-width: 45%;
     }
-    
 }
 
 @media only screen and (min-width: 992px) {
 
     header {
-        padding: 1em 3em;
+        padding: 1em 4em;
     }
 
-    main .intro, .projects, .bio, .sm {
-        padding: 4em 3em;
-    }
-
-    .artifact .title {
-        font-size: 2rem;
+    .intro, .projects, .bio {
+        padding: 0 4em;
     }
 
     .bio {
         flex-direction: row;
+        height: 100vh;
         align-items: center;
-        min-height: 80vh;
-        padding: 0 3em 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        gap: 0;
     }
 
-    .bio .col-2 p {
-        margin-left: 0;
-        width: 90%;
-    }
-
-    .bio .col-2 p:first-of-type {
-        margin-top: 0.5em;
+    .bio .col-1 {
+        flex-basis: 50%;
+        max-width: 50%;
+        text-align: left;
     }
 
     .bio img {
-        width: 70%;
-        margin-left: 1em;
+        width: 23em;
+    }
+
+    .bio .col-2 {
+        flex-basis: 50%;
+        max-width: 50%;
     }
 
     .bio p:nth-child(1)::before {
         display: none;
     }
 
-    .bio .col-2 .btn {
-        margin: 0;
+    /* .bio .col-1 {
+        text-align: right;
     }
+    
+    .bio .col-2 {
+        flex-basis: 40%;
+        max-width: 40%;
+    }
+    
+    .bio p:nth-last-of-type(1) {
+        margin: 2em 0;
+    } */
 
     footer {
-        padding: 0 4em;
+        padding: 1em 4em;
     }
 
 }
 
 @media only screen and (min-width: 1200px) {
 
-    header {
-        padding: 1em 4em;
+    .intro, .projects, .bio, footer {
+        max-width: 1140px;
     }
 
-    main .intro, .projects, .bio, .sm {
-        padding: inherit 4em;
+    .projects .artifact {
+        margin-bottom: 5em;
     }
 
-    .sm {
-        max-height: 30em;
+    .bio .col-1 {
+        text-align: center;
     }
 
-    footer {
-        padding: 0 5em;
+    .bio .col-2 {
+        flex-basis: 40%;
+        max-width: 40%;
     }
 
 }

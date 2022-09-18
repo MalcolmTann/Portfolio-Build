@@ -1,5 +1,5 @@
 <header>
-    <a href="index.php" title="Home"><h2>Mal</h2></a>
+    <a href="index.php" title="Home"><h2>Mal.</h2></a>
     <button class="gn-trig">
         <div class="burger"></div>
     </button>
@@ -7,6 +7,7 @@
         <ul class="gn-items">
             <li><a href="index.php" title="Home">Home</a></li>
             <li><a href="work.php" title="Work">Work</a></li>
+            <li><a href="work.php" title="Work">About</a></li>
             <div class="is-flex">
                 <li>
                     <a href="#" title="Email">

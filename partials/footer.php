@@ -10,7 +10,7 @@
             <img src="images/linkedin.svg" alt="Linkedin">
         </a>
     </div>
-    <p>Developed by Malcolm Tan</p>
+    <p>Built by Malcolm Tan</p>
 </footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="scripts/main.js"></script>
