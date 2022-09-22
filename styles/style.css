@@ -8,16 +8,17 @@ body {
     font-family: 'Poppins';
 }
 
-header footer {
+/* header footer {
     margin-right: auto;
     margin-left: auto;
-}
+} */
 
 .intro, .projects, .bio {
+    max-width: 300px;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 0 1.5em;
+    padding: 0 1em;
     margin-right: auto;
     margin-left: auto;
 }
@@ -67,7 +68,7 @@ p {
 |------------------------------------------
 */
 header {
-    padding: 1em 1.5em;
+    padding: 1em;
     display: flex;
     position: fixed;
     top: 0;
@@ -193,7 +194,7 @@ header h2 {
 
 /*
 |------------------------------------------
-|  Intro - Home
+|  Intro 
 |------------------------------------------
 */
 .intro {
@@ -209,48 +210,48 @@ header h2 {
 
 /*
 |------------------------------------------
-|  Projects — Home
+|  Projects 
 |------------------------------------------
 */
 .projects {
     height: max-content;
     flex-direction: column;
     justify-content: space-evenly;
-    gap: 3em;
+    gap: 4em;
 }
 
-.artifact img {
+.projects .artifact img {
     width: 100%;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
     z-index: 2;
 }
 
-.artifact .col-2 {
+.projects .artifact .col-2 {
     margin-top: 1.5em;
 }
 
-.artifact .title {
+.projects .col-2 .title {
     font-size: 1.5rem;
     font-weight: 300;
     margin-bottom: 0.4em;
 }
 
-.artifact .desc {
+.projects .col-2 .desc {
     font-weight: 300;
 }
 
 /*
 |------------------------------------------
-|  Bio - About
+|  Bio 
 |------------------------------------------
 */
 
 .bio {
     height: max-content;
-    margin-top: 4em;
+    margin-top: 5em;
     margin-bottom: 4em;
-    gap: 2.5em;
+    gap: 3em;
 }
 
 .bio .is-flex {
@@ -260,14 +261,12 @@ header h2 {
 
 .bio .col-1 {
     text-align: center;
-    /* position: relative; */
 }
 
 .bio img {
-    width: 15em;
-    border-radius: 5px;
+    width: 90%;
+    border-radius: 50%;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
-
 }
 
 .bio p {
@@ -282,7 +281,7 @@ header h2 {
     width: 30%;
     height: 1px;
     background-color: #b5b5b5;
-    top: -16px;
+    top: -22px;
     left: 35%;
 }
 
@@ -300,7 +299,6 @@ header h2 {
 |  Footer
 |------------------------------------------
 */
-
 footer {
     display: flex;
     min-height: 4em;
@@ -324,19 +322,14 @@ footer p {
 |  Media Queries
 |------------------------------------------
 */
-
 @media only screen and (min-width: 320px) {
+
+    .intro, .projects, .bio {
+        max-width: 330px;
+    }
 
     .intro h1 {
         font-size: 2rem;
-    }
-
-    .bio {
-        gap: 3em;
-    }
-
-    .bio p:nth-child(1)::before {
-        top: -20px;
     }
 }
 
@@ -344,26 +337,41 @@ footer p {
 
     header {
         padding: 1em 2em;
-    }
+    } 
 
     .intro, .projects, .bio {
-        padding: 0 2em;
+        max-width: 540px;
     }
 
-    .projects .artifact {
-        margin-bottom: 4em;
+    .projects  {
+        gap: 5em;
     }
 
-    .artifact .title {
+    .projects .artifact .col-1 {
+        text-align: center;
+    }
+
+    .projects .artifact .col-1 img {
+        width: 90%;
+    }
+
+    .projects .artifact .col-2 {
+        padding-left: 1.5em;
+        margin-top: 2em;
+    }
+
+    .projects .artifact .col-2 .title {
         font-size: 2rem;
     }
 
     .bio {
-        margin-top: 2em;
+        gap: 4em;
+        margin-top: 8em;
+        margin-bottom: 5em;
     }
 
     .bio img {
-        width: 20em;
+        width: 60%;
     }
 
     .bio .col-2 {
@@ -372,7 +380,7 @@ footer p {
     }
 
     .bio p:nth-child(1)::before {
-        top: -23px;
+        top: -30px;
         left: 40%;
         width: 20%;
     }
@@ -392,11 +400,11 @@ footer p {
 @media only screen and (min-width: 768px) {
 
     header {
-        padding: 1em 3em;
+        padding: 1em 2.5em;
     }
 
     .intro, .projects, .bio {
-        padding: 0 3em;
+        max-width: 720px;
     }
 
     .gn {
@@ -438,45 +446,69 @@ footer p {
     }
 
     .projects {
-        justify-content: left;
         justify-content: space-evenly;
-        gap: 3em;
-        text-align: center;
+        gap: 9em;
     }
 
     .projects .artifact {
         display: flex;
         align-items: center;
+        flex-direction: row-reverse;
+        text-align: center;
     }
 
     .projects .artifact:nth-of-type(2) {
-        flex-direction: row-reverse;
+        flex-direction: row;
     }
 
-    .artifact .col-1 {
+    .projects .artifact:nth-of-type(2) .col-2 .title {
+        letter-spacing: 4px;
+    }
+
+    .projects .artifact .col-1 {
         flex-basis: 55%;
         max-width: 55%;
+        text-align: left;
     }
 
-    .artifact .col-2 {
+    .projects .artifact .col-1 img {
+        width: 100%;
+    }
+
+    .projects .artifact .col-2 {
         flex-basis: 45%;
         max-width: 45%;
+        margin-top: 0;
+        padding: 0;
     }
+    
+    .projects .artifact .col-2 .title {
+        font-size: 2rem;
+    }
+
+    .bio {
+        margin-top: 9em;
+    }
+
+    .bio img {
+        width: 50%;
+    }
+
 }
 
 @media only screen and (min-width: 992px) {
 
     header {
-        padding: 1em 4em;
-    }
+        padding: 1em 2em;
+    } 
 
     .intro, .projects, .bio {
-        padding: 0 4em;
+        max-width: 960px;
     }
 
     .bio {
+        height: 80vh;
         flex-direction: row;
-        height: 100vh;
         align-items: center;
         margin-top: 0;
         margin-bottom: 0;
@@ -485,17 +517,18 @@ footer p {
 
     .bio .col-1 {
         flex-basis: 50%;
-        max-width: 50%;
-        text-align: left;
+        max-width: 55%;
+        text-align: center;
     }
 
     .bio img {
-        width: 23em;
+        width: 80%;
     }
 
     .bio .col-2 {
-        flex-basis: 50%;
-        max-width: 50%;
+        flex-basis: 40%;
+        max-width: 40%;
+
     }
 
     .bio p:nth-child(1)::before {

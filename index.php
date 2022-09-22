@@ -14,11 +14,11 @@
     <body>
         <?php include('partials/header.php'); ?>
         <main>
-            <?php include('partials/intro-home.php'); ?>
+            <?php include('partials/intro.php'); ?>
 
-            <?php include('partials/projects-home.php'); ?>
+            <?php include('partials/projects.php'); ?>
             
-            <?php include('partials/about-home.php'); ?>
+            <?php include('partials/bio.php'); ?>
         </main> 
         <?php include('partials/footer.php'); ?>
     </body>
