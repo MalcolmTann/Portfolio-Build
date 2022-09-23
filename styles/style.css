@@ -38,7 +38,7 @@ img {
 }
 
 .container {
-    max-width: 1320px;
+    max-width: 1140px;
     margin: 0 auto;
     display: flex;
 }
@@ -336,8 +336,8 @@ footer .container {
     min-height: 4em;
     justify-content: space-between;
     flex-direction: column;
-    padding-bottom: 1em;
     text-align: center;
+    padding-bottom: 1em;
 }
 
 footer img {
@@ -384,7 +384,7 @@ footer p {
 
     header {
         padding: 1em 2em;
-    } 
+    }
 
     .intro, .projects, .bio {
         max-width: 540px;
@@ -455,8 +455,9 @@ footer p {
 
     footer .container {
         flex-direction: row-reverse;
-        align-items: flex-end;
-        padding: 1em 2em;
+        align-items: center;
+        justify-content: space-around;
+        padding: 1em;
     }
 
     footer p {
@@ -582,10 +583,6 @@ footer p {
 
 @media only screen and (min-width: 992px) {
 
-    header {
-        padding: 1em 2em;
-    } 
-
     .intro, .projects, .bio {
         max-width: 960px;
     }
@@ -636,10 +633,6 @@ footer p {
 
 @media only screen and (min-width: 1200px) {
 
-    header {
-        padding: 1em 2.8em;
-    }
-
     .intro, .projects, .bio {
         max-width: 1140px;
     }
@@ -680,52 +673,8 @@ footer p {
         width: 70%;
     }
 
-    footer .container {
-        padding: 1em 3em;
+    footer img {
+        height: 1.5em;
+        padding: 0 1em;
     }
-}
-
-@media only screen and (min-width: 1440px) {
-
-    p {
-        font-size: 1.2rem;
-    }
-    
-    .btn {
-        font-size: 1.2rem;
-    }
-
-    .intro, .projects, .bio {
-        max-width: 1320px;
-    }
-
-    .intro h1 {
-        font-size: 4rem;
-    }
-
-    .intro p {
-        font-size: 1.5rem;
-    }
-
-    .intro .btn {
-        margin-top: 2em;
-        font-size: 1.5rem;
-    }
-
-    .intro .shape {
-        height: 22em;
-        width: 22em;
-        top: 45%;
-        left: 70%;
-    }
-
-    .intro .shape:after {
-        height: 20em;
-        width: 20em;
-    }
-
-    .projects .artifact .col-2 .title {
-        font-size: 3rem;
-    }
-
 }
