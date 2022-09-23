@@ -43,6 +43,18 @@ img {
     display: flex;
 }
 
+.hidden {
+    position: relative;
+    transform: translateY(300px);
+    opacity: 0;
+    transition: 0.9s all ease;
+}
+
+.hidden.show {
+    transform: translateY(0);
+    opacity: 1;
+}
+
 /*
 |------------------------------------------
 |  Typography
@@ -233,7 +245,7 @@ header h2 {
     top: 75%;
     left: 40%;
     background-color: #9fd3e8;
-    opacity: 0.3;
+    opacity: 0.2;
     z-index: -1;
 }
 
@@ -633,6 +645,10 @@ footer p {
 
 @media only screen and (min-width: 1200px) {
 
+    .gn a {
+        font-size: 1.1rem;
+    }
+
     .intro, .projects, .bio {
         max-width: 1140px;
     }
@@ -643,6 +659,7 @@ footer p {
 
     .intro .btn {
         font-size: 1.2rem;
+        margin-top: 2em;
     }
 
     .intro .shape {
