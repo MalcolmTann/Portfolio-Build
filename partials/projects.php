@@ -28,8 +28,8 @@
             </a>
         </div>
         <div class="col-2">
-            <div class="title">Stopwatch</div>
-            <div class="desc">/ JavaScript</div>
+            <div class="title">Note App</div>
+            <div class="desc">/ PHP</div>
         </div>
     </div>
 </section>
