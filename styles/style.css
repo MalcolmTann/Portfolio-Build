@@ -45,13 +45,27 @@ img {
 
 .hidden {
     position: relative;
-    transform: translateY(300px);
+    transform: translateX(300px);
     opacity: 0;
-    transition: 0.9s all ease;
+    transition: 1s all ease;
+}
+
+.hidden:nth-of-type(1) {
+    position: relative;
+    transform: translateX(-300px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.hidden:nth-of-type(3) {
+    position: relative;
+    transform: translateX(-300px);
+    opacity: 0;
+    transition: 1s all ease;
 }
 
 .hidden.show {
-    transform: translateY(0);
+    transform: translateX(0);
     opacity: 1;
 }
 
@@ -83,6 +97,8 @@ p {
     fill: #4381b4;
     width: fit-content;
     padding: 0.5em 1em;
+    transition: .45s ease;
+    position: relative;
 }
 
 /*
@@ -510,6 +526,7 @@ footer p {
         padding: 0em 1.6em;
         font-size: 1em;
         font-weight: 300;
+        transition: .30s ease;
     }
 
     .gn a:last-child {
@@ -591,9 +608,22 @@ footer p {
     .bio img {
         width: 50%;
     }
+
+    .hidden {
+        transition: 0.9s all ease;
+    }
 }
 
 @media only screen and (min-width: 992px) {
+
+    .btn:hover {
+        color: #fff;
+        transform: translateY(-4px);
+    }
+
+    .gn a:hover {
+        color: #9fd3e8;
+    }
 
     .intro, .projects, .bio {
         max-width: 960px;

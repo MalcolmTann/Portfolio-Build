@@ -22,8 +22,6 @@ function showProjects() {
     for ( var i=0; i < projects.length; i++) {
         var boxTop = projects[i].getBoundingClientRect().top;
 
-        //console.log ("window-visible "+ (windowHeight - startVisible), "boxtop= "+boxTop);
-
         if(boxTop < windowHeight - startVisible) {
             projects[i].classList.add("show");
         }else {
@@ -35,10 +33,11 @@ function showProjects() {
 window.addEventListener("scroll", showProjects)
 
 
+
 // const navSlide = () => {
 //     const burger = document.querySelector('.gn-trig');
 //     const nav = document.querySelector('.gn-items');
-//     // const navLinks = document.querySelectorAll('.gn-items li');
+//     const navLinks = document.querySelectorAll('.gn-items li');
 
 //     burger.addEventListener('click', () => {
 //         // Toggle Nav
