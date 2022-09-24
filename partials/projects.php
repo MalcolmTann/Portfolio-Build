@@ -1,7 +1,7 @@
 <section class="projects">
     <div class="artifact hidden">
         <div class="col-1">
-            <a href="..." title="...">
+            <a href="project-1.php" title="...">
                 <img src="images/malsathome.jpg" alt="View ...">
             </a>
         </div>
@@ -12,7 +12,7 @@
     </div>
     <div class="artifact hidden">
         <div class="col-1">
-            <a href="..." title="...">
+            <a href="project-2.php" title="...">
                 <img src="images/malsathome.jpg" alt="View ...">
             </a>
         </div>
@@ -23,7 +23,7 @@
     </div>
     <div class="artifact hidden">
         <div class="col-1">
-            <a href="..." title="...">
+            <a href="project-3.php" title="...">
                 <img src="images/malsathome.jpg" alt="View ...">
             </a>
         </div>
