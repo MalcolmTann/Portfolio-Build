@@ -9,11 +9,10 @@ body {
 }
 
 main {
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
-.intro, .projects, .bio {
-    /* max-width: 300px; */
+.intro, .projects, .bio, .proj-land, .skills, .overview, .more-projects {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -366,6 +365,105 @@ header h2 {
 
 /*
 |------------------------------------------
+|  Project - Landing page
+|------------------------------------------
+*/
+
+.proj-land {
+    min-height: 90vh;
+    gap: 2em;
+}
+
+.proj-land h1 {
+    font-size: 2rem;
+}
+
+.proj-land .col-1 img {
+    width: 100%;
+}
+
+.proj-land .col-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.proj-land .col-2 p:nth-of-type(2) {
+    margin-top: 1em;
+}
+
+.proj-land .col-2 .btn {
+    margin-top: 2.5em;
+}
+
+/*
+|------------------------------------------
+|  Skills
+|------------------------------------------
+*/
+
+.skills {
+    height: max-content;
+    background-color: aliceblue;
+    padding: 1em;
+}
+
+.skills .is-flex {
+    flex-direction: column;
+    gap: 2em;
+}
+
+.skills .is-flex .col {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.skills .is-flex .col ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.skills ul li {
+    font-weight: 300;
+}
+
+.skills h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/*
+|------------------------------------------
+|  Overview
+|------------------------------------------
+*/
+
+.overview {
+    height: max-content;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    gap: 1em;
+}
+
+
+/*
+|------------------------------------------
+|  More Projects
+|------------------------------------------
+*/
+
+.more-projects {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 2em;
+    
+}
+
+/*
+|------------------------------------------
 |  Footer
 |------------------------------------------
 */
@@ -401,7 +499,6 @@ footer p {
     .intro h1 {
         font-size: 2rem;
     }
-
 }
 
 @media only screen and (min-width: 450px) {
