@@ -98,6 +98,7 @@ p {
     padding: 0.5em 1em;
     transition: .45s ease;
     position: relative;
+
 }
 
 /*
@@ -236,12 +237,12 @@ header h2 {
 */
 .intro {
     min-height: 100vh;
-    position: relative;
     gap: 1em;
 }
 
 .intro h1 {
     font-size: 2rem;
+    position: relative;
     line-height: 1.4;
 }
 
@@ -250,31 +251,31 @@ header h2 {
     text-transform: uppercase;
 }
 
-.intro .shape {
+.intro h1:before {
     content: '';
     display: block;
     position: absolute;
-    height: 8em;
-    width: 8em;
+    height: 5em;
+    width: 5em;
     border-radius: 50%;
-    top: 75%;
-    left: 40%;
-    background-color: #9fd3e8;
-    opacity: 0.2;
+    top: 7em;
+    left: 4em;
+    background-color: #4381b4;
+    opacity: 0.17;
     z-index: -1;
 }
 
-.intro .shape:after {
+.intro h1:after {
     content: '';
     display: block;
     position: absolute;
-    height: 8em;
-    width: 8em;
-    top: 50%;
-    left: 50%;
+    height: 5em;
+    width: 5em;
+    top: 9.5em;
+    left: 6.5em;
     background-color: #4381b4;
     z-index: -1;
-    opacity: 0.2;
+    opacity: 0.05;
 }
 
 /*
@@ -389,7 +390,7 @@ header h2 {
 }
 
 .proj-land .col-2 p:nth-of-type(2) {
-    margin-top: 1em;
+    margin-top: 0.5em;
 }
 
 .proj-land .col-2 .btn {
@@ -503,16 +504,18 @@ footer p {
 
 @media only screen and (min-width: 450px) {
 
-    .intro .shape {
-        height: 12em;
-        width: 12em;
-        top: 70%;
-        left: 50%;
+    .intro h1:before {
+        height: 6em;
+        width: 6em;
+        top: 6em;
+        left: 7em;
     }
     
-    .intro .shape:after {
-        height: 10em;
-        width: 10em;
+    .intro h1:after {
+        height: 6em;
+        width: 6em;
+        top: 9em;
+        left: 10em;
     }
 
     .bio .col-1:before {
@@ -534,7 +537,7 @@ footer p {
 @media only screen and (min-width: 576px) {
 
     header {
-        padding: 1em 2em;
+        padding: 1em 1.7em;
     }
 
     .intro, .projects, .bio {
@@ -545,15 +548,18 @@ footer p {
         font-size: 2.5rem;
     }
 
-    .intro .shape {
-        height: 14em;
-        width: 14em;
-        top: 62%;
+    .intro h1:before {
+        height: 6em;
+        width: 6em;
+        top: 4em;
+        left: 7em;
     }
-
-    .intro .shape:after {
-        height: 12em;
-        width: 12em;
+    
+    .intro h1:after {
+        height: 6em;
+        width: 6em;
+        top: 7em;
+        left: 10em;
     }
 
     .projects  {
@@ -615,10 +621,6 @@ footer p {
 
 @media only screen and (min-width: 768px) {
 
-    header {
-        padding: 1em 2.5em;
-    }
-
     .container {
         align-items: center;
     }
@@ -673,21 +675,23 @@ footer p {
         max-width: 800px;
     }
 
-    .intro .shape {
-        height: 16em;
-        width: 16em;
-        top: 55%;
-        left: 60%;
+    .intro h1:before {
+        height: 5em;
+        width: 5em;
+        top: 3em;
+        left: 9em;
     }
-
-    .intro .shape:after {
-        height: 14em;
-        width: 14em;
+    
+    .intro h1:after {
+        height: 5em;
+        width: 5em;
+        top: 5.5em;
+        left: 11.5em;
     }
 
     .projects {
         justify-content: space-evenly;
-        gap: 9em;
+        gap: 8em;
     }
 
     .projects .artifact {
@@ -702,8 +706,8 @@ footer p {
     }
 
     .projects .artifact .col-1 {
-        flex-basis: 53%;
-        max-width: 53%;
+        flex-basis: 55%;
+        max-width: 55%;
         text-align: left;
     }
 
@@ -712,8 +716,8 @@ footer p {
     }
 
     .projects .artifact .col-2 {
-        flex-basis: 47%;
-        max-width: 47%;
+        flex-basis: 45%;
+        max-width: 45%;
         margin-top: 0;
         padding: 0;
     }
@@ -765,14 +769,14 @@ footer p {
         font-size: 3.5rem;
     }
 
-    .intro .shape {
-        height: 18em;
-        width: 18em;
+    .intro h1:before {
+        top: 2.5em;
+        left: 10.5em;
     }
-
-    .intro .shape:after {
-        height: 16em;
-        width: 16em;
+    
+    .intro h1:after {
+        top: 5em;
+        left: 13em;
     }
 
     .bio {
@@ -814,7 +818,7 @@ footer p {
 @media only screen and (min-width: 1200px) {
 
     .intro, .projects, .bio {
-        max-width: 1140px;
+        max-width: 1170px;
     }
 
     .intro p {
@@ -825,20 +829,14 @@ footer p {
         font-size: 1.1rem;
     }
 
-    .intro .shape {
-        height: 20em;
-        width: 20em;
-        top: 50%;
-        left: 65%;
+    .intro h1:before {
+        top: 2em;
+        left: 12.7em;
     }
-
-    .intro .shape:after {
-        height: 18em;
-        width: 18em;
-    }
-
-    .projects {
-        gap: 9em;
+    
+    .intro h1:after {
+        top: 4.5em;
+        left: 15.3em;
     }
 
     .projects .artifact .col-2 .title {
