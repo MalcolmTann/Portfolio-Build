@@ -14,7 +14,7 @@
 
             <?php include('partials/home/projects.php'); ?>
             
-            <?php include('partials/home/bio.php'); ?>
+            <?php include('partials/home/about.php'); ?>
         </main> 
         <?php include('partials/footer.php'); ?>
     </body>

@@ -1,4 +1,4 @@
-<section class="bio">
+<section class="about">
     <div class="col-1 hidden">
         <img src="images/portrait.jpg" alt="Malcolm Tan">
     </div>
