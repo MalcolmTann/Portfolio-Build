@@ -6,21 +6,21 @@
         </button>
         <nav class="gn">
             <ul class="gn-items">
-                <li><a href="..." title="Work">Work</a></li>
-                <li><a href="..." title="About">About</a></li>
+                <li><a href="#work" title="Work">Work</a></li>
+                <li><a href="#about" title="About">About</a></li>
                 <div class="is-flex">
                     <li>
-                        <a href="#" title="Email">
+                        <a href="mailto:malcolmtan20@gmail.com" title="Email Me">
                             <img src="images/email.svg" alt="Email">
                         </a>
                     </li>
                     <li>
-                        <a href="#" title="Github">
+                        <a href="https://github.com/MacolmTann" title="Github" target="_blank">
                             <img src="images/github.svg" alt="Github">
                         </a>
                     </li>
                     <li>
-                        <a href="#" title="Linkedin">
+                        <a href="https://www.linkedin.com/in/malcolmtan-" title="Linkedin" target="_blank">
                             <img src="images/linkedin.svg" alt="Linkedin">
                         </a>
                     </li>

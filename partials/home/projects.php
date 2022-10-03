@@ -1,4 +1,4 @@
-<section class="projects">
+<section id="work" class="projects">
     <div class="artifact hidden">
         <div class="col-1">
             <a href="project-1.php" title="...">
