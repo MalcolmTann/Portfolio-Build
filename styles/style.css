@@ -12,7 +12,7 @@ main {
     overflow: hidden;
 }
 
-.intro, .projects, .about, .proj-land, .skills, .overview, .more-projects {
+.home-landing, .projects, .about, .proj-landing, .skills, .overview, .more-projects {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -93,6 +93,7 @@ a {
 p {
     font-weight: 300;
     font-size: 1rem;
+    line-height: 1.6;
 }
 
 .btn {
@@ -240,26 +241,26 @@ header h2 {
 
 /*
 |------------------------------------------
-|  Intro - Home
+|  home-landing - Home
 |------------------------------------------
 */
-.intro {
+.home-landing {
     min-height: 100vh;
     gap: 1em;
 }
 
-.intro h1 {
+.home-landing h1 {
     font-size: 2rem;
     position: relative;
     line-height: 1.4;
 }
 
-.intro .btn {
+.home-landing .btn {
     margin-top: 1em;
     text-transform: uppercase;
 }
 
-.intro h1:before {
+.home-landing h1:before {
     content: '';
     display: block;
     position: absolute;
@@ -267,20 +268,20 @@ header h2 {
     width: 5em;
     border-radius: 50%;
     top: 7em;
-    left: 4em;
+    left: 3em;
     background-color: #4381b4;
     opacity: 0.17;
     z-index: -1;
 }
 
-.intro h1:after {
+.home-landing h1:after {
     content: '';
     display: block;
     position: absolute;
     height: 5em;
     width: 5em;
     top: 9.5em;
-    left: 6.5em;
+    left: 5.5em;
     background-color: #4381b4;
     z-index: -1;
     opacity: 0.05;
@@ -354,10 +355,6 @@ header h2 {
     font-size: 1.3rem;
 }
 
-.about p {
-    line-height: 2;
-}
-
 .about .col-1:before {
     content: '';
     display: block;
@@ -378,33 +375,48 @@ header h2 {
 |------------------------------------------
 */
 
-.proj-land {
-    min-height: 90vh;
+.proj-landing {
+    min-height: 100vh;
     gap: 2em;
 }
 
-.proj-land h1 {
+.proj-landing h1 {
     font-size: 2rem;
+    position: relative;
 }
 
-.proj-land .col-1 img {
+.proj-landing .col-1 img {
     width: 100%;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
 }
 
-.proj-land .col-2 {
+.proj-landing .col-2 {
     display: flex;
     flex-direction: column;
     gap: 0.5em;
 }
 
-.proj-land .col-2 p:nth-of-type(2) {
+.proj-landing .col-2 p:nth-of-type(2) {
     margin-top: 0.5em;
 }
 
-.proj-land .col-2 .btn {
+.proj-landing .col-2 .btn {
     margin-top: 2.5em;
+}
+
+.proj-landing h1:before {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 6em;
+    width: 6em;
+    border-radius: 5%;
+    top: 5.5em;
+    left: 6em; 
+    background-color: #4381b4;
+    opacity: 0.05;
+    z-index: -1;
 }
 
 /*
@@ -415,7 +427,7 @@ header h2 {
 
 .skills {
     height: max-content;
-    padding: 1em;
+    padding: 2em 1em;
 }
 
 .skills .is-flex {
@@ -452,14 +464,14 @@ header h2 {
 */
 
 .overview {
-    height: max-content;
-    gap: 2em;
+    height: 60vh;
+    gap: 3em;
     margin-top: 4em;
     margin-bottom: 4em;
 }
 
 .overview h3 {
-    font-weight: 400;
+    font-weight: 300;
     font-size: 1.5rem;
 }
 
@@ -488,7 +500,6 @@ header h2 {
 }
 
 .more-projects img {
-    height: 100%;
     width: 100%;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
     border-radius: 5px;
@@ -524,25 +535,25 @@ footer p {
 */
 @media only screen and (min-width: 320px) {
 
-    .intro, .projects, .about, .proj-land, .skills, .overview, .more-projects {
+    .home-landing, .projects, .about, .proj-landing, .skills, .overview, .more-projects {
         max-width: 450px;
     }
 
-    .intro h1 {
+    .home-landing h1 {
         font-size: 2rem;
     }
 }
 
 @media only screen and (min-width: 450px) {
 
-    .intro h1:before {
+    .home-landing h1:before {
         height: 6em;
         width: 6em;
         top: 6em;
         left: 7em;
     }
     
-    .intro h1:after {
+    .home-landing h1:after {
         height: 6em;
         width: 6em;
         top: 9em;
@@ -553,15 +564,19 @@ footer p {
         top: -4px;
         left: 10%;
         width: 80%;
-    }   
-    
-
-    .about img {
-        width: 70%;
-    }
+    }  
 
     .about .is-flex {
         gap: 2em;
+    }
+
+    .proj-landing h1:before {
+        left: 9em; 
+    }
+
+    .overview {
+        margin-top: 1em;
+        margin-bottom: 1em;
     }
 }
 
@@ -571,22 +586,22 @@ footer p {
         padding: 1em 1.7em;
     }
 
-    .intro, .projects, .about {
+    .home-landing, .projects, .about, .proj-landing, .skills, .overview, .more-projects {
         max-width: 550px;
     }
 
-    .intro h1 {
+    .home-landing h1 {
         font-size: 2.5rem;
     }
 
-    .intro h1:before {
+    .home-landing h1:before {
         height: 6em;
         width: 6em;
         top: 4em;
         left: 7em;
     }
     
-    .intro h1:after {
+    .home-landing h1:after {
         height: 6em;
         width: 6em;
         top: 7em;
@@ -636,6 +651,20 @@ footer p {
     .about .col-2 {
         width: 80%;
         margin: 0 auto;
+    }
+
+    .proj-landing {
+        gap: 2.5em;
+    }
+
+    .proj-landing h1:before {
+        top: 4em;
+        left: 12em; 
+    }
+
+    .skills .is-flex {
+        flex-direction: row;
+        justify-content: space-between;
     }
 
     footer .container {
@@ -697,23 +726,23 @@ footer p {
         display: none;
     }
 
-    .intro, .projects, .about {
+    .home-landing, .projects, .about, .proj-landing, .skills, .overview, .more-projects {
         max-width: 740px;
     }
 
-    .intro h1 {
+    .home-landing h1 {
         font-size: 3rem;
         max-width: 800px;
     }
 
-    .intro h1:before {
+    .home-landing h1:before {
         height: 5em;
         width: 5em;
         top: 3em;
         left: 9em;
     }
     
-    .intro h1:after {
+    .home-landing h1:after {
         height: 5em;
         width: 5em;
         top: 5.5em;
@@ -772,6 +801,46 @@ footer p {
         width: 50%;
     }
 
+    .proj-landing {
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .proj-landing .col-1 {
+        flex-basis: 60%;
+        max-width: 60%;
+    }
+
+    .proj-landing .col-2 {
+        flex-basis: 40%;
+        max-width: 40%;
+    }
+
+    .proj-landing h1:before {
+        height: 8em;
+        width: 4em;
+        left: 14em; 
+        top: 8.5em;
+    }
+
+    .skills .is-flex {
+        justify-content: space-around;
+    }
+
+    .overview .is-flex:first-of-type p {
+        width: 70%;
+    }
+
+    .more-projects .is-flex {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .more-projects img {
+        width: 48%;
+    }
+    
     .hidden {
         transition: 0.9s all ease;
     }
@@ -792,20 +861,20 @@ footer p {
         transform: translateY(-4px);
     }
 
-    .intro, .projects, .about {
+    .home-landing, .projects, .about, .proj-landing, .skills, .overview, .more-projects {
         max-width: 970px;
     }
 
-    .intro h1 {
+    .home-landing h1 {
         font-size: 3.5rem;
     }
 
-    .intro h1:before {
+    .home-landing h1:before {
         top: 2.5em;
         left: 10.5em;
     }
     
-    .intro h1:after {
+    .home-landing h1:after {
         top: 5em;
         left: 13em;
     }
@@ -840,32 +909,49 @@ footer p {
         max-width: 40%;
     }
 
+    .proj-landing {
+        gap: 2.5em;
+    }
+
+    .proj-landing .col-1 {
+        flex-basis: 55%;
+        max-width: 55%;
+    }
+
+    .proj-landing h1:before {
+        left: 19em; 
+        top: 9em;
+    }
+
+    .overview .is-flex:first-of-type p {
+        width: 55%;
+    }
+
     footer img:hover {
         transform: translateY(-4px);
     }
-
 }
 
 @media only screen and (min-width: 1200px) {
 
-    .intro, .projects, .about {
+    .home-landing, .projects, .about, .proj-landing, .skills, .overview, .more-projects {
         max-width: 1170px;
     }
 
-    .intro p {
+    .home-landing p {
         font-size: 1.2rem;
     }
 
-    .intro .btn {
+    .home-landing, .proj-landing .btn {
         font-size: 1.1rem;
     }
 
-    .intro h1:before {
+    .home-landing h1:before {
         top: 2em;
         left: 12.7em;
     }
     
-    .intro h1:after {
+    .home-landing h1:after {
         top: 4.5em;
         left: 15.3em;
     }
@@ -886,6 +972,24 @@ footer p {
         left: 6%;
         width: 88%;
     }   
+
+    .proj-landing {
+        gap: 3em;
+    }
+
+    .proj-landing .col-2 {
+        flex-basis: 40%;
+        min-width: 40%;
+    }
+
+    .proj-landing .col-2 .btn {
+        margin-top: 3em;
+    }
+
+    .proj-landing h1:before {
+        left: 23.5em; 
+        top: 10em;
+    }
 
     footer img {
         height: 1.5em;

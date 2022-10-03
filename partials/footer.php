@@ -11,7 +11,7 @@
                 <img src="images/linkedin.svg" alt="Linkedin">
             </a>
         </div>
-        <p>Built by Malcolm Tan</p>
+        <p>Built by Malcolm Tan :)</p>
     </div>
 </footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
