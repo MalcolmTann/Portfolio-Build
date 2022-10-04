@@ -93,7 +93,7 @@ a {
 p {
     font-weight: 300;
     font-size: 1rem;
-    line-height: 1.6;
+    line-height: 1.7;
 }
 
 .btn {
@@ -268,7 +268,7 @@ header h2 {
     width: 5em;
     border-radius: 50%;
     top: 7em;
-    left: 3em;
+    left: 2em;
     background-color: #679cc8;
     opacity: 0.2;
     z-index: -1;
@@ -281,9 +281,9 @@ header h2 {
     height: 5em;
     width: 5em;
     top: 9.5em;
-    left: 5.5em;
+    left: 4.55em;
     background-color: #679cc8;
-    z-index: -1;
+    z-index: -2;
     opacity: 0.05;
 }
 
@@ -293,6 +293,7 @@ header h2 {
 |------------------------------------------
 */
 .projects {
+    padding-top: 4em;
     height: max-content;
     flex-direction: column;
     justify-content: space-evenly;
@@ -403,20 +404,6 @@ header h2 {
 
 .proj-landing .col-2 .btn {
     margin-top: 2.5em;
-}
-
-.proj-landing h1:before {
-    content: '';
-    display: block;
-    position: absolute;
-    height: 6em;
-    width: 6em;
-    border-radius: 5%;
-    top: 5.5em;
-    left: 6em; 
-    background-color: #4381b4;
-    opacity: 0.05;
-    z-index: -1;
 }
 
 /*
@@ -550,28 +537,24 @@ footer p {
         height: 6em;
         width: 6em;
         top: 6em;
-        left: 7em;
+        left: 6em;
     }
     
     .home-landing h1:after {
         height: 6em;
         width: 6em;
         top: 9em;
-        left: 10em;
+        left: 9em;
     }
 
     .about .col-1:before {
-        top: -4px;
-        left: 10%;
-        width: 80%;
+        top: -8px;
+        left: 6%;
+        width: 90%;
     }  
 
     .about .is-flex {
         gap: 2em;
-    }
-
-    .proj-landing h1:before {
-        left: 9em; 
     }
 
     .overview {
@@ -595,20 +578,17 @@ footer p {
     }
 
     .home-landing h1:before {
-        height: 6em;
-        width: 6em;
-        top: 4em;
-        left: 7em;
+        top: 3em;
+        left: 7.5em;
     }
     
     .home-landing h1:after {
-        height: 6em;
-        width: 6em;
-        top: 7em;
-        left: 10em;
+        top: 6em;
+        left: 10.5em;
     }
 
     .projects  {
+        padding-top: 5em;
         gap: 5em;
     }
 
@@ -644,8 +624,8 @@ footer p {
     }
 
     .about .col-1:before {
-        left: 14%;
-        width: 72%;
+        left: 18%;
+        width: 65%;
     }   
 
     .about .col-2 {
@@ -655,11 +635,6 @@ footer p {
 
     .proj-landing {
         gap: 2.5em;
-    }
-
-    .proj-landing h1:before {
-        top: 4em;
-        left: 12em; 
     }
 
     .skills .is-flex {
@@ -738,20 +713,18 @@ footer p {
     .home-landing h1:before {
         height: 5em;
         width: 5em;
-        top: 3em;
-        left: 9em;
+        left: 8em;
     }
     
     .home-landing h1:after {
         height: 5em;
         width: 5em;
         top: 5.5em;
-        left: 11.5em;
     }
 
     .projects {
         justify-content: space-evenly;
-        gap: 8em;
+        gap: 6em;
     }
 
     .projects .artifact {
@@ -791,10 +764,10 @@ footer p {
     }
 
     .about .col-1:before {
-        top: 0;
-        left: 20%;
-        height: 101%;
-        width: 60%;
+        top: 2px;
+        left: 22%;
+        height: 100%;
+        width: 55%;
     }   
 
     .about img {
@@ -817,13 +790,6 @@ footer p {
         max-width: 40%;
     }
 
-    .proj-landing h1:before {
-        height: 8em;
-        width: 4em;
-        left: 14em; 
-        top: 8.5em;
-    }
-
     .skills .is-flex {
         justify-content: space-around;
     }
@@ -835,10 +801,6 @@ footer p {
     .more-projects .is-flex {
         flex-direction: row;
         justify-content: space-between;
-    }
-
-    .more-projects img {
-        width: 48%;
     }
     
     .hidden {
@@ -870,13 +832,13 @@ footer p {
     }
 
     .home-landing h1:before {
-        top: 2.5em;
-        left: 10.5em;
+        top: 2em;
+        left: 11em;
     }
     
     .home-landing h1:after {
-        top: 5em;
-        left: 13em;
+        top: 4.5em;
+        left: 13.5em;
     }
 
     .about {
@@ -896,7 +858,6 @@ footer p {
 
     .about .col-1:before {
         left: 4%;
-        height: 100%;
         width: 90%;
     }   
 
@@ -916,11 +877,6 @@ footer p {
     .proj-landing .col-1 {
         flex-basis: 55%;
         max-width: 55%;
-    }
-
-    .proj-landing h1:before {
-        left: 19em; 
-        top: 9em;
     }
 
     .overview .is-flex:first-of-type p {
@@ -956,6 +912,10 @@ footer p {
         left: 15.3em;
     }
 
+    .projects {
+        gap: 8em;
+    }
+
     .projects .artifact .col-2 .title {
         font-size: 2.5rem;
     }
@@ -969,8 +929,8 @@ footer p {
     }
 
     .about .col-1:before {
-        left: 6%;
-        width: 88%;
+        left: 10%;
+        width: 80%;
     }   
 
     .proj-landing {
@@ -984,11 +944,6 @@ footer p {
 
     .proj-landing .col-2 .btn {
         margin-top: 3em;
-    }
-
-    .proj-landing h1:before {
-        left: 23.5em; 
-        top: 10em;
     }
 
     footer img {

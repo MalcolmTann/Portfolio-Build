@@ -1,16 +1,17 @@
-<section class="bg">
+<?php 
+
+    $skills_date = $skills_date ?? '';
+
+?><section class="bg">
     <div class="skills"> 
         <div class="is-flex">
             <div class="col">
                 <h4>Completed On</h4>
-                <p>01/01/21</p>
+                <p><?php echo $skills_date; ?></p>
             </div>
             <div class="col">
                 <h4>Role</h4>
-                <ul>
-                    <li>Developer</li>
-                    <li>Designer</li>
-                </ul>
+                <p>Developer</p>
             </div>
             <div class="col">
                 <h4>Software</h4>

@@ -2,13 +2,13 @@
     <div class="container">
         <div class="is-flex">
             <a href="mailto:malcolmtan20@gmai.com" title="Email Me">
-                <img src="images/email.svg" alt="Email">
+                <img src="../images/email.svg" alt="Email">
             </a>
             <a href="https://github.com/MacolmTann" title="Github" target="_blank">
-                <img src="images/github.svg" alt="Github">
+                <img src="../images/github.svg" alt="Github Logo">
             </a>
             <a href="#" title="Linkedin">        
-                <img src="images/linkedin.svg" alt="Linkedin">
+                <img src="../images/linkedin.svg" alt="Linkedin Logo">
             </a>
         </div>
         <p>Built by Malcolm Tan :)</p>

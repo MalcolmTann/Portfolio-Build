@@ -1,11 +1,19 @@
-<section class="proj-landing">
+<?php 
+
+    $landing_title = $landing_title ?? '';
+    $landing_sub_title = $landing_sub_title ?? '';
+    $landing_img_src = $landing_img_src ?? '';
+    $landing_img_alt = $landing_img_alt ?? '';
+    $landing_desc = $landing_desc ?? '';
+
+?><section class="proj-landing">
     <div class="col-1">
-        <img src="images/malsathome.jpg">
+        <img src="<?php echo $landing_img_src; ?>" alt="<?php echo $landing_img_alt; ?>">
     </div>
     <div class="col-2">
-        <p>/ Bootstrap</p>
-        <h1>Malsathome</h1>
-        <p>A mobile-first modern restaurant design for a fictitious client. Built using a Bootstrap with custom SASS styling.</p>
+        <p><?php echo $landing_sub_title; ?></p>
+        <h1><?php echo $landing_title; ?></h1>
+        <p><?php echo $landing_desc; ?></p>
         <button class="btn">Live Site</button>
     </div>
 </section>
