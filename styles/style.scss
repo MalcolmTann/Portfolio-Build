@@ -1,1 +1,292 @@
-/* Sass styles go here */
+// Background
+$primaryBg: #fff;
+$secondaryBg: #f0f8ff;
+$tertiaryBg: #9fd3e8;
+
+// Font Family
+$fontFam: 'Poppins';
+
+// Font Weight
+$bold: 500;
+$normal: 400;
+$light: 300;
+
+// Font Size
+$lrg: 2rem;
+$med: 1.5rem;
+$small: 1rem;
+
+// Paragraph Height
+$lineHeight: 1.7;
+
+
+/*
+|------------------------------------------
+|  Global
+|------------------------------------------
+*/
+
+body {
+    background-color: $primaryBg;
+    font-family: $fontFam;
+    main {
+        overflow: hidden;
+    }
+}
+
+.home-landing, .projects, .about, .proj-landing .skills, .overview, .more-projects {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 1em;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.bg {
+    background-color: $secondaryBg;
+}
+
+img {
+    cursor: pointer;
+}
+
+/*
+|------------------------------------------
+|  Typography
+|------------------------------------------
+*/
+h1, h2 {
+    font-weight: $bold;
+    font-size: $lrg;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+p {
+    font-weight: $normal;
+    font-size: $small;
+    line-height: $lineHeight;
+}
+
+
+/*
+|------------------------------------------
+|  Helper Classes
+|------------------------------------------
+*/
+
+.is-flex {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    font-family: $fontFam;
+    cursor: pointer;
+    background: none;
+    border: none;
+    background-color: $tertiaryBg;
+    width: fit-content;
+    padding: 0.5em 1em;
+    transition: .45s ease;
+    position: relative;
+}
+
+/*
+|------------------------------------------
+|  JS Paralax Animation
+|------------------------------------------
+*/
+
+.hidden {
+    position: relative;
+    transform: translateX(300px);
+    opacity: 0;
+    transition: 1.1s all ease;
+    &:nth-of-type(1) {
+        position: relative;
+        transform: translateX(-300px);
+        opacity: 0;
+        transition: 1.1s all ease;
+    }
+    &:nth-of-type(3) {
+        position: relative;
+        transform: translateX(-300px);
+        opacity: 0;
+        transition: 1.1s all ease;
+    }
+    .show {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/*
+|------------------------------------------
+|  Header / Nav
+|------------------------------------------
+*/
+
+header {
+    padding: 1em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    align-items: center;
+    background-color: $primaryBg;
+    justify-content: space-between;
+    transition: .3s ease;
+    h2 {
+        font-size: $med;
+        font-weight: $normal;
+    }
+    .nav-container {
+        max-width: 1140px;
+        margin: 0 auto;
+        display: flex;
+    }
+    .gn {
+        position: absolute;
+        top: 50px;
+        right: 0;
+        width: 50%;
+        display: none;
+    }
+    .gn-trig {
+        position: relative;
+        width: 30px;
+        height: 20px;
+        border: none;
+        background: transparent;
+        display: flex;        
+        justify-content: flex-end;
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+    .gn-items {
+        position: absolute;
+        right: 0px;
+        top: -50px;
+        height: 100vh;
+        min-width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        overflow-x: hidden;
+        background-color: $tertiaryBg;
+    }
+    .gn a {
+        text-decoration: none;
+        margin-top: -50px;
+        font-size: 1.3rem;
+        font-weight: $light;
+        color: #000;  
+    }
+    .gn img {
+        padding: 0 0.4em;
+        height: 1em;
+    }
+}
+
+/*
+|------------------------------------------
+| Burger Nav
+|------------------------------------------
+*/
+
+.burger {
+    position: absolute;
+    background: #000;
+    width: 20px;
+    height: 2px;
+    right: 0px;
+    top: 50%;
+    z-index: 1;
+    &:before, &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        background: #000;
+        width: 30px;
+        height: 2px;
+        right: 0;
+    }
+    &:before {
+        top: 7px;
+    }
+    &:after {
+        bottom: 7px;
+    } 
+}
+
+.burger, .burger:before, .burger:after {
+    transition-property: transform, top, background;
+    transition-duration: .45s;
+}
+
+.gn-trig.is-active {
+    .burger:before {
+        transform: rotate(45deg) ;
+        background-color: $primaryBg;
+        top: -2px;
+    }
+    .burger:after {
+        transform: rotate(-45deg);
+        background-color: $primaryBg;
+        top: -2px;
+    } 
+    .burger {
+        background: rgba(255, 255, 255, 0);
+    }
+}
+
+/*
+|------------------------------------------
+|  home-landing - Home
+|------------------------------------------
+*/
+
+.home-landing {
+    min-height: 100vh;
+    gap: 1em;
+    h1 {
+        position: relative;
+        line-height: 1.4;
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            height: 5em;
+            width: 5em;
+            border-radius: 50%;
+            top: 7em;
+            left: 2em;
+            background-color: $tertiaryBg;
+            opacity: 0.25;
+            z-index: -1;
+        }
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            height: 5em;
+            width: 5em;
+            top: 9.5em;
+            left: 4.55em;
+            background-color: $tertiaryBg;
+            z-index: -2;
+            opacity: 0.15;
+        }
+    }
+    .btn {
+        margin-top: 1em;
+        text-transform: uppercase;
+    }
+}

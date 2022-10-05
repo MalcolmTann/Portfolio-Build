@@ -1,5 +1,5 @@
 <footer>
-    <div class="container">
+    <div class="nav-container">
         <div class="is-flex">
             <a href="mailto:malcolmtan20@gmai.com" title="Email Me">
                 <img src="../images/email.svg" alt="Email">
