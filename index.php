@@ -10,7 +10,6 @@
     <body>
         <?php include('partials/header.php'); ?>
         <main>
-            
             <section class="home-landing">
                 <p>/ Front-end Developer</p>
                 <h1>Turning ideas into reality through code.</h1>
@@ -18,7 +17,6 @@
                     <button class="btn">projects</button>
                 </a>
             </section>
-
             <section id="work" class="projects">
                 <div class="artifact hidden">
                     <div class="col-1">
@@ -54,7 +52,6 @@
                     </div>
                 </div>
             </section>
-            
             <section id="about" class="about">
                 <div class="col-1 hidden">
                     <img src="images/portrait.jpg" alt="Malcolm Tan">
