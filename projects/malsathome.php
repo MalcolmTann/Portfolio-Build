@@ -24,7 +24,7 @@
             ?>
             
             <?php 
-                $overview_desc = 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et praesentium debitis sed impedit neque reprehenderit, labore recusandae libero amand quo reiciendis inventore quis illum culpa modi cumque provident consequuntur, qui perspiciatis!';
+                $overview_desc = 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et praesentium debitis sed impedit neque reprehenderit, labore recusandae libero quo reiciendis inventore quis illum culpa modi cumque provident consequuntur, qui perspiciatis!';
                 include('../partials/projects/overview.php'); 
             ?>
 
