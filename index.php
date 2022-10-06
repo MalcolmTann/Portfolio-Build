@@ -18,7 +18,7 @@
                 </a>
             </section>
             <section id="work" class="projects">
-                <div class="artifact hidden">
+                <div class="artifact">
                     <div class="col-1">
                         <a href="projects/malsathome.php" title="...">
                             <img src="images/malsathome.jpg" alt="View ...">
@@ -29,7 +29,7 @@
                         <div class="desc">/ Bootstrap</div>
                     </div>
                 </div>
-                <div class="artifact hidden">
+                <div class="artifact">
                     <div class="col-1">
                         <a href="project-2.php" title="...">
                             <img src="images/malsathome.jpg" alt="View ...">
@@ -40,7 +40,7 @@
                         <div class="desc">/ ReactJS</div>
                     </div>
                 </div>
-                <div class="artifact hidden">
+                <div class="artifact">
                     <div class="col-1">
                         <a href="project-3.php" title="...">
                             <img src="images/malsathome.jpg" alt="View ...">
@@ -53,10 +53,10 @@
                 </div>
             </section>
             <section id="about" class="about">
-                <div class="col-1 hidden">
+                <div class="col-1">
                     <img src="images/portrait.jpg" alt="Malcolm Tan">
                 </div>
-                <div class="is-flex col-2 hidden">
+                <div class="is-flex col-2">
                     <h2>Hey, I'm Malcolm</h2>
                     <p>I code because I love the process of building things and taking on challenges that allow me to exercise my creativity. Curiosity drives me to be a proactive and passionate learner, always seeking to acquire new skills, technical knowledge and experiences in pursuit of continuous slef-improvement and growth.</p>
                     <button class="btn">View Resume</button>
