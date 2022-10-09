@@ -5,6 +5,14 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Malcolm Tan | Front-end Developer</title>
+        <meta name="description" content="Malcolm Tan | Turning Ideas Into Reality Through Code.">
+        <meta name="keywords" content="Malcolm Tan, Malcolm Tan portfolio, Front-end Developer, Web Devloper, BCIT New Media Web Design and Development, Vancouver BC">
+        <meta name="author" content="Malcolm Tan">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://malcolmtan24.com">
+        <meta property="og:title" content="Malcolm Tan | Front-End Devloper">
+        <meta property="og:description" content="Malcolm Tan | Turning Ideas Into Reality Through Code.">
         <?php include('partials/links.php'); ?>
     </head>
     <body>
@@ -12,7 +20,7 @@
         <main>
             <section class="home-landing">
                 <p>/ Front-end Developer</p>
-                <h1>Turning ideas into reality through code.</h1>
+                <h1>Turning ideas into reality through &lt;code&gt;</h1>
                 <a href="#work" title="View Projects" >
                     <button class="btn">projects</button>
                 </a>
