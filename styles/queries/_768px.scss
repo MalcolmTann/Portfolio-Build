@@ -1,0 +1,150 @@
+@use '../utilities' as *;
+
+    
+@media (min-width: 768px) {
+
+    header {
+        .nav-container {
+            align-items: center;
+        }
+        .gn {
+            display: block;
+            position: static;
+            margin-left: auto;
+        }
+        .gn-trig {
+            display: none;
+        }
+        .gn-items {
+            flex-direction: row;
+            position: static;
+            height: 5vh;
+            justify-content: flex-end;
+            background-color: #fff;
+        }
+        .gn {
+            a {
+                margin-top: 0;
+                padding: 0em 1.6em;
+                font-size: $small;
+                font-weight: $light;
+                transition: .30s ease;  
+                &:last-child {
+                    padding-right: 0;
+                }
+            }
+            img {
+                padding: 0;
+                margin-bottom: 4px;
+                height: 1.2em;
+                transition: .30s ease;
+            }
+            .is-flex li:nth-child(1) {
+                display: none;
+            }
+        }
+    }
+
+    .home-landing, .projects, .about, .proj-landing, .skills, .overview, .more-projects {
+        max-width: 740px;
+    }
+
+    .home-landing {
+        h1 {
+            font-size: 3rem;
+            max-width: 900px;
+            &:before {
+                height: 5em;
+                width: 5em;
+                left: 8em;
+            }
+            &:after {
+                height: 5em;
+                width: 5em;
+                top: 5.5em;
+            }
+        }
+    }
+    
+    .projects {
+        justify-content: space-evenly;
+        gap: 6em;
+        .artifact {
+            display: flex;
+            align-items: center;
+            flex-direction: row-reverse;
+            text-align: center;
+            &:nth-of-type(2) {
+                flex-direction: row;
+            }
+            .col-1 {
+                flex-basis: 55%;
+                max-width: 55%;
+                text-align: left;
+                img {
+                    width: 100%;
+                }
+            }
+            .col-2 {
+                flex-basis: 45%;
+                max-width: 45%;
+                margin-top: 0;
+                padding: 0;
+                .title {
+                    font-size: 2.5rem;
+                }
+                .desc {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+
+    .about {
+        margin-top: 9em;
+        .col-1 {
+            &:before {
+                top: 2px;
+                left: 22%;
+                height: 100%;
+                width: 55%; 
+            }
+            img {
+                width: 50%; 
+            }
+        }
+    }
+
+    .proj-landing {
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        .col-1 {
+            flex-basis: 60%;
+            max-width: 60%;
+        } 
+        .col-2 {
+            flex-basis: 40%;
+            max-width: 40%; 
+        }
+    }
+
+    .skills {
+        .is-flex {
+            justify-content: space-around;
+        }
+    }
+
+    .overview {
+        .is-flex:first-of-type p {
+            width: 70%;
+        }
+    }
+
+    .more-projects {
+        .is-flex {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+}

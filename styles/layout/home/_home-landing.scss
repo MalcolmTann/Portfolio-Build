@@ -1,0 +1,39 @@
+@use '../../utilities' as *;
+
+.home-landing {
+    min-height: 100vh;
+    gap: 1em;
+    h1 {
+        position: relative;
+        line-height: 1.4;
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            height: 5em;
+            width: 5em;
+            border-radius: 50%;
+            top: 7em;
+            left: 2em;
+            background-color: $tertiaryBg;
+            opacity: 0.25;
+            z-index: -1;
+        }
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            height: 5em;
+            width: 5em;
+            top: 9.5em;
+            left: 4.55em;
+            background-color: $tertiaryBg;
+            z-index: -2;
+            opacity: 0.15;
+        }
+    }
+    .btn {
+        margin-top: 1em;
+        text-transform: uppercase;
+    }
+}

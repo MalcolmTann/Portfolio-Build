@@ -1,0 +1,83 @@
+@use '../utilities' as *;
+
+@media (min-width: 992px) {
+    
+    header {
+        .gn {
+            a:hover {
+                color: #9fd3e8;
+            }
+            img:hover {
+                transform: translateY(-4px);
+            }
+        }
+    }
+    
+    .home-landing, .projects, .about, .proj-landing, .skills, .overview, .more-projects {
+        max-width: 970px;
+    }
+    
+    .btn:hover {
+        color: #fff;
+        transform: translateY(-4px);
+    }
+
+    .home-landing {
+        h1 {
+            font-size: 3.5rem;
+            &:before {
+                top: 2em;
+                left: 11em;
+            }
+            &:after {
+                top: 4.5em;
+                left: 13.5em;
+            }
+        }
+    }
+
+    .about {
+        height: 90vh;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 0;
+        margin-bottom: 0;
+        gap: 0; 
+        .col-1 {
+            flex-basis: 50%;
+            max-width: 50%;
+            text-align: center;
+            &:before {
+                left: 5%;
+                width: 90%; 
+            }
+            img {
+                width: 80%;
+            }
+        }
+        .col-2 {
+            flex-basis: 40%;
+            max-width: 40%;
+        }
+    }
+
+    .proj-landing {
+        gap: 2.5em;
+        .col-1 {
+            flex-basis: 55%;
+            max-width: 55%;
+        }
+    }
+
+    .overview {
+        .is-flex:first-of-type p {
+            width: 55%;
+        }
+    }
+
+    footer {
+        img:hover {
+            transform: translateY(-4px);
+        }
+    }
+}

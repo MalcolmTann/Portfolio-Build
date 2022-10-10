@@ -25,15 +25,4 @@
             }
         }
     }
-    @media (min-width: 576px) {
-        .is-flex {
-            flex-direction: row;
-            justify-content: space-between;
-        }
-    }
-    @media (min-width: 768px) {
-        .is-flex {
-            justify-content: space-around;
-        }
-    }
 }

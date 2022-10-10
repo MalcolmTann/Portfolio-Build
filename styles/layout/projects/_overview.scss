@@ -13,18 +13,4 @@
         flex-direction: column;
         gap: 1em;
     }
-    @media (min-width: 450px) {
-        margin-top: 1em;
-        margin-bottom: 1em; 
-    }
-    @media (min-width: 768px) {
-        .is-flex:first-of-type p {
-            width: 70%;
-        }
-    }
-    @media (min-width: 992px) {
-        .is-flex:first-of-type p {
-            width: 55%;
-        }
-    }
 }

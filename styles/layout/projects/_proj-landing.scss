@@ -22,45 +22,4 @@
             margin-top: 2.5em;
         }
     }
-    @media (min-width: 576px) {
-        gap: 2.5em;
-    }
-    @media (min-width: 768px) {
-        flex-direction: row-reverse;
-        justify-content: center;
-        align-items: center;
-        .col-1 {
-            flex-basis: 60%;
-            max-width: 60%;
-        } 
-        .col-2 {
-            flex-basis: 40%;
-            max-width: 40%; 
-        }
-    }
-    @media (min-width: 992px) {
-        gap: 2.5em;
-        .col-1 {
-            flex-basis: 55%;
-            max-width: 55%;
-        }
-    }
-    @media (min-width: 1200px) {
-        gap: 3em;
-        h1 {
-            font-size: 3rem;
-        }
-        .col-2 {
-            flex-basis: 40%;
-            min-width: 40%;
-            p {
-                &:first-of-type {
-                    font-size: 1.2rem;
-                }
-            }
-            .btn {
-                margin-top: 3em;
-            }
-        }
-    }
  }

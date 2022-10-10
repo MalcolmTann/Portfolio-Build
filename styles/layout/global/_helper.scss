@@ -15,12 +15,6 @@
     padding: 0.5em 1em;
     transition: .45s ease;
     position: relative;
-    @media (min-width: 992px) {
-        &:hover {
-            color: #fff;
-            transform: translateY(-4px);
-        }
-    }
 }
 
 img {
