@@ -1,0 +1,87 @@
+@use '../../utilities' as *;
+
+.projects {
+    padding-top: 4em;
+    height: max-content;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 4em;
+    .artifact {
+        img {
+            width: 100%;
+            border-radius: 5px;
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+            z-index: 2;
+        }
+        .col-2 {
+            margin-top: 1.5em;
+            .title {
+                font-size: $lrg;
+                font-weight: $bold;
+                margin-bottom: 0.4em;
+            }
+            .desc {
+                font-weight: $light;
+            }
+        }
+    }
+    @media (min-width: 576px) {
+        padding-top: 5em;
+        gap: 5em;
+        .artifact {
+            .col-1 {
+                text-align: center;
+                img {
+                    width: 90%;
+                    border-radius: 10px;
+                }
+            }
+            .col-2 {
+                padding-left: 1.5em;
+                margin-top: 2em;
+            }
+        }
+    }
+    @media (min-width: 768px) {
+        justify-content: space-evenly;
+        gap: 6em;
+        .artifact {
+            display: flex;
+            align-items: center;
+            flex-direction: row-reverse;
+            text-align: center;
+            &:nth-of-type(2) {
+                flex-direction: row;
+            }
+            .col-1 {
+                flex-basis: 55%;
+                max-width: 55%;
+                text-align: left;
+                img {
+                    width: 100%;
+                }
+            }
+            .col-2 {
+                flex-basis: 45%;
+                max-width: 45%;
+                margin-top: 0;
+                padding: 0;
+                .title {
+                    font-size: 2.5rem;
+                }
+                .desc {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+    @media (min-width: 1200px) {
+        gap: 8em;
+        .col-2 {
+            .title {
+                font-size: 3rem;
+            }
+        }
+
+    }
+}

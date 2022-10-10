@@ -1,0 +1,17 @@
+@use '../../utilities' as *;
+
+h1, h2 {
+    font-weight: $bold;
+    font-size: $lrg;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+p {
+    font-weight: $normal;
+    font-size: $small;
+    line-height: $lineHeight;
+}

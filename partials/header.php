@@ -1,6 +1,6 @@
 <header>
     <div class="nav-container">
-        <a href="index.php" title="Home"><h2>Mal.</h2></a>
+        <a href="index.php" title="Home"><h2>Mal</h2></a>
         <button class="gn-trig">
             <div class="burger"></div>
         </button>

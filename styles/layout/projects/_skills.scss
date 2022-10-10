@@ -1,0 +1,39 @@
+@use '../../utilities' as *;
+
+.skills {
+    height: max-content;
+    padding: 2em 1em;
+    h4 {
+        font-size: $small;
+        font-weight: $xBold;
+        text-transform: uppercase;
+    }
+    .is-flex {
+        flex-direction: column;
+        gap: 2em;
+        .col {
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: 0.5em;
+                li {
+                    font-weight: $light;
+                }
+            }
+        }
+    }
+    @media (min-width: 576px) {
+        .is-flex {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+    @media (min-width: 768px) {
+        .is-flex {
+            justify-content: space-around;
+        }
+    }
+}

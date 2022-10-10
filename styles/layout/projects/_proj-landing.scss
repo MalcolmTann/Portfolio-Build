@@ -1,0 +1,66 @@
+@use '../../utilities' as *;
+
+.proj-landing {
+    min-height: 100vh;
+    gap: 2em;
+    h1 {
+        font-size: $lrg;
+        position: relative;
+    }.col-1 img {
+        width: 100%;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    }
+    .col-2 {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+        p:nth-of-type(2) {
+            margin-top: 0.5em;
+        }
+        .btn {
+            margin-top: 2.5em;
+        }
+    }
+    @media (min-width: 576px) {
+        gap: 2.5em;
+    }
+    @media (min-width: 768px) {
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        .col-1 {
+            flex-basis: 60%;
+            max-width: 60%;
+        } 
+        .col-2 {
+            flex-basis: 40%;
+            max-width: 40%; 
+        }
+    }
+    @media (min-width: 992px) {
+        gap: 2.5em;
+        .col-1 {
+            flex-basis: 55%;
+            max-width: 55%;
+        }
+    }
+    @media (min-width: 1200px) {
+        gap: 3em;
+        h1 {
+            font-size: 3rem;
+        }
+        .col-2 {
+            flex-basis: 40%;
+            min-width: 40%;
+            p {
+                &:first-of-type {
+                    font-size: 1.2rem;
+                }
+            }
+            .btn {
+                margin-top: 3em;
+            }
+        }
+    }
+ }

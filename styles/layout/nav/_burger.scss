@@ -1,0 +1,47 @@
+@use '../../utilities' as *;
+
+.burger {
+    position: absolute;
+    background: #000;
+    width: 20px;
+    height: 2px;
+    right: 0px;
+    top: 50%;
+    z-index: 1;
+    &:before, &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        background: #000;
+        width: 30px;
+        height: 2px;
+        right: 0;
+    }
+    &:before {
+        top: 7px;
+    }
+    &:after {
+        bottom: 7px;
+    } 
+}
+
+.burger, .burger:before, .burger:after {
+    transition-property: transform, top, background;
+    transition-duration: .45s;
+}
+
+.gn-trig.is-active {
+    .burger:before {
+        transform: rotate(45deg) ;
+        background-color: $primaryBg;
+        top: -2px;
+    }
+    .burger:after {
+        transform: rotate(-45deg);
+        background-color: $primaryBg;
+        top: -2px;
+    } 
+    .burger {
+        background: rgba(255, 255, 255, 0);
+    }
+}

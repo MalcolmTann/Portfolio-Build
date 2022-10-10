@@ -1,0 +1,43 @@
+@use '../../utilities' as *;
+
+body {
+    background-color: $primaryBg;
+    font-family: $fontFam;
+    main {
+        overflow: hidden;
+    }
+}
+
+.home-landing, .projects, .about, .proj-landing, .skills, .overview, .more-projects {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 1em;
+    margin-right: auto;
+    margin-left: auto;
+    @media (min-width: 320px) {
+        max-width: 450px;
+    }
+    @media (min-width: 576px) {
+        max-width: 550px;
+    }
+    @media (min-width: 768px) {
+        max-width: 740px;
+    }
+    @media (min-width: 992px) {
+        max-width: 970px;
+    }
+    @media (min-width: 1200px) {
+        max-width: 1170px;
+    }
+}
+
+.bg {
+    background-color: $secondaryBg;
+}
+
+.nav-container {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+}

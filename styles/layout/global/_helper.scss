@@ -1,0 +1,28 @@
+@use '../../utilities' as *;
+
+.is-flex {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    font-family: $fontFam;
+    cursor: pointer;
+    background: none;
+    border: none;
+    background-color: $tertiaryBg;
+    width: fit-content;
+    padding: 0.5em 1em;
+    transition: .45s ease;
+    position: relative;
+    @media (min-width: 992px) {
+        &:hover {
+            color: #fff;
+            transform: translateY(-4px);
+        }
+    }
+}
+
+img {
+    cursor: pointer;
+}
