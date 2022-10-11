@@ -20,14 +20,21 @@
         <main>
             <section class="home-landing">
                 <p>/ Front-end Developer</p>
-                <h1>Turning ideas into reality through &lt;code&gt;</h1>
+                <div>
+                    <h1>
+                        <span class="text">Turning ideas into reality</span>
+                    </h1>
+                    <h1>
+                        <span class="text" >through code</span>
+                    </h1>
+                </div>
                 <a href="#work" title="View Projects" >
                     <button class="btn">projects</button>
                 </a>
             </section>
             <section id="work" class="projects">
                 <div class="artifact">
-                    <div class="col-1">
+                    <div class="col-1 hidden">
                         <a href="projects/malsathome.php" title="...">
                             <img src="images/malsathome.jpg" alt="View ...">
                         </a>
@@ -38,7 +45,7 @@
                     </div>
                 </div>
                 <div class="artifact">
-                    <div class="col-1">
+                    <div class="col-1 hidden">
                         <a href="project-2.php" title="...">
                             <img src="images/malsathome.jpg" alt="View ...">
                         </a>
@@ -49,7 +56,7 @@
                     </div>
                 </div>
                 <div class="artifact">
-                    <div class="col-1">
+                    <div class="col-1 hidden">
                         <a href="project-3.php" title="...">
                             <img src="images/malsathome.jpg" alt="View ...">
                         </a>
@@ -61,10 +68,10 @@
                 </div>
             </section>
             <section id="about" class="about">
-                <div class="col-1">
+                <div class="col-1 hidden">
                     <img src="images/portrait.jpg" alt="Malcolm Tan">
                 </div>
-                <div class="is-flex col-2">
+                <div class="is-flex col-2 hidden">
                     <h2>Hey, I'm Malcolm</h2>
                     <p>I code because I love the process of building things and taking on challenges that allow me to exercise my creativity. Curiosity drives me to be a proactive and passionate learner, always seeking to acquire new skills, technical knowledge and experiences in pursuit of continuous slef-improvement and growth.</p>
                     <button class="btn">View Resume</button>

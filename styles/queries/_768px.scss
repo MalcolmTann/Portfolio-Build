@@ -53,16 +53,17 @@
         h1 {
             font-size: 3rem;
             max-width: 900px;
-            &:before {
-                height: 5em;
-                width: 5em;
-                left: 8em;
-            }
-            &:after {
-                height: 5em;
-                width: 5em;
-                top: 5.5em;
-            }
+        }
+        &:before {
+            height: 12rem;
+            width: 12rem;
+            top: 75%;
+        }
+        &:after {
+            height: 13rem;
+            width: 13rem;
+            top: 61%;
+            right: 12%;
         }
     }
     

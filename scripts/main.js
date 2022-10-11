@@ -12,7 +12,7 @@ $('.gn-trig').on('click', function(e) {
     }
 });
 
-// Scroll Animation (Projects)
+// Scroll Animation 
 function showProjects() {
     var projects = document.querySelectorAll(".hidden");
     var windowHeight = window.innerHeight;
@@ -30,7 +30,15 @@ function showProjects() {
     }
 }
 
-window.addEventListener("scroll", showProjects)
+window.addEventListener("scroll", showProjects);
+
+
+let tl = gsap.timeline({defaults: {ease: 'power1.out'}});
+
+tl.to('.text', {y:'0%', duration: 1, stagger: 0.25});
+
+
+    
 
 
 

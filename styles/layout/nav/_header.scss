@@ -15,6 +15,7 @@ header {
         font-size: $med;
         font-weight: $normal;
         color: #000;
+        transition: .30s ease;
     }
     .nav-container {
         max-width: 1140px;

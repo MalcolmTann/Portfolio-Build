@@ -13,14 +13,16 @@
     .home-landing {
         h1 {
             font-size: 2.5rem;
-            &:before {
-                top: 3em;
-                left: 7.5em;
-            }
-            &:after {
-                top: 6em;
-                left: 10.5em;
-            }
+        }
+        &:before {
+            height: 10rem;
+            width: 10rem;
+        }
+        &:after {
+            height: 11rem;
+            width: 11rem;
+            top: 68%;
+            right: 13%;
         }
     }
 

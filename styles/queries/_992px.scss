@@ -3,6 +3,9 @@
 @media (min-width: 992px) {
     
     header {
+        h2:hover {
+            color: #9fd3e8;
+        }
         .gn {
             a:hover {
                 color: #9fd3e8;
@@ -25,14 +28,20 @@
     .home-landing {
         h1 {
             font-size: 3.5rem;
-            &:before {
-                top: 2em;
-                left: 11em;
-            }
-            &:after {
-                top: 4.5em;
-                left: 13.5em;
-            }
+        }
+        p {
+            font-size: 1.2rem;
+        }
+        &:before {
+            height: 14rem;
+            width: 14rem;
+            top: 70%;
+        }
+        &:after {
+            height: 15rem;
+            width: 15rem;
+            top: 55%;
+            right: 11%;
         }
     }
 

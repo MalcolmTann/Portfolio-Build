@@ -7,22 +7,20 @@
     }
 
     .home-landing {
-        p {
-            font-size: 1.2rem;
-        }
         .btn {
             margin-top: 2em;
             font-size: 1.1rem;
         }
-        h1 {
-            &:before {
-                top: 2em;
-                left: 12.7em;
-            }
-            &:after {
-                top: 4.5em;
-                left: 15.3em;
-            }
+        &:before {
+            height: 15rem;
+            width: 15rem;
+            top: 65%;
+        }
+        &:after {
+            height: 16rem;
+            width: 16rem;
+            top: 47%;
+            right: 10%;
         }
     }
 

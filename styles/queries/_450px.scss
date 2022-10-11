@@ -2,19 +2,16 @@
 @media (min-width: 450px) {
     
    .home-landing {
-        h1 {
-            &:before {
-                height: 6em;
-                width: 6em;
-                top: 6em;
-                left: 6em;
-            }
-            &:after {
-                height: 6em;
-                width: 6em;
-                top: 9em;
-                left: 9em;
-            }
+        &:before {
+            height: 9rem;
+            width: 9rem;
+            top: 80%;
+        }
+        &:after {
+            height: 10rem;
+            width: 10rem;
+            top: 69%;
+            right: 15%;
         }
     } 
 
