@@ -1,6 +1,6 @@
-My Portfolio Build Process
+# My Portfolio Build Process
 
-* Coded By Malcolm Tan
+Coded By Malcolm Tan
 
 
 
