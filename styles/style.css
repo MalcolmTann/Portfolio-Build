@@ -66,19 +66,7 @@ img {
 
 .hidden {
   position: relative;
-  transform: translateX(300px);
-  opacity: 0;
-  transition: 1s all ease;
-}
-.hidden:nth-of-type(1) {
-  position: relative;
-  transform: translateX(-300px);
-  opacity: 0;
-  transition: 1s all ease;
-}
-.hidden:nth-of-type(3) {
-  position: relative;
-  transform: translateX(-300px);
+  transform: translateY(150px);
   opacity: 0;
   transition: 1s all ease;
 }
@@ -273,6 +261,9 @@ footer p {
   display: inline-block;
   transform: translateY(100%);
 }
+.home-landing p {
+  color: rgb(160, 160, 160);
+}
 .home-landing:before {
   content: "";
   position: absolute;
@@ -307,7 +298,7 @@ footer p {
 .projects .artifact .col-1 img {
   width: 100%;
   border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
 .projects .artifact .col-2 {
   margin-top: 1.5em;
@@ -316,6 +307,7 @@ footer p {
   font-size: 2.5rem;
   font-weight: 500;
   margin-bottom: 0.5em;
+  color: #9fd3e8;
 }
 .projects .artifact .col-2 .align .desc {
   font-size: 1.2rem;

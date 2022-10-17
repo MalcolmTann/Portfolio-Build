@@ -17,6 +17,9 @@
             transform: translateY(100%);
         }
     }
+    p {
+        color: rgb(160, 160, 160);
+    }
     &:before {
         content: '';
         position: absolute;

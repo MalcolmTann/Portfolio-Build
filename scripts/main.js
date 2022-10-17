@@ -34,7 +34,7 @@ window.addEventListener("scroll", showProjects);
 
 
 
-// Reveal Text
+// Reveal Text - GSAP
 let tl = gsap.timeline({defaults: {ease: 'power1.out'}});
 
 tl.to('.text', {y:'0%', duration: 1, stagger: 0.25});
@@ -63,3 +63,16 @@ const navSlide = () => {
 }
 
 navSlide();
+
+
+
+// Smooth Scroll
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});

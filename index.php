@@ -35,8 +35,8 @@
             <section id="work" class="projects">
                 <div class="artifact">
                     <div class="col-1 hidden">
-                        <a class="image-hover" href="projects/malsathome.php" title="...">
-                            <img src="images/malsathome.jpg" alt="View ...">
+                        <a class="image-hover" href="projects/malsathome.php" title="Blogr Landing Page">
+                            <img src="images/project-filler.jpg" alt="Blogr">
                             <div class="overlay">
                                 <div class="ol-title">Coming Soon</div>
                             </div>
@@ -56,8 +56,8 @@
                 </div>
                 <div class="artifact">
                     <div class="col-1 hidden">
-                        <a class="image-hover" href="..." title="...">
-                            <img src="images/malsathome.jpg" alt="View ...">
+                        <a class="image-hover" href="..." title="ToDo Task Manager">
+                            <img src="images/project-filler.jpg" alt="ToDo App">
                             <div class="overlay">
                                 <div class="ol-title">Coming Soon</div>
                             </div>
@@ -77,8 +77,8 @@
                 </div>
                 <div class="artifact">
                     <div class="col-1 hidden">
-                        <a class="image-hover" href="..." title="...">
-                            <img src="images/malsathome.jpg" alt="View ...">
+                        <a class="image-hover" href="..." title="NUTTRI Health App">
+                            <img src="images/project-filler.jpg" alt="NUTTRI App">
                             <div class="overlay">
                                 <div class="ol-title">Coming Soon</div>
                             </div>

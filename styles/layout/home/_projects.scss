@@ -11,7 +11,7 @@
             img {
                 width: 100%;
                 border-radius: 5px;
-                box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+                box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
             }
         }
         .col-2 {
@@ -21,6 +21,7 @@
                     font-size: 2.5rem;
                     font-weight: $bold;
                     margin-bottom: 0.5em;
+                    color: #9fd3e8;
                 }
                 .desc {
                     font-size: 1.2rem;
