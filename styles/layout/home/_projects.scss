@@ -7,21 +7,43 @@
     justify-content: space-evenly;
     gap: 4em;
     .artifact {
-        img {
-            width: 100%;
-            border-radius: 5px;
-            box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
-            z-index: 2;
+        .col-1 {
+            img {
+                width: 100%;
+                border-radius: 5px;
+                box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+            }
         }
         .col-2 {
             margin-top: 1.5em;
-            .title {
-                font-size: $lrg;
-                font-weight: $bold;
-                margin-bottom: 0.4em;
+            .align {
+                .title {
+                    font-size: 2.5rem;
+                    font-weight: $bold;
+                    margin-bottom: 0.5em;
+                }
+                .desc {
+                    font-size: 1.2rem;
+                    color: rgb(160, 160, 160);
+                }
+                .skills {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 1.5em;
+                    margin-top: 3em;
+                    justify-content: flex-start;
+                    padding: 0;
+                    li {
+                        font-weight: $light;
+                    }
+                }
             }
-            .desc {
-                font-weight: $light;
+        }
+    }
+    .image-hover {
+        .overlay {
+            .ol-title {
+                display: none;
             }
         }
     }

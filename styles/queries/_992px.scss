@@ -16,7 +16,7 @@
         }
     }
     
-    .home-landing, .projects, .about, .proj-landing, .skills, .overview, .more-projects {
+    .home-landing, .projects, .about, .proj-landing, .info, .overview, .more-projects {
         max-width: 970px;
     }
     
@@ -26,9 +26,6 @@
     }
 
     .home-landing {
-        h1 {
-            font-size: 3.5rem;
-        }
         p {
             font-size: 1.2rem;
         }
@@ -42,6 +39,49 @@
             width: 15rem;
             top: 55%;
             right: 11%;
+        }
+    }
+
+    .projects {
+        .artifact {
+            .col-2 {
+                .align {
+                    .title {
+                        font-size: 3rem;
+                    }
+                    .desc {
+                        font-size: 1.2rem;
+                        margin-top: 1em;
+                    }
+                }
+            }
+        }
+        .image-hover {
+            position: relative;
+            .overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.8);
+                display: flex;
+                border-radius: 5px;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                opacity: 0;
+                transition: opacity ease 0.4s;
+                color: #fff;
+                &:hover {
+                    opacity: 1;
+                }
+                .ol-title {
+                    display: contents;
+                    font-size: 3.5rem;
+                    font-weight: $bold;
+                }
+            }
         }
     }
 

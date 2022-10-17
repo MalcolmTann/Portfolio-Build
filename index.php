@@ -25,7 +25,7 @@
                         <span class="text">Turning ideas into reality</span>
                     </h1>
                     <h1>
-                        <span class="text" >through code</span>
+                        <span class="text">through code</span>
                     </h1>
                 </div>
                 <a href="#work" title="View Projects" >
@@ -35,35 +35,63 @@
             <section id="work" class="projects">
                 <div class="artifact">
                     <div class="col-1 hidden">
-                        <a href="projects/malsathome.php" title="...">
+                        <a class="image-hover" href="projects/malsathome.php" title="...">
                             <img src="images/malsathome.jpg" alt="View ...">
+                            <div class="overlay">
+                                <div class="ol-title">Coming Soon</div>
+                            </div>
                         </a>
                     </div>
-                    <div class="col-2">
-                        <div class="title">Malsathome</div>
-                        <div class="desc">/ Bootstrap</div>
+                    <div class="col-2 hidden">
+                        <div class="align">
+                            <div class="title">Blogr</div>
+                            <div class="desc">/ Landing Page Design</div>
+                            <ul class="skills">
+                                <li>Bootstrap</li>
+                                <li>CSS/SCSS</li>
+                                <li>HTML</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <div class="artifact">
                     <div class="col-1 hidden">
-                        <a href="project-2.php" title="...">
+                        <a class="image-hover" href="..." title="...">
                             <img src="images/malsathome.jpg" alt="View ...">
+                            <div class="overlay">
+                                <div class="ol-title">Coming Soon</div>
+                            </div>
                         </a>
                     </div>
-                    <div class="col-2">
-                        <div class="title">NUTTRI</div>
-                        <div class="desc">/ ReactJS</div>
+                    <div class="col-2 hidden">
+                        <div class="align">
+                            <div class="title">ToDo App</div>
+                            <div class="desc">/ Task Manager</div>
+                            <ul class="skills">
+                                <li>JavaScript</li>
+                                <li>CSS/SCSS</li>
+                                <li>HTML</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <div class="artifact">
                     <div class="col-1 hidden">
-                        <a href="project-3.php" title="...">
+                        <a class="image-hover" href="..." title="...">
                             <img src="images/malsathome.jpg" alt="View ...">
+                            <div class="overlay">
+                                <div class="ol-title">Coming Soon</div>
+                            </div>
                         </a>
                     </div>
-                    <div class="col-2">
-                        <div class="title">Stopwatch</div>
-                        <div class="desc">/ JavaScript</div>
+                    <div class="col-2 hidden">
+                        <div class="align">
+                            <div class="title">NUTTRI</div>
+                            <div class="desc">/ Health & Nutrition App</div>
+                            <ul class="skills">
+                                <li>React.Js</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -72,8 +100,7 @@
                     <img src="images/portrait.jpg" alt="Malcolm Tan">
                 </div>
                 <div class="is-flex col-2 hidden">
-                    <h2>Hey, I'm Malcolm</h2>
-                    <p>I code because I love the process of building things and taking on challenges that allow me to exercise my creativity. Curiosity drives me to be a proactive and passionate learner, always seeking to acquire new skills, technical knowledge and experiences in pursuit of continuous slef-improvement and growth.</p>
+                    <p>I code because I love the process of turning web ideas into functional applications and taking on challenges that allow me to exercise my creativity. Curiosity drives me to be a proactive and passionate learner, always seeking to acquire new skills, technical knowledge and experiences in pursuit of continuous slef-improvement and growth. During my free time, I enjoy film-photography, music, sports, and spending quality time with friends and loved ones.</p>
                     <button class="btn">View Resume</button>
                 </div>
             </section> 

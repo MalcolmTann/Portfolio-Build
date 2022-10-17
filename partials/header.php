@@ -6,7 +6,7 @@
         </button>
         <nav class="gn">
             <ul class="gn-items">
-                <li><a href="index.php#work" title="Work">Work</a></li>
+                <li><a href="index.php#work" title="Projects">Projects</a></li>
                 <li><a href="index.php#about" title="About">About</a></li>
                 <div class="is-flex">
                     <li>

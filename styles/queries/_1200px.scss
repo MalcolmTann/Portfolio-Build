@@ -2,11 +2,14 @@
 
 @media (min-width: 1200px) {
     
-    .home-landing, .projects, .about, .proj-landing, .skills, .overview, .more-projects {
+    .home-landing, .projects, .about, .proj-landing, .info, .overview, .more-projects {
        max-width: 1170px;
     }
 
     .home-landing {
+        h1 {
+            font-size: 3.5rem;
+        }
         .btn {
             margin-top: 2em;
             font-size: 1.1rem;
@@ -14,24 +17,18 @@
         &:before {
             height: 15rem;
             width: 15rem;
-            top: 65%;
+            top: 60%;
         }
         &:after {
             height: 16rem;
             width: 16rem;
-            top: 47%;
-            right: 10%;
+            top: 45%;
+            right: 9%;
         }
     }
 
     .projects {
         gap: 8em;
-        .col-2 {
-            .title {
-                font-size: 3rem;
-            }
-        }
-
     }
 
     .about {
@@ -44,10 +41,15 @@
                 width: 70%;
             }
         }
+        .col-2 {
+            h2 {
+                font-size: $lrg;
+            }
+        }
     }
 
     .proj-landing {
-        gap: 3em;
+        gap: 4em;
         h1 {
             font-size: 3rem;
         }

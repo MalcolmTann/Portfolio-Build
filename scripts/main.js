@@ -33,24 +33,33 @@ function showProjects() {
 window.addEventListener("scroll", showProjects);
 
 
+
+// Reveal Text
 let tl = gsap.timeline({defaults: {ease: 'power1.out'}});
 
 tl.to('.text', {y:'0%', duration: 1, stagger: 0.25});
 
 
-    
+
+// Smooth Nav Slide
+const navSlide = () => {
+    const burger = document.querySelector('.gn-trig');
+    const nav = document.querySelector('.gn-items');
+    const navLinks = document.querySelectorAll('.gn-items li');
 
 
+    burger.addEventListener('click', () => {
+        // Toggle Nav
+        nav.classList.toggle('nav-active');
 
-// const navSlide = () => {
-//     const burger = document.querySelector('.gn-trig');
-//     const nav = document.querySelector('.gn-items');
-//     const navLinks = document.querySelectorAll('.gn-items li');
+        navLinks.forEach((link, index) => {
+            if(link.style.animation) {
+                link.style.animation = '';
+            }else {
+                link.style.animation = `navLinkFade 0.8s ease forwards ${index / 7 + 0.3}s`;
+            }
+        })
+    });
+}
 
-//     burger.addEventListener('click', () => {
-//         // Toggle Nav
-//         nav.classList.toggle('nav-active');
-//     });
-// }
-
-// navSlide();
+navSlide();

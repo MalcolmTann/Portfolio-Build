@@ -1,13 +1,13 @@
 <?php 
 
-    $skills_date = $skills_date ?? '';
+    $info_date = $info_date ?? '';
 
 ?><section class="bg">
-    <div class="skills"> 
+    <div class="info"> 
         <div class="is-flex">
             <div class="col">
                 <h4>Completed On</h4>
-                <p><?php echo $skills_date; ?></p>
+                <p><?php echo $info_date; ?></p>
             </div>
             <div class="col">
                 <h4>Role</h4>

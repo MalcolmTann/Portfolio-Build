@@ -21,6 +21,7 @@
             height: 5vh;
             justify-content: flex-end;
             background-color: #fff;
+            transform: translateX(0%);
         }
         .gn {
             a {
@@ -45,7 +46,7 @@
         }
     }
 
-    .home-landing, .projects, .about, .proj-landing, .skills, .overview, .more-projects {
+    .home-landing, .projects, .about, .proj-landing, .info, .overview, .more-projects {
         max-width: 740px;
     }
 
@@ -79,23 +80,22 @@
                 flex-direction: row;
             }
             .col-1 {
-                flex-basis: 55%;
-                max-width: 55%;
+                flex-basis: 50%;
+                max-width: 50%;
                 text-align: left;
                 img {
                     width: 100%;
                 }
             }
             .col-2 {
-                flex-basis: 45%;
-                max-width: 45%;
+                flex-basis: 50%;
+                max-width: 50%;
                 margin-top: 0;
                 padding: 0;
-                .title {
-                    font-size: 2.5rem;
-                }
-                .desc {
-                    font-size: 1.2rem;
+                display: flex;
+                justify-content: center;
+                .align {
+                    text-align: left;
                 }
             }
         }
@@ -130,7 +130,7 @@
         }
     }
 
-    .skills {
+    .info {
         .is-flex {
             justify-content: space-around;
         }
@@ -139,13 +139,6 @@
     .overview {
         .is-flex:first-of-type p {
             width: 70%;
-        }
-    }
-
-    .more-projects {
-        .is-flex {
-            flex-direction: row;
-            justify-content: space-between;
         }
     }
 }
