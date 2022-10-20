@@ -10,10 +10,6 @@
         h1 {
             font-size: 3.5rem;
         }
-        .btn {
-            margin-top: 2em;
-            font-size: 1.1rem;
-        }
         &:before {
             height: 15rem;
             width: 15rem;
@@ -34,14 +30,15 @@
     .about {
         .col-1 {
             &:before {
-                left: 10%;
-                width: 80%; 
+                left: 15%;
+                width: 69%; 
             }
             img {
-                width: 70%;
+                width: 65%;
             }
         }
         .col-2 {
+            margin-top: 1em;
             h2 {
                 font-size: $lrg;
             }
@@ -68,9 +65,11 @@
     }
 
     footer {
-        img {
-            height: 1.5em;
-            padding: 0 1em;
+        .nav-container {
+            img {
+                height: 1.5em;
+                padding: 0 1em;
+            }
         }
     }
 }

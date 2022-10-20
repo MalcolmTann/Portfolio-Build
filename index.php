@@ -21,12 +21,8 @@
             <section class="home-landing">
                 <p>/ Front-end Developer</p>
                 <div>
-                    <h1>
-                        <span class="text">Turning ideas into reality</span>
-                    </h1>
-                    <h1>
-                        <span class="text">through code</span>
-                    </h1>
+                    <h1><span class="text">Turning ideas into reality</span></h1>
+                    <h1><span class="text">through code</span></h1>
                 </div>
                 <a href="#work" title="View Projects" >
                     <button class="btn">projects</button>
@@ -37,16 +33,16 @@
                     <div class="col-1 hidden">
                         <a class="image-hover" href="projects/malsathome.php" title="Blogr Landing Page">
                             <img src="images/project-filler.jpg" alt="Blogr">
-                            <div class="overlay">
-                                <div class="ol-title">Coming Soon</div>
+                            <div>
+                                <p>Coming Soon</p>
                             </div>
                         </a>
                     </div>
                     <div class="col-2 hidden">
-                        <div class="align">
-                            <div class="title">Blogr</div>
-                            <div class="desc">/ Landing Page Design</div>
-                            <ul class="skills">
+                        <div class="desc">
+                            <h3>Blogr</h3>
+                            <p>/ Landing Page Design</p>
+                            <ul>
                                 <li>Bootstrap</li>
                                 <li>CSS/SCSS</li>
                                 <li>HTML</li>
@@ -58,16 +54,16 @@
                     <div class="col-1 hidden">
                         <a class="image-hover" href="..." title="ToDo Task Manager">
                             <img src="images/project-filler.jpg" alt="ToDo App">
-                            <div class="overlay">
-                                <div class="ol-title">Coming Soon</div>
+                            <div>
+                                <p>Coming Soon</p>
                             </div>
                         </a>
                     </div>
                     <div class="col-2 hidden">
-                        <div class="align">
-                            <div class="title">ToDo App</div>
-                            <div class="desc">/ Task Manager</div>
-                            <ul class="skills">
+                        <div class="desc">
+                            <h3>Todo App</h3>
+                            <p>/ Task Manager</p>
+                            <ul>
                                 <li>JavaScript</li>
                                 <li>CSS/SCSS</li>
                                 <li>HTML</li>
@@ -79,16 +75,16 @@
                     <div class="col-1 hidden">
                         <a class="image-hover" href="..." title="NUTTRI Health App">
                             <img src="images/project-filler.jpg" alt="NUTTRI App">
-                            <div class="overlay">
-                                <div class="ol-title">Coming Soon</div>
+                            <div>
+                                <p>Coming Soon</p>
                             </div>
                         </a>
                     </div>
                     <div class="col-2 hidden">
-                        <div class="align">
-                            <div class="title">NUTTRI</div>
-                            <div class="desc">/ Health & Nutrition App</div>
-                            <ul class="skills">
+                        <div class="desc">
+                            <h3>NUTTRI</h3>
+                            <p>/ Health & Nutrition App</p>
+                            <ul>
                                 <li>React.Js</li>
                             </ul>
                         </div>
@@ -104,7 +100,6 @@
                     <button class="btn">View Resume</button>
                 </div>
             </section> 
-
         </main> 
         <?php include('partials/footer.php'); ?>
     </body>

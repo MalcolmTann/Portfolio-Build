@@ -16,12 +16,16 @@
     } 
 
     .about {
-        .col-1:before {
-            top: -8px;
-            left: 6%;
-            width: 90%;
+        .col-1 {
+            &:before {
+                left: 18%;
+                width: 64%;
+            }
+            img {
+                width: 60%;
+            }
         }
-        .is-flex {
+        .col-2.is-flex {
             gap: 2em;
         }
     }

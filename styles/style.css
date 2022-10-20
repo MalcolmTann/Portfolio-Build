@@ -27,7 +27,6 @@ body main {
 
 h1, h2 {
   font-weight: 500;
-  font-size: 2rem;
 }
 
 a {
@@ -98,19 +97,37 @@ header h2 {
   color: #000;
   transition: 0.3s ease;
 }
-header .nav-container {
+
+.nav-container {
   max-width: 1140px;
   margin: 0 auto;
   display: flex;
 }
-header .gn {
+
+.gn {
   position: absolute;
   top: 50px;
   right: 0;
   width: 50%;
   display: none;
 }
-header .gn-trig {
+.gn a {
+  text-decoration: none;
+  margin-top: -50px;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #000;
+}
+.gn img {
+  padding: 0 0.4em;
+  height: 1em;
+}
+.gn .social li {
+  opacity: 0 !important;
+  transition: 0.35s;
+}
+
+.gn-trig {
   position: relative;
   width: 30px;
   height: 20px;
@@ -120,7 +137,8 @@ header .gn-trig {
   display: flex;
   flex-basis: 100%;
 }
-header .gn-items {
+
+.gn-items {
   position: absolute;
   right: 0px;
   top: -50px;
@@ -135,53 +153,31 @@ header .gn-items {
   transform: translateX(100%);
   transition: transform 0.8s ease-in;
 }
-header .nav-active {
+
+.nav-active {
   transform: translateX(0%);
 }
-header .gn a {
-  text-decoration: none;
-  margin-top: -50px;
-  font-size: 1.2rem;
-  font-weight: 300;
-  color: #000;
+.nav-active .social li {
+  opacity: 1 !important;
 }
-header .gn img {
-  padding: 0 0.4em;
-  height: 1em;
-}
+
 @-webkit-keyframes navLinkFade {
   0% {
-    opacity: 0;
     transform: translateX(100px);
   }
-  50% {
-    opacity: 0.3;
-  }
-  75% {
-    opacity: 0.6;
-  }
   100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-@keyframes navLinkFade {
-  0% {
-    opacity: 0;
-    transform: translateX(100px);
-  }
-  50% {
-    opacity: 0.3;
-  }
-  75% {
-    opacity: 0.6;
-  }
-  100% {
-    opacity: 1;
     transform: translateX(0);
   }
 }
 
+@keyframes navLinkFade {
+  0% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 .burger {
   position: absolute;
   background: #000;
@@ -233,12 +229,12 @@ footer .nav-container {
   text-align: center;
   padding-bottom: 1em;
 }
-footer img {
+footer .nav-container img {
   height: 1.5em;
   padding: 0 0.5em;
   transition: 0.3s ease;
 }
-footer p {
+footer .nav-container p {
   margin-top: 0.5em;
   font-size: 0.8rem;
 }
@@ -254,6 +250,7 @@ footer p {
   text-transform: uppercase;
 }
 .home-landing h1 {
+  font-size: 2rem;
   overflow: hidden;
   background-color: #fff;
 }
@@ -295,25 +292,29 @@ footer p {
   justify-content: space-evenly;
   gap: 4em;
 }
-.projects .artifact .col-1 img {
+
+.artifact a img {
   width: 100%;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
-.projects .artifact .col-2 {
-  margin-top: 1.5em;
+.artifact a p {
+  display: none;
 }
-.projects .artifact .col-2 .align .title {
-  font-size: 2.5rem;
+.artifact .col-2 {
+  margin-top: 2em;
+}
+.artifact .col-2 .desc h3 {
+  font-size: 2rem;
   font-weight: 500;
-  margin-bottom: 0.5em;
   color: #9fd3e8;
+  margin-bottom: 0.1em;
 }
-.projects .artifact .col-2 .align .desc {
-  font-size: 1.2rem;
+.artifact .col-2 .desc p {
+  font-size: 1.1rem;
   color: rgb(160, 160, 160);
 }
-.projects .artifact .col-2 .align .skills {
+.artifact .col-2 .desc ul {
   display: flex;
   flex-direction: row;
   gap: 1.5em;
@@ -321,11 +322,8 @@ footer p {
   justify-content: flex-start;
   padding: 0;
 }
-.projects .artifact .col-2 .align .skills li {
+.artifact .col-2 .desc ul li {
   font-weight: 300;
-}
-.projects .image-hover .overlay .ol-title {
-  display: none;
 }
 
 .about {
@@ -336,13 +334,8 @@ footer p {
   margin-bottom: 4em;
   gap: 3em;
 }
-.about .is-flex {
-  flex-direction: column;
-  gap: 1.5em;
-}
 .about .col-1 {
   text-align: center;
-  position: relative;
 }
 .about .col-1 img {
   width: 90%;
@@ -350,13 +343,6 @@ footer p {
   box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
   position: relative;
   z-index: -1;
-}
-.about h2 {
-  font-weight: 500;
-  font-size: 1.3rem;
-}
-.about p {
-  font-weight: 300;
 }
 .about .col-1:before {
   content: "";
@@ -370,6 +356,13 @@ footer p {
   background-color: #9fd3e8;
   opacity: 0.2;
   z-index: -1;
+}
+.about .col-2.is-flex {
+  flex-direction: column;
+  gap: 1.5em;
+}
+.about .col-2.is-flex p {
+  font-weight: 300;
 }
 
 .proj-landing {
@@ -437,9 +430,6 @@ footer p {
   .home-landing, .projects, .about, .proj-landing, .info, .overview, .more-projects {
     max-width: 450px;
   }
-  .home-landing h1 {
-    font-size: 2rem;
-  }
 }
 @media (min-width: 450px) {
   .home-landing:before {
@@ -454,11 +444,13 @@ footer p {
     right: 15%;
   }
   .about .col-1:before {
-    top: -8px;
-    left: 6%;
-    width: 90%;
+    left: 18%;
+    width: 64%;
   }
-  .about .is-flex {
+  .about .col-1 img {
+    width: 60%;
+  }
+  .about .col-2.is-flex {
     gap: 2em;
   }
   .overview {
@@ -490,29 +482,18 @@ footer p {
     padding-top: 5em;
     gap: 5em;
   }
-  .projects .artifact .col-1 {
+  .artifact .col-1 {
     text-align: center;
   }
-  .projects .artifact .col-1 img {
+  .artifact .col-1 img {
     width: 90%;
   }
-  .projects .artifact .col-2 {
+  .artifact .col-2 {
     padding-left: 1.5em;
-    margin-top: 2em;
   }
   .about {
     margin-top: 8em;
     margin-bottom: 5em;
-  }
-  .about h2 {
-    font-size: 1.5rem;
-  }
-  .about .col-1:before {
-    left: 18%;
-    width: 65%;
-  }
-  .about .col-1 img {
-    width: 60%;
   }
   .about .col-2 {
     width: 80%;
@@ -535,23 +516,23 @@ footer p {
     justify-content: space-around;
     padding: 1em;
   }
-  footer p {
+  footer .nav-container p {
     font-size: 1rem;
   }
 }
 @media (min-width: 768px) {
-  header .nav-container {
+  .nav-container {
     align-items: center;
   }
-  header .gn {
+  .gn {
     display: block;
     position: static;
     margin-left: auto;
   }
-  header .gn-trig {
+  .gn-trig {
     display: none;
   }
-  header .gn-items {
+  .gn-items {
     flex-direction: row;
     position: static;
     height: 5vh;
@@ -559,23 +540,26 @@ footer p {
     background-color: #fff;
     transform: translateX(0%);
   }
-  header .gn a {
+  .gn a {
     margin-top: 0;
     padding: 0em 1.6em;
     font-size: 1rem;
     font-weight: 300;
     transition: 0.3s ease;
   }
-  header .gn a:last-child {
+  .gn a:last-child {
     padding-right: 0;
   }
-  header .gn img {
+  .gn img {
     padding: 0;
     margin-bottom: 4px;
     height: 1.2em;
     transition: 0.3s ease;
   }
-  header .gn .is-flex li:nth-child(1) {
+  .gn .social li {
+    opacity: 1 !important;
+  }
+  .gn .is-flex li:nth-child(1) {
     display: none;
   }
   .home-landing, .projects, .about, .proj-landing, .info, .overview, .more-projects {
@@ -600,32 +584,23 @@ footer p {
     justify-content: space-evenly;
     gap: 6em;
   }
-  .projects .artifact {
+  .artifact {
     display: flex;
-    align-items: center;
     flex-direction: row-reverse;
-    text-align: center;
+    align-items: center;
   }
-  .projects .artifact:nth-of-type(2) {
-    flex-direction: row;
-  }
-  .projects .artifact .col-1 {
+  .artifact .col-1 {
     flex-basis: 50%;
     max-width: 50%;
-    text-align: left;
   }
-  .projects .artifact .col-1 img {
+  .artifact .col-1 img {
     width: 100%;
   }
-  .projects .artifact .col-2 {
+  .artifact .col-2 {
     flex-basis: 50%;
     max-width: 50%;
-    margin-top: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
   }
-  .projects .artifact .col-2 .align {
+  .artifact .col-2 .desc {
     text-align: left;
   }
   .about {
@@ -633,12 +608,15 @@ footer p {
   }
   .about .col-1:before {
     top: 2px;
-    left: 22%;
+    left: 28%;
     height: 100%;
-    width: 55%;
+    width: 44%;
   }
   .about .col-1 img {
-    width: 50%;
+    width: 40%;
+  }
+  .about .col-2 {
+    width: 70%;
   }
   .proj-landing {
     flex-direction: row-reverse;
@@ -664,10 +642,10 @@ footer p {
   header h2:hover {
     color: #9fd3e8;
   }
-  header .gn a:hover {
+  .gn a:hover {
     color: #9fd3e8;
   }
-  header .gn img:hover {
+  .gn img:hover {
     transform: translateY(-4px);
   }
   .home-landing, .projects, .about, .proj-landing, .info, .overview, .more-projects {
@@ -680,6 +658,10 @@ footer p {
   .home-landing p {
     font-size: 1.2rem;
   }
+  .home-landing .btn {
+    margin-top: 2em;
+    font-size: 1.1rem;
+  }
   .home-landing:before {
     height: 14rem;
     width: 14rem;
@@ -691,39 +673,34 @@ footer p {
     top: 55%;
     right: 11%;
   }
-  .projects .artifact .col-2 .align .title {
-    font-size: 3rem;
-  }
-  .projects .artifact .col-2 .align .desc {
-    font-size: 1.2rem;
-    margin-top: 1em;
-  }
   .projects .image-hover {
     position: relative;
   }
-  .projects .image-hover .overlay {
+  .projects .image-hover p {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.8);
-    display: flex;
     border-radius: 5px;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     opacity: 0;
-    transition: opacity ease 0.4s;
+    transition: 0.45s;
     color: #fff;
   }
-  .projects .image-hover .overlay:hover {
+  .projects .image-hover p:hover {
     opacity: 1;
   }
-  .projects .image-hover .overlay .ol-title {
-    display: contents;
-    font-size: 3.5rem;
-    font-weight: 500;
+  .artifact .col-2 .desc .title {
+    font-size: 3rem;
+  }
+  .artifact .col-2 .desc .desc {
+    font-size: 1.2rem;
+    margin-top: 1em;
   }
   .about {
     height: 90vh;
@@ -736,14 +713,13 @@ footer p {
   .about .col-1 {
     flex-basis: 50%;
     max-width: 50%;
-    text-align: center;
   }
   .about .col-1:before {
-    left: 5%;
-    width: 90%;
+    left: 10%;
+    width: 80%;
   }
   .about .col-1 img {
-    width: 80%;
+    width: 75%;
   }
   .about .col-2 {
     flex-basis: 40%;
@@ -770,10 +746,6 @@ footer p {
   .home-landing h1 {
     font-size: 3.5rem;
   }
-  .home-landing .btn {
-    margin-top: 2em;
-    font-size: 1.1rem;
-  }
   .home-landing:before {
     height: 15rem;
     width: 15rem;
@@ -789,11 +761,14 @@ footer p {
     gap: 8em;
   }
   .about .col-1:before {
-    left: 10%;
-    width: 80%;
+    left: 15%;
+    width: 69%;
   }
   .about .col-1 img {
-    width: 70%;
+    width: 65%;
+  }
+  .about .col-2 {
+    margin-top: 1em;
   }
   .about .col-2 h2 {
     font-size: 2rem;
@@ -814,7 +789,7 @@ footer p {
   .proj-landing .col-2 .btn {
     margin-top: 3em;
   }
-  footer img {
+  footer .nav-container img {
     height: 1.5em;
     padding: 0 1em;
   }

@@ -8,7 +8,7 @@
             <ul class="gn-items">
                 <li><a href="index.php#work" title="Projects">Projects</a></li>
                 <li><a href="index.php#about" title="About">About</a></li>
-                <div class="is-flex">
+                <ul class="is-flex social">
                     <li>
                         <a href="mailto:malcolmtan20@gmail.com" title="Email Me">
                             <img src="../images/email.svg" alt="Email">
@@ -24,7 +24,7 @@
                             <img src="../images/linkedin.svg" alt="Linkedin">
                         </a>
                     </li>
-                </div>
+                </ul>
             </ul>
         </nav>
     </div>

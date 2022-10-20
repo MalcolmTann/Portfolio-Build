@@ -6,13 +6,14 @@
         h2:hover {
             color: #9fd3e8;
         }
-        .gn {
-            a:hover {
-                color: #9fd3e8;
-            }
-            img:hover {
-                transform: translateY(-4px);
-            }
+    }
+
+    .gn {
+        a:hover {
+            color: #9fd3e8;
+        }
+        img:hover {
+            transform: translateY(-4px);
         }
     }
     
@@ -29,6 +30,10 @@
         p {
             font-size: 1.2rem;
         }
+        .btn {
+            margin-top: 2em;
+            font-size: 1.1rem;
+        }
         &:before {
             height: 14rem;
             width: 14rem;
@@ -43,43 +48,39 @@
     }
 
     .projects {
-        .artifact {
-            .col-2 {
-                .align {
-                    .title {
-                        font-size: 3rem;
-                    }
-                    .desc {
-                        font-size: 1.2rem;
-                        margin-top: 1em;
-                    }
-                }
-            }
-        }
         .image-hover {
             position: relative;
-            .overlay {
+            p {
                 position: absolute;
                 top: 0;
                 left: 0;
                 width: 100%;
                 height: 100%;
                 background: rgba(0, 0, 0, 0.8);
-                display: flex;
                 border-radius: 5px;
+                display: flex;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
                 opacity: 0;
-                transition: opacity ease 0.4s;
+                transition: 0.45s;
                 color: #fff;
                 &:hover {
                     opacity: 1;
                 }
-                .ol-title {
-                    display: contents;
-                    font-size: 3.5rem;
-                    font-weight: $bold;
+            }
+        }
+    }
+
+    .artifact {
+        .col-2 {
+            .desc {
+                .title {
+                    font-size: 3rem;
+                }
+                .desc {
+                    font-size: 1.2rem;
+                    margin-top: 1em;
                 }
             }
         }
@@ -95,13 +96,12 @@
         .col-1 {
             flex-basis: 50%;
             max-width: 50%;
-            text-align: center;
             &:before {
-                left: 5%;
-                width: 90%; 
+                left: 10%;
+                width: 80%; 
             }
             img {
-                width: 80%;
+                width: 75%;
             }
         }
         .col-2 {
