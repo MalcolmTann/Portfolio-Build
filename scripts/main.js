@@ -1,14 +1,13 @@
 
-
-// Burger Toggler
-$('.gn-trig').on('click', function(e) {
-    e.preventDefault();
-    if($(this).hasClass('is-active')) {
-        $(this).removeClass('is-active');
-    } else {
-        $(this).addClass('is-active');
-    }
-});
+// // Burger Toggler
+// $('.gn-trig').on('click', function(e) {
+//     e.preventDefault();
+//     if($(this).hasClass('is-active')) {
+//         $(this).removeClass('is-active');
+//     } else {
+//         $(this).addClass('is-active');
+//     }
+// });
 
 // Scroll Animation 
 function showProjects() {
@@ -45,9 +44,8 @@ const navSlide = () => {
     const nav = document.querySelector('.gn-items');
 
     burger.addEventListener('click', () => {
-        // Toggle Nav
 
-        console.log(burger.dataset.open);
+        burger.classList.toggle('is-active');
 
         if(burger.dataset.open == 0) {
 
@@ -82,7 +80,6 @@ const navSlide = () => {
 } 
 
 navSlide();
-
 
 
 // Smooth Scroll

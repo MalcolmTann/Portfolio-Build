@@ -13,7 +13,7 @@
             <?php 
                 $landing_title = 'Blogr';
                 $landing_sub_title = '/ Landing Page Design';
-                $landing_img_src = '../images/malsathome.jpg';
+                $landing_img_src = '../images/project-filler.jpg';
                 $landing_img_alt = 'Project in desktop and mobile view';
                 $landing_desc = 'A mobile-first modern restaurant design for a fictitious client. Built using a Bootstrap and custom SASS styling.';
                 include('../partials/projects/landing.php'); 

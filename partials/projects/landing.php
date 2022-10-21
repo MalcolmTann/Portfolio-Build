@@ -7,10 +7,8 @@
     $landing_desc = $landing_desc ?? '';
 
 ?><section class="proj-landing">
-    <div class="col-1">
-        <img src="<?php echo $landing_img_src; ?>" alt="<?php echo $landing_img_alt; ?>">
-    </div>
-    <div class="col-2">
+    <img src="<?php echo $landing_img_src; ?>" alt="<?php echo $landing_img_alt; ?>">
+    <div class="intro">
         <p><?php echo $landing_sub_title; ?></p>
         <h1><?php echo $landing_title; ?></h1>
         <p><?php echo $landing_desc; ?></p>

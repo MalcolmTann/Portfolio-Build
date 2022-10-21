@@ -42,9 +42,6 @@
         justify-content: flex-end;
         background-color: #fff;
         transform: translateX(0%);
-        a {
-            opacity: 1;
-        }
     }
 
     .home-landing, .projects, .about, .proj-landing, .info, .overview, .more-projects {
@@ -116,11 +113,11 @@
         flex-direction: row-reverse;
         justify-content: center;
         align-items: center;
-        .col-1 {
+        img {
             flex-basis: 60%;
             max-width: 60%;
         } 
-        .col-2 {
+        .intro {
             flex-basis: 40%;
             max-width: 40%; 
         }
@@ -133,7 +130,7 @@
     }
 
     .overview {
-        .is-flex:first-of-type p {
+        .is-flex p {
             width: 70%;
         }
     }

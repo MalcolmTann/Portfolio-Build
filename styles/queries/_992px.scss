@@ -112,14 +112,15 @@
 
     .proj-landing {
         gap: 2.5em;
-        .col-1 {
+        img {
             flex-basis: 55%;
             max-width: 55%;
         }
     }
 
     .overview {
-        .is-flex:first-of-type p {
+        margin: 0 auto;
+        .is-flex p {
             width: 55%;
         }
     }
