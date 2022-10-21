@@ -15,5 +15,5 @@ jobs:
         username: github-deploy@malcolm-tan.com
         password: ${{ secrets.FTP_PASSWORD }}
         port: 21
-        protocol: ftps
+        protocol: ftp
         server-dir: public_html/
