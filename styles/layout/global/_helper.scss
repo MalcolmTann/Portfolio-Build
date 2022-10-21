@@ -21,6 +21,10 @@ img {
     cursor: pointer;
 }
 
+a {
+    text-decoration: none;
+}
+
 .hidden {
     position: relative;
     transform: translateY(150px);

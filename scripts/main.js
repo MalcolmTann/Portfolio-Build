@@ -5,10 +5,8 @@ $('.gn-trig').on('click', function(e) {
     e.preventDefault();
     if($(this).hasClass('is-active')) {
         $(this).removeClass('is-active');
-        $('.gn').slideUp();
     } else {
         $(this).addClass('is-active');
-        $('.gn').slideDown();
     }
 });
 
@@ -45,22 +43,43 @@ tl.to('.text', {y:'0%', duration: 1, stagger: 0.25});
 const navSlide = () => {
     const burger = document.querySelector('.gn-trig');
     const nav = document.querySelector('.gn-items');
-    const navLinks = document.querySelectorAll('.gn-items li');
-
 
     burger.addEventListener('click', () => {
         // Toggle Nav
-        nav.classList.toggle('nav-active');
 
-        navLinks.forEach((link, index) => {
-            if(link.style.animation) {
-                link.style.animation = '';
-            }else {
-                link.style.animation = `navLinkFade 0.8s ease forwards ${index / 7 + 0.3}s`;
-            }
-        })
+        console.log(burger.dataset.open);
+
+        if(burger.dataset.open == 0) {
+
+            nav.classList.toggle('nav-active');
+
+            gsap.to('.js-menu-item', {
+                opacity: 1, 
+                x: 0,
+                duration: 0.5,
+                delay: 0.8,
+                stagger: 0.1,
+                onComplete: function(){
+                    burger.dataset.open = 1;
+                }
+            });
+        } else {
+            gsap.to('.js-menu-item', {
+                opacity: 0, 
+                x: 90,
+                duration: 0.5,
+                stagger: {
+                    from: 'end',
+                    each: 0.1
+                },
+                onComplete: function(){
+                    burger.dataset.open = 0;
+                    nav.classList.toggle('nav-active');
+                }
+            })
+        }
     });
-}
+} 
 
 navSlide();
 

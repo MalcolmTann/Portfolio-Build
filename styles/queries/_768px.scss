@@ -14,14 +14,6 @@
     .gn-trig {
         display: none;
     }
-    .gn-items {
-        flex-direction: row;
-        position: static;
-        height: 5vh;
-        justify-content: flex-end;
-        background-color: #fff;
-        transform: translateX(0%);
-    }
     .gn {
         a {
             margin-top: 0;
@@ -37,15 +29,21 @@
             padding: 0;
             margin-bottom: 4px;
             height: 1.2em;
-            transition: .30s ease;
-        }
-        .social {
-            li {
-                opacity: 1 !important;
-            }
+            transition: .35s ease;
         }
         .is-flex li:nth-child(1) {
             display: none;
+        }
+    }
+    .gn-items {
+        flex-direction: row;
+        position: static;
+        height: 5vh;
+        justify-content: flex-end;
+        background-color: #fff;
+        transform: translateX(0%);
+        a {
+            opacity: 1;
         }
     }
 

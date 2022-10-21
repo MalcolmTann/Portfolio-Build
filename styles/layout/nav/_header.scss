@@ -30,9 +30,8 @@ header {
     top: 50px;
     right: 0;
     width: 50%;
-    display: none;
+    // display: none;
     a {
-        text-decoration: none;
         margin-top: -50px;
         font-size: 1.2rem;
         font-weight: $light;
@@ -44,7 +43,7 @@ header {
     }
     .social {
         li {
-            opacity: 0 !important;
+            opacity: 0.5 !important;
             transition: .35s;
         }
     }
@@ -73,31 +72,27 @@ header {
     background-color: $tertiaryBg;
     transform: translateX(100%);
     transition: transform .8s ease-in;
+    a {
+        transform: translateX(90px);
+        opacity: 0;
+        // transition: all .35s;
+    }
 }
 .nav-active {
     transform: translateX(0%);
-    .social {
-        li {
-            opacity: 1 !important;
-        }
-    }
-}
 
-@keyframes navLinkFade {
-    0% {
-        // opacity: 0;
-        transform: translateX(100px);
-    }
-    50% {
-        // opacity: 0.3;
-    }
-    75% {
-        // opacity: 0.6;
-    }
-    100% {
-        // opacity: 1;
-        transform: translateX(0);
-    }
-} 
+    // a {
+    //     transform: translateX(0);
+    //     opacity: 1;
+    //     // &:last-child {
+    //     //     transition-delay: 200ms;
+    //     // }
+    // }
+    // .social {
+    //     li {
+    //         opacity: 1 !important;
+    //     }
+    // }
+}
 
 
