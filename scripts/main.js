@@ -1,14 +1,4 @@
 
-// // Burger Toggler
-// $('.gn-trig').on('click', function(e) {
-//     e.preventDefault();
-//     if($(this).hasClass('is-active')) {
-//         $(this).removeClass('is-active');
-//     } else {
-//         $(this).addClass('is-active');
-//     }
-// });
-
 // Scroll Animation 
 function showProjects() {
     var projects = document.querySelectorAll(".hidden");
@@ -30,12 +20,10 @@ function showProjects() {
 window.addEventListener("scroll", showProjects);
 
 
-
 // Reveal Text - GSAP
 let tl = gsap.timeline({defaults: {ease: 'power1.out'}});
 
 tl.to('.text', {y:'0%', duration: 1, stagger: 0.25});
-
 
 
 // Smooth Nav Slide
@@ -78,17 +66,4 @@ const navSlide = () => {
         }
     });
 } 
-
 navSlide();
-
-
-// Smooth Scroll
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
