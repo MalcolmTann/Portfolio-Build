@@ -22,7 +22,7 @@
                 <p>/ Front-end Developer</p>
                 <div>
                     <h1><span class="text">Turning ideas into reality</span></h1>
-                    <h1><span class="text">through code</span></h1>
+                    <h1><span class="text">through code!</span></h1>
                 </div>
                 <a href="#work" title="View Projects" >
                     <button class="btn">projects</button>
