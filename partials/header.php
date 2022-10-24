@@ -1,4 +1,4 @@
-<header>
+<header data-aos="fade" data-aos-delay="1600" data-aos-duration="1500">
     <div class="nav-container">
         <a href="index.php" title="Home"><h2>Mal</h2></a>
         <button class="gn-trig" data-open="0">

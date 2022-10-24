@@ -25,16 +25,7 @@ a {
     text-decoration: none;
 }
 
-.hidden {
-    position: relative;
-    transform: translateY(150px);
-    opacity: 0;
-    transition: 1s all ease;
-    &.show {
-        transform: translateX(0);
-        opacity: 1;
-    }
-    @media (min-width: 768px) {
-        transition: 1s all ease;
-    }
+span {
+    display: inline-block;
+    transform: translateY(100%);
 }

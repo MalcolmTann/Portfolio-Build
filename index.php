@@ -19,18 +19,18 @@
         <?php include('partials/header.php'); ?>
         <main>
             <section class="home-landing">
-                <p>/ Front-end Developer</p>
+                <p data-aos="fade" data-aos-delay="700" data-aos-duration="1500">/ Front-end Developer</p>
                 <div>
                     <h1><span class="text">Turning ideas into reality</span></h1>
-                    <h1><span class="text">through code!</span></h1>
+                    <h1><span class="text">through code&#33; </span></h1>
                 </div>
-                <a href="#work" title="View Projects" >
+                <a href="#work" data-aos="fade" data-aos-delay="1100" data-aos-duration="1500" title="View Projects" >
                     <button class="btn">projects</button>
                 </a>
             </section>
             <section id="work" class="projects">
                 <div class="artifact">
-                    <div class="col-1 hidden">
+                    <div class="col-1" data-aos="fade-up" data-aos-duration="1000">
                         <a class="image-hover" href="projects/malsathome.php" title="Blogr Landing Page">
                             <img src="images/project-filler.jpg" alt="Blogr">
                             <div>
@@ -38,7 +38,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-2 hidden">
+                    <div class="col-2" data-aos="fade-up" data-aos-duration="1000">
                         <div class="desc">
                             <h3>Blogr</h3>
                             <p>/ Landing Page Design</p>
@@ -51,7 +51,7 @@
                     </div>
                 </div>
                 <div class="artifact">
-                    <div class="col-1 hidden">
+                    <div class="col-1" data-aos="fade-up" data-aos-duration="1000">
                         <a class="image-hover" href="..." title="ToDo Task Manager">
                             <img src="images/project-filler.jpg" alt="ToDo App">
                             <div>
@@ -59,20 +59,20 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-2 hidden">
+                    <div class="col-2" data-aos="fade-up" data-aos-duration="1000">
                         <div class="desc">
                             <h3>Todo App</h3>
                             <p>/ Task Manager</p>
                             <ul>
                                 <li>JavaScript</li>
-                                <li>CSS/SCSS</li>
+                                <li>CSS</li>
                                 <li>HTML</li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div class="artifact">
-                    <div class="col-1 hidden">
+                    <div class="col-1" data-aos="fade-up" data-aos-duration="1000">
                         <a class="image-hover" href="..." title="NUTTRI Health App">
                             <img src="images/project-filler.jpg" alt="NUTTRI App">
                             <div>
@@ -80,7 +80,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-2 hidden">
+                    <div class="col-2" data-aos="fade-up" data-aos-duration="1000">
                         <div class="desc">
                             <h3>NUTTRI</h3>
                             <p>/ Health & Nutrition App</p>
@@ -92,10 +92,10 @@
                 </div>
             </section>
             <section id="about" class="about">
-                <div class="col-1 hidden">
+                <div class="col-1" data-aos="fade-right" data-aos-duration="950">
                     <img src="images/portrait.jpg" alt="Malcolm Tan">
                 </div>
-                <div class="is-flex col-2 hidden">
+                <div class="is-flex col-2" data-aos="fade-left" data-aos-duration="950">
                     <p>I code because I love the process of turning web ideas into functional applications and taking on challenges that allow me to exercise my creativity. Curiosity drives me to be a proactive and passionate learner, always seeking to acquire new skills, technical knowledge and experiences in pursuit of continuous slef-improvement and growth. During my free time, I enjoy film-photography, music, sports, and spending quality time with friends and loved ones.</p>
                     <button class="btn">View Resume</button>
                 </div>

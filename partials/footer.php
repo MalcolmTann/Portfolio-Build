@@ -15,4 +15,6 @@
     </div>
 </footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
 <script src="../scripts/main.js"></script>
