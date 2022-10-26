@@ -714,12 +714,12 @@ footer .nav-container p {
   .home-landing:before {
     height: 15rem;
     width: 15rem;
-    top: 60%;
+    top: 65%;
   }
   .home-landing:after {
     height: 16rem;
     width: 16rem;
-    top: 45%;
+    top: 47%;
     right: 9%;
   }
   .projects {
