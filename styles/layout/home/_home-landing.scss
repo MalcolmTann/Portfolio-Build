@@ -1,18 +1,16 @@
 @use '../../utilities' as *;
 
 .home-landing {
-    min-height: 100vh;
+    min-height: 90vh;
     gap: 1em;
     position: relative;
-    line-height: 1.4;
+    line-height: 1.5;
     .btn {
         margin-top: 1em;
         text-transform: uppercase;
     }
     h1 {
         font-size: $lrg;
-        overflow: hidden;
-        background-color: $primaryBg;
     }
     p {
         color: rgb(160, 160, 160);
