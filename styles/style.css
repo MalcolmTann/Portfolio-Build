@@ -132,12 +132,15 @@ header h2 {
   justify-content: space-evenly;
   overflow-x: hidden;
   background-color: #9fd3e8;
-  transform: translateX(100%);
   border-left: 0.3px solid rgb(100, 100, 100);
 }
 
-.nav-active {
-  transform: translateX(0%);
+.js-menu-item, .js-menu-bg {
+  translate: none;
+  rotate: none;
+  scale: none;
+  transform: translate(100%, 0);
+  opacity: 0;
 }
 
 .burger {

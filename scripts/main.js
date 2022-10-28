@@ -1,33 +1,36 @@
 
-// Reveal Text - GSAP
-let textTl = gsap.timeline({defaults: {ease: 'power1.out'}});
-
-textTl.to('.text', {y:'0%', duration: 1, stagger: 0.25});
-
-
 const navSlide = () => {
     const burger = document.querySelector('.gn-trig');
-    const nav = document.querySelector('.gn-items');
 
     burger.addEventListener('click', () => {
         
-        burger.classList.toggle('is-active');
+        let currOpen = burger.dataset.open;
+        burger.dataset.open = 1;
         
-        if(burger.dataset.open == 0) {
+        if(currOpen == 0) {
 
-            nav.classList.toggle('nav-active');
-            gsap.to('.js-menu-item', {
+            burger.classList.add('is-active');
+
+            let navTlIn = gsap.timeline();
+            navTlIn.to('.js-menu-bg', {
+                opacity: 1,
+                x: 0,
+                duration: 0.5
+            });
+
+            navTlIn.to('.js-menu-item', {
                 opacity: 1, 
                 x: 0,
                 duration: 0.5,
-                delay: 0.8,
                 stagger: 0.1,
                 onComplete: function(){
-                    burger.dataset.open = 1;
+                    burger.dataset.open = 2;
                 }
             });
-        } else {
-            gsap.to('.js-menu-item', {
+        } else if(currOpen == 2) {
+            let navTlOut = gsap.timeline();
+
+            navTlOut.to('.js-menu-item', {
                 opacity: 0, 
                 x: 90,
                 duration: 0.5,
@@ -35,11 +38,17 @@ const navSlide = () => {
                     from: 'end',
                     each: 0.1
                 },
+            });
+
+            navTlOut.to('.js-menu-bg', {
+                opacity: 0,
+                x: '100%',
+                duration: 0.5,
                 onComplete: function(){
                     burger.dataset.open = 0;
-                    nav.classList.toggle('nav-active');
+                    burger.classList.remove('is-active');
                 }
-            })
+            });
         }
     });
 } 

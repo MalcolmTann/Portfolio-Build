@@ -1,11 +1,11 @@
-<header data-aos="fade" data-aos-delay="2200" data-aos-duration="2000">
+<header data-aos="fade" data-aos-delay="200" data-aos-duration="2000">
     <div class="nav-container">
         <a href="index.php" title="Home"><h2>Mal</h2></a>
         <button class="gn-trig" data-open="0">
             <div class="burger"></div>
         </button>
         <nav class="gn">
-            <ul class="gn-items">
+            <ul class="gn-items js-menu-bg">
                 <li><a class="js-menu-item" href="index.php#work" title="Projects">Projects</a></li>
                 <li><a class="js-menu-item" href="index.php#about" title="About">About</a></li>
                 <ul class="is-flex">

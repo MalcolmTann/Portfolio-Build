@@ -63,13 +63,16 @@ header {
     justify-content: space-evenly;
     overflow-x: hidden;
     background-color: $tertiaryBg;
-    transform: translateX(100%);
     border-left: .3px solid rgb(100, 100, 100);
 }
-
-.nav-active {
-    transform: translateX(0%);
+.js-menu-item, .js-menu-bg {
+    translate: none; 
+    rotate: none; 
+    scale: none; 
+    transform: translate(100%, 0); 
+    opacity: 0;
 }
+
 
 
 
