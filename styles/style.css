@@ -524,7 +524,6 @@ footer .nav-container p {
     height: 5vh;
     justify-content: flex-end;
     background-color: #fff;
-    transform: translateX(0%);
     border-left: none;
   }
   .home-landing, .projects, .about, .proj-landing, .info, .overview, .more-projects {
