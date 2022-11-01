@@ -51,8 +51,6 @@ p {
   background: none;
   border: none;
   background-color: #9fd3e8;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   padding: 0.5em 1em;
   transition: 0.45s ease;
@@ -244,8 +242,6 @@ footer .nav-container p {
 
 .projects {
   padding-top: 4em;
-  height: -webkit-max-content;
-  height: -moz-max-content;
   height: max-content;
   flex-direction: column;
   justify-content: space-evenly;
@@ -285,8 +281,6 @@ footer .nav-container p {
 }
 
 .about {
-  height: -webkit-max-content;
-  height: -moz-max-content;
   height: max-content;
   margin-top: 5em;
   margin-bottom: 4em;
@@ -352,10 +346,8 @@ footer .nav-container p {
 }
 
 .info {
-  height: -webkit-max-content;
-  height: -moz-max-content;
   height: max-content;
-  padding: 2em 1em;
+  padding: 2em 3em;
 }
 .info h4 {
   font-size: 1rem;
@@ -471,6 +463,7 @@ footer .nav-container p {
   }
   .info {
     margin: 0 auto;
+    padding: 2em 1em;
   }
   .info .is-flex {
     flex-direction: row;
@@ -760,4 +753,6 @@ footer .nav-container p {
     height: 1.5em;
     padding: 0 1em;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */

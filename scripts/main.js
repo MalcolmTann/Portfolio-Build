@@ -59,7 +59,7 @@ const menuSlider = () => {
             });
         }
     });
-} 
+}
 menuSlider();
 
 // Shows the navigation depending on viewport width
