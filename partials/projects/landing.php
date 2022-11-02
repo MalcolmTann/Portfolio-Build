@@ -12,6 +12,13 @@
         <p data-aos="fade" data-aos-delay="500" data-aos-duration="2000"><?php echo $landing_sub_title; ?></p>
         <h1 data-aos="fade" data-aos-duration="2000"><?php echo $landing_title; ?></h1>
         <p data-aos="fade" data-aos-delay="1000" data-aos-duration="2000"><?php echo $landing_desc; ?></p>
-        <button data-aos="fade" data-aos-delay="1000" data-aos-duration="2000" class="btn">Live Site</button>
+        <div class="btn-group is-flex">
+            <a href="#" title="View Live Site">
+                <button data-aos="fade" data-aos-delay="1000" data-aos-duration="2000" class="btn filled">Live Site</button>
+            </a>
+            <a>
+                <button data-aos="fade" data-aos-delay="1000" data-aos-duration="2000" class="btn outline">View Code</button>
+            </a>
+        </div>
     </div>
 </section>

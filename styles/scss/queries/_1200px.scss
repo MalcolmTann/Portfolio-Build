@@ -27,6 +27,16 @@
         gap: 8em;
     }
 
+    .artifact {
+        .col-2 {
+            .desc {
+                h3 {
+                    font-size: 3em;
+                }
+            }
+        }
+    }
+
     .about {
         .col-1 {
             &:before {

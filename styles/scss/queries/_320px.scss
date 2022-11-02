@@ -9,4 +9,10 @@
     .proj-landing {
         height: 95vh;
     }
+
+    .btn-group.is-flex {
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 2em;
+    }
 }

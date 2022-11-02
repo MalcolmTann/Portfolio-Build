@@ -111,6 +111,7 @@
     }
 
     .proj-landing {
+        height: 85vh;
         flex-direction: row-reverse;
         justify-content: center;
         align-items: center;
@@ -118,12 +119,6 @@
             flex-basis: 55%;
             max-width: 55%;
         } 
-    }
-
-    .intro {
-        .btn {
-            margin-top: 2em;
-        }
     }
 
     .info {

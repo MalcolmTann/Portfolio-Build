@@ -262,11 +262,10 @@ footer .nav-container p {
 .artifact .col-2 .desc h3 {
   font-size: 2rem;
   font-weight: 500;
-  margin-bottom: 0.1em;
 }
 .artifact .col-2 .desc p {
-  font-size: 1.1rem;
   color: rgb(160, 160, 160);
+  margin-bottom: 0.2em;
 }
 .artifact .col-2 .desc ul {
   display: flex;
@@ -341,13 +340,25 @@ footer .nav-container p {
 .intro p:nth-of-type(2) {
   margin-top: 0.5em;
 }
-.intro .btn {
-  margin-top: 1em;
+
+.btn-group.is-flex {
+  flex-direction: column;
+  gap: 1em;
+  margin-top: 2em;
+}
+.btn-group.is-flex .filled {
+  padding: 0.5em 1.8em;
+}
+.btn-group.is-flex .outline {
+  background-color: transparent;
+  border: 1px solid #9fd3e8;
+  color: #000;
 }
 
 .info {
   height: max-content;
-  padding: 2em 3em;
+  padding: 2em 1em;
+  margin-bottom: 3em;
 }
 .info h4 {
   font-size: 1rem;
@@ -370,6 +381,11 @@ footer .nav-container p {
   }
   .proj-landing {
     height: 95vh;
+  }
+  .btn-group.is-flex {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 2em;
   }
 }
 @media (min-width: 450px) {
@@ -431,6 +447,9 @@ footer .nav-container p {
   .artifact .col-2 {
     padding-left: 1.5em;
   }
+  .artifact .col-2 .desc h3 {
+    font-size: 2.5rem;
+  }
   .about {
     margin-top: 8em;
     margin-bottom: 5em;
@@ -443,7 +462,7 @@ footer .nav-container p {
     gap: 2.5em;
   }
   .info {
-    margin: 0 auto;
+    margin: 0 auto 3em auto;
     padding: 2em 1em;
   }
   .info .is-flex {
@@ -560,6 +579,7 @@ footer .nav-container p {
     width: 70%;
   }
   .proj-landing {
+    height: 85vh;
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
@@ -567,9 +587,6 @@ footer .nav-container p {
   .proj-landing img {
     flex-basis: 55%;
     max-width: 55%;
-  }
-  .intro .btn {
-    margin-top: 2em;
   }
   .info .is-flex {
     justify-content: space-around;
@@ -596,7 +613,7 @@ footer .nav-container p {
     font-size: 1.2rem;
   }
   .home-landing .btn {
-    margin-top: 2em;
+    margin-top: 3em;
     font-size: 1.1rem;
   }
   .home-landing:before {
@@ -634,10 +651,6 @@ footer .nav-container p {
   }
   .artifact .col-2 .desc .title {
     font-size: 3rem;
-  }
-  .artifact .col-2 .desc .desc {
-    font-size: 1.2rem;
-    margin-top: 1em;
   }
   .about {
     height: 90vh;
@@ -686,6 +699,9 @@ footer .nav-container p {
   }
   .projects {
     gap: 8em;
+  }
+  .artifact .col-2 .desc h3 {
+    font-size: 3em;
   }
   .about .col-1:before {
     left: 14%;

@@ -39,8 +39,8 @@
                     </div>
                     <div class="col-2" data-aos="fade-up" data-aos-duration="1000">
                         <div class="desc">
-                            <h3>Blogr</h3>
                             <p>/ Landing Page Design</p>
+                            <h3>Blogr</h3>
                             <ul>
                                 <li>Bootstrap</li>
                                 <li>CSS/SCSS</li>
@@ -60,8 +60,8 @@
                     </div>
                     <div class="col-2" data-aos="fade-up" data-aos-duration="1000">
                         <div class="desc">
-                            <h3>Todo App</h3>
                             <p>/ Task Manager</p>
+                            <h3>Todo App</h3>
                             <ul>
                                 <li>JavaScript</li>
                                 <li>CSS</li>
@@ -81,8 +81,8 @@
                     </div>
                     <div class="col-2" data-aos="fade-up" data-aos-duration="1000">
                         <div class="desc">
-                            <h3>NUTTRI</h3>
                             <p>/ Health & Nutrition App</p>
+                            <h3>NUTTRI</h3>
                             <ul>
                                 <li>React.Js</li>
                             </ul>

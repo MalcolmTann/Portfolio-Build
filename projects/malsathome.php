@@ -22,9 +22,6 @@
                 $info_date = '01/01/21';
                 include('../partials/projects/info.php'); 
             ?>
-            <section>
-
-            </section>
         </main>
         <?php include('../partials/footer.php'); ?>
     </body>

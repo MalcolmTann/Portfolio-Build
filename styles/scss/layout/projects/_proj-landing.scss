@@ -23,7 +23,18 @@
     p:nth-of-type(2) {
         margin-top: 0.5em;
     }
-    .btn {
-        margin-top: 1em;
+}
+
+.btn-group.is-flex {
+    flex-direction: column;
+    gap: 1em;
+    margin-top: 2em;
+    .filled {
+        padding: 0.5em 1.8em;
+    }
+    .outline {
+        background-color: transparent;
+        border: 1px solid #9fd3e8;
+        color: #000;
     }
 }
