@@ -65,7 +65,7 @@ menuSlider();
 // Shows the navigation depending on viewport width
 function showMenu(){
     // greater than 768px, show navbar
-    if(window.innerWidth > 768) {
+    if(window.innerWidth >= 768) {
         gsap.set(['.js-menu-bg', '.js-menu-item'], {
             opacity: 1,
             x: 0

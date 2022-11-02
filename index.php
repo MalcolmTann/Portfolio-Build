@@ -19,11 +19,11 @@
         <?php include('partials/header.php'); ?>
         <main>
             <section class="home-landing">
-                <p data-aos="fade" data-aos-delay="800" data-aos-duration="2000">/ Front-end Developer</p>
+                <p data-aos="fade" data-aos-delay="500" data-aos-duration="2000">/ Front-end Developer</p>
                 <div>
                     <h1 data-aos="fade" data-aos-duration="2000">Turning ideas into reality through code</h1>
                 </div>
-                <a href="#work" data-aos="fade" data-aos-delay="1500" data-aos-duration="2500" title="View Projects" >
+                <a href="#work" data-aos="fade" data-aos-delay="1000" data-aos-duration="2000" title="View Projects" >
                     <button class="btn">projects</button>
                 </a>
             </section>

@@ -110,21 +110,6 @@
         }
     }
 
-    .proj-landing {
-        gap: 2.5em;
-        img {
-            flex-basis: 55%;
-            max-width: 55%;
-        }
-    }
-
-    .overview {
-        margin: 0 auto;
-        .is-flex p {
-            width: 55%;
-        }
-    }
-
     footer {
         img:hover {
             transform: translateY(-4px);

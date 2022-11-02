@@ -115,24 +115,20 @@
         justify-content: center;
         align-items: center;
         img {
-            flex-basis: 60%;
-            max-width: 60%;
+            flex-basis: 55%;
+            max-width: 55%;
         } 
-        .intro {
-            flex-basis: 40%;
-            max-width: 40%; 
+    }
+
+    .intro {
+        .btn {
+            margin-top: 2em;
         }
     }
 
     .info {
         .is-flex {
             justify-content: space-around;
-        }
-    }
-
-    .overview {
-        .is-flex p {
-            width: 70%;
         }
     }
 }

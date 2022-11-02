@@ -1,7 +1,7 @@
 @use '../../utilities' as *;
 
 .proj-landing {
-    min-height: 100vh;
+    height: 650px;
     gap: 2em;
     h1 {
         font-size: $lrg;
@@ -24,6 +24,6 @@
         margin-top: 0.5em;
     }
     .btn {
-        margin-top: 2.5em;
+        margin-top: 1em;
     }
 }
