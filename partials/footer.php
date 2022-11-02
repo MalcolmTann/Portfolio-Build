@@ -4,7 +4,7 @@
             <a href="mailto:malcolmtan20@gmai.com" title="Email Me">
                 <img src="../images/email.svg" alt="Email">
             </a>
-            <a href="https://github.com/MacolmTann" title="Github" target="_blank">
+            <a href="https://github.com/MalcolmTann" title="Github" target="_blank">
                 <img src="../images/github.svg" alt="Github Logo">
             </a>
             <a href="https://www.linkedin.com/in/malcolmtan-" title="Linkedin">        

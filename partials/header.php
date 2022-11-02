@@ -15,7 +15,7 @@
                         </a>
                     </li>
                     <li>
-                        <a class="js-menu-item" href="https://github.com/MacolmTann" title="Github" target="_blank">
+                        <a class="js-menu-item" href="https://github.com/MalcolmTann" title="Github" target="_blank">
                             <img src="../images/github.svg" alt="Github">
                         </a>
                     </li>

@@ -186,8 +186,8 @@ header h2 {
 }
 
 footer .nav-container {
-  min-height: 4em;
-  justify-content: space-between;
+  height: 4em;
+  justify-content: center;
   flex-direction: column;
   text-align: center;
   padding-bottom: 1em;
@@ -521,6 +521,9 @@ footer .nav-container p {
   }
   .home-landing, .projects, .about, .proj-landing, .info, .overview, .more-projects {
     max-width: 740px;
+  }
+  .home-landing {
+    margin-top: 2em;
   }
   .home-landing h1 {
     font-size: 3rem;
