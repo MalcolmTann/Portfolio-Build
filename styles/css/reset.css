@@ -30,7 +30,7 @@ time, mark, audio, video {
 }
 
 /* make sure to set some focus styles for accessibility */
-:focus {
+a:focus {
     outline: none;
 }
 
