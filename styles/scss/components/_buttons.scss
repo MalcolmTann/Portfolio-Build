@@ -1,9 +1,4 @@
-@use '../../utilities' as *;
-
-.is-flex {
-    display: flex;
-    justify-content: center;
-}
+@use '../utilities' as *;
 
 .btn {
     font-family: $fontFam;
@@ -15,12 +10,4 @@
     padding: 0.5em 1em;
     transition: .45s ease;
     position: relative;
-}
-
-img {
-    cursor: pointer;
-}
-
-a {
-    text-decoration: none;
 }

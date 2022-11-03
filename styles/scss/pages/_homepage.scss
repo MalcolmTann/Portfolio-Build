@@ -1,0 +1,128 @@
+@use '../utilities' as *;
+@use '../components' as *;
+
+// Landing
+
+.home-landing {
+    height: 90vh;
+    gap: 1em;
+    position: relative;
+    line-height: 1.5;
+    .btn {
+        margin-top: 1em;
+        text-transform: uppercase;
+    }
+    h1 {
+        font-size: $lrg;
+    }
+    p {
+        color: rgb(160, 160, 160);
+    }
+    &:before {
+        content: '';
+        position: absolute;
+        top: 85%;
+        right: 0;
+        background-color: #9fd3e8;
+        height: 8rem;
+        width: 8rem;
+        opacity: 0.2;
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        top: 75%;
+        right: 18%;
+        background-color: #9fd3e8;
+        height: 9rem;
+        width: 9rem;
+        border-radius: 50%;
+        opacity: 0.4;
+    }
+}
+
+// Projects
+
+.projects {
+    padding-top: 4em;
+    height: max-content;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 4em;
+}
+
+.artifact {
+    a {
+        img {
+            width: 100%;
+            border-radius: 5px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+        }
+        p {
+            display: none;
+        }
+    }
+    .col-2 {
+        margin-top: 2em;
+        .desc {
+            h3 {
+                font-size: $lrg;
+                font-weight: $bold;
+            }
+            p {
+                color: rgb(160, 160, 160);
+                margin-bottom: 0.2em;
+            }
+            ul {
+                display: flex;
+                flex-direction: row;
+                gap: 1.5em;
+                margin-top: 3em;
+                justify-content: flex-start;
+                padding: 0;
+                li {
+                    font-weight: $light;
+                }
+            }
+        }
+    }
+}
+
+// About
+
+.about {
+    height: max-content;
+    margin-top: 5em;
+    margin-bottom: 4em;
+    gap: 3em;
+    .col-1 {
+        text-align: center;
+        img {
+            width: 90%;
+            border-radius: 50%;
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+            position: relative;
+            z-index: -1;
+        }
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: -3px;
+            left: -6px;
+            height: 103%;
+            width: 105%;
+            border-radius: 50% 25%;
+            background-color: #9fd3e8;
+            opacity: 0.2;
+            z-index: -1;
+        }
+    }
+    .col-2.is-flex {
+        flex-direction: column;
+        gap: 1.5em;
+        p {
+            font-weight: $light;
+        }
+    }   
+}

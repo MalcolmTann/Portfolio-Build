@@ -1,25 +1,5 @@
-@use '../../utilities' as *;
+@use '../utilities' as *;
 
-header {
-    padding: 1em;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 999;
-    align-items: center;
-    background-color: $primaryBg;
-    justify-content: space-between;
-    transition: .3s ease;
-    h2 {
-        font-size: $med;
-        font-weight: $normal;
-        color: #000;
-        transition: .30s ease;
-    }
-}
-
-// Navigation
 .nav-container {
     max-width: 1140px;
     margin: 0 auto;
@@ -72,8 +52,4 @@ header {
     transform: translate(100%, 0); 
     opacity: 0;
 }
-
-
-
-
 

@@ -1,37 +1,5 @@
-body {
-  background-color: #fff;
-  font-family: "Poppins";
-}
-body main {
-  overflow: hidden;
-}
-
-.home-landing, .projects, .about, .proj-landing, .skills, .overview, .more-projects {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  padding: 0 1em;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.bg {
-  background-color: #f0f8ff;
-}
-
-.nav-container {
-  max-width: 1140px;
-  margin: 0 auto;
-  display: flex;
-}
-
 h1, h2 {
   font-weight: 500;
-}
-
-a {
-  text-decoration: none;
-  display: block;
 }
 
 p {
@@ -40,29 +8,9 @@ p {
   line-height: 1.7;
 }
 
-.is-flex {
-  display: flex;
-  justify-content: center;
-}
-
-.btn {
-  font-family: "Poppins";
-  cursor: pointer;
-  background: none;
-  border: none;
-  background-color: #9fd3e8;
-  width: fit-content;
-  padding: 0.5em 1em;
-  transition: 0.45s ease;
-  position: relative;
-}
-
-img {
-  cursor: pointer;
-}
-
 a {
   text-decoration: none;
+  display: block;
 }
 
 header {
@@ -82,6 +30,67 @@ header h2 {
   font-weight: 400;
   color: #000;
   transition: 0.3s ease;
+}
+
+footer .nav-container {
+  height: 4em;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 1em;
+}
+footer .nav-container img {
+  height: 1.5em;
+  padding: 0 0.5em;
+  transition: 0.3s ease;
+}
+footer .nav-container p {
+  margin-top: 0.5em;
+  font-size: 0.8rem;
+}
+
+.burger {
+  position: absolute;
+  background: #000;
+  width: 20px;
+  height: 2px;
+  right: 0px;
+  top: 50%;
+  z-index: 1;
+}
+.burger:before, .burger:after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: #000;
+  width: 30px;
+  height: 2px;
+  right: 0;
+}
+.burger:before {
+  top: 7px;
+}
+.burger:after {
+  bottom: 7px;
+}
+
+.burger, .burger:before, .burger:after {
+  transition-property: transform, top, background;
+  transition-duration: 0.45s;
+}
+
+.gn-trig.is-active .burger:before {
+  transform: rotate(45deg);
+  background-color: #fff;
+  top: -2px;
+}
+.gn-trig.is-active .burger:after {
+  transform: rotate(-45deg);
+  background-color: #fff;
+  top: -2px;
+}
+.gn-trig.is-active .burger {
+  background: rgba(255, 255, 255, 0);
 }
 
 .nav-container {
@@ -141,65 +150,48 @@ header h2 {
   opacity: 0;
 }
 
-.burger {
-  position: absolute;
-  background: #000;
-  width: 20px;
-  height: 2px;
-  right: 0px;
-  top: 50%;
-  z-index: 1;
-}
-.burger:before, .burger:after {
-  content: "";
-  display: block;
-  position: absolute;
-  background: #000;
-  width: 30px;
-  height: 2px;
-  right: 0;
-}
-.burger:before {
-  top: 7px;
-}
-.burger:after {
-  bottom: 7px;
-}
-
-.burger, .burger:before, .burger:after {
-  transition-property: transform, top, background;
-  transition-duration: 0.45s;
-}
-
-.gn-trig.is-active .burger:before {
-  transform: rotate(45deg);
+body {
   background-color: #fff;
-  top: -2px;
+  font-family: "Poppins";
 }
-.gn-trig.is-active .burger:after {
-  transform: rotate(-45deg);
-  background-color: #fff;
-  top: -2px;
-}
-.gn-trig.is-active .burger {
-  background: rgba(255, 255, 255, 0);
+body main {
+  overflow: hidden;
 }
 
-footer .nav-container {
-  height: 4em;
+.home-landing, .projects, .about, .proj-landing, .skills, .overview, .more-projects {
+  display: flex;
   justify-content: center;
   flex-direction: column;
-  text-align: center;
-  padding-bottom: 1em;
+  padding: 0 1em;
+  margin-right: auto;
+  margin-left: auto;
 }
-footer .nav-container img {
-  height: 1.5em;
-  padding: 0 0.5em;
-  transition: 0.3s ease;
+
+.nav-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
 }
-footer .nav-container p {
-  margin-top: 0.5em;
-  font-size: 0.8rem;
+
+.btn {
+  font-family: "Poppins";
+  cursor: pointer;
+  background: none;
+  border: none;
+  background-color: #9fd3e8;
+  width: fit-content;
+  padding: 0.5em 1em;
+  transition: 0.45s ease;
+  position: relative;
+}
+
+.is-flex {
+  display: flex;
+  justify-content: center;
+}
+
+.bg {
+  background-color: #f0f8ff;
 }
 
 .home-landing {
@@ -679,7 +671,7 @@ footer .nav-container p {
     transform: translateY(-4px);
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
   .home-landing, .projects, .about, .proj-landing, .info, .overview, .more-projects {
     max-width: 1170px;
   }
@@ -738,4 +730,4 @@ footer .nav-container p {
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=main.css.map */

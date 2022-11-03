@@ -1,4 +1,4 @@
-@use '../../utilities' as *;
+@use '../utilities' as *;
 
 body {
     background-color: $primaryBg;
@@ -15,10 +15,6 @@ body {
     padding: 0 1em;
     margin-right: auto;
     margin-left: auto;
-}
-
-.bg {
-    background-color: $secondaryBg;
 }
 
 .nav-container {

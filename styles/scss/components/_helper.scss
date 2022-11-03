@@ -1,0 +1,11 @@
+@use '../utilities' as *;
+
+.is-flex {
+    display: flex;
+    justify-content: center;
+}
+
+.bg {
+    background-color: $secondaryBg;
+}
+
