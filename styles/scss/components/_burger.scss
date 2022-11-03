@@ -33,12 +33,12 @@
 .gn-trig.is-active {
     .burger:before {
         transform: rotate(45deg) ;
-        background-color: $primaryBg;
+        background-color: $white;
         top: -2px;
     }
     .burger:after {
         transform: rotate(-45deg);
-        background-color: $primaryBg;
+        background-color: $white;
         top: -2px;
     } 
     .burger {
