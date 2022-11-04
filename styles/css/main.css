@@ -547,11 +547,11 @@ body main {
   height: 90vh;
   gap: 1em;
   position: relative;
-  line-height: 1.5;
+  line-height: 1.4;
+  padding: 1em;
 }
 .home-landing .btn {
   margin-top: 2em;
-  text-transform: uppercase;
 }
 .home-landing h1 {
   font-size: 2rem;
@@ -589,6 +589,12 @@ body main {
   gap: 4em;
 }
 
+.artifact {
+  background-color: rgb(249, 249, 249);
+  padding: 1em;
+  border-radius: 8px;
+  margin-bottom: 5em;
+}
 .artifact a img {
   width: 100%;
   border-radius: 5px;
@@ -597,7 +603,10 @@ body main {
   display: none;
 }
 .artifact .col-2 {
-  margin-top: 2em;
+  margin-top: 1.5em;
+}
+.artifact .col-2 .desc {
+  margin-bottom: 3em;
 }
 .artifact .col-2 .desc h3 {
   font-size: 2rem;
@@ -611,7 +620,7 @@ body main {
   display: flex;
   flex-direction: row;
   gap: 1.5em;
-  margin-top: 3em;
+  margin-top: 1.5em;
   justify-content: flex-start;
   padding: 0;
 }
@@ -621,9 +630,8 @@ body main {
 
 .about {
   height: max-content;
-  margin-top: 5em;
-  margin-bottom: 4em;
   gap: 3em;
+  margin: 4em auto;
 }
 .about .col-1 {
   text-align: center;
@@ -657,7 +665,7 @@ body main {
 }
 
 .proj-landing {
-  height: 800px;
+  min-height: 100vh;
   gap: 2em;
 }
 .proj-landing h1 {
@@ -719,7 +727,7 @@ body main {
 }
 
 @media (min-width: 320px) {
-  .home-landing, .projects, .about, .proj-landing, .info, .overview, .more-projects {
+  .home-landing, .projects, .about, .proj-landing, .info {
     max-width: 450px;
   }
   .proj-landing {
@@ -765,7 +773,7 @@ body main {
   header {
     padding: 1em 1.7em;
   }
-  .home-landing, .projects, .about, .proj-landing, .info, .overview, .more-projects {
+  .home-landing, .projects, .about, .proj-landing, .info {
     max-width: 550px;
   }
   .home-landing h1 {
@@ -867,7 +875,7 @@ body main {
     background-color: #fff;
     border-left: none;
   }
-  .home-landing, .projects, .about, .proj-landing, .info, .overview, .more-projects {
+  .home-landing, .projects, .about, .proj-landing, .info {
     max-width: 740px;
   }
   .home-landing {
@@ -896,6 +904,7 @@ body main {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
+    padding: 1em 0.5em;
   }
   .artifact .col-1 {
     flex-basis: 50%;
@@ -909,7 +918,7 @@ body main {
     max-width: 50%;
   }
   .artifact .col-2 .desc {
-    text-align: left;
+    margin-bottom: 4em;
   }
   .about {
     margin-top: 9em;
@@ -936,6 +945,9 @@ body main {
     flex-basis: 55%;
     max-width: 55%;
   }
+  .btn-group.is-flex {
+    margin-top: 3em;
+  }
   .info .is-flex {
     justify-content: space-around;
   }
@@ -950,7 +962,7 @@ body main {
   .gn img:hover {
     transform: translateY(-4px);
   }
-  .home-landing, .projects, .about, .proj-landing, .info, .overview, .more-projects {
+  .home-landing, .projects, .about, .proj-landing, .info {
     max-width: 970px;
   }
   .btn:hover {
@@ -975,27 +987,19 @@ body main {
     top: 55%;
     right: 11%;
   }
-  .projects .image-hover {
-    position: relative;
+  .artifact .col-1 {
+    flex-basis: 55%;
+    max-width: 55%;
   }
-  .projects .image-hover p {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: 0.45s;
-    color: #fff;
+  .artifact .col-1 img {
+    transition: 0.3s ease-in;
   }
-  .projects .image-hover p:hover {
-    opacity: 1;
+  .artifact .col-1 img:hover {
+    transform: scale(1.02);
+  }
+  .artifact .col-2 {
+    flex-basis: 45%;
+    max-width: 45%;
   }
   .artifact .col-2 .desc .title {
     font-size: 3rem;

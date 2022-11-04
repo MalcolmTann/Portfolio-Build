@@ -19,27 +19,24 @@
         <?php include('partials/header.php'); ?>
         <main>
             <section class="home-landing">
-                <p data-aos="fade" data-aos-delay="500" data-aos-duration="2000">/ Front-end Developer</p>
+                <p data-aos="fade" data-aos-delay="500" data-aos-duration="2000">Front-end Developer</p>
                 <div>
                     <h1 data-aos="fade" data-aos-duration="2000">Turning ideas into reality through code</h1>
                 </div>
                 <a href="#work" data-aos="fade" data-aos-delay="1000" data-aos-duration="2000" title="View Projects" >
-                    <button class="btn">projects</button>
+                    <button class="btn">See My Projects</button>
                 </a>
             </section>
             <section id="work" class="projects">
-                <div class="artifact">
-                    <div class="col-1" data-aos="fade-up" data-aos-duration="1000">
-                        <a class="image-hover" href="projects/blogr.php" title="Blogr Landing Page">
+                <div class="artifact" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="col-1">
+                        <a href="projects/blogr.php" title="Blogr Landing Page">
                             <img src="images/blogr.png" alt="Blogr">
-                            <div>
-                                <p>Coming Soon</p>
-                            </div>
                         </a>
                     </div>
-                    <div class="col-2" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="col-2">
                         <div class="desc">
-                            <p>/ Landing Page Design</p>
+                            <p>Landing Page Design</p>
                             <h3>Blogr</h3>
                             <ul>
                                 <li>Bootstrap</li>
@@ -47,20 +44,18 @@
                                 <li>HTML</li>
                             </ul>
                         </div>
+                        <button class="btn">View Project</button>
                     </div>
                 </div>
-                <div class="artifact">
-                    <div class="col-1" data-aos="fade-up" data-aos-duration="1000">
-                        <a class="image-hover" href="#" title="ToDo Task Manager">
+                <div class="artifact" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="col-1">
+                        <a href="#" title="ToDo Task Manager">
                             <img src="images/todo.png" alt="ToDo App">
-                            <div>
-                                <p>Coming Soon</p>
-                            </div>
                         </a>
                     </div>
-                    <div class="col-2" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="col-2">
                         <div class="desc">
-                            <p>/ Task Manager</p>
+                            <p>Task Manager</p>
                             <h3>Todo App</h3>
                             <ul>
                                 <li>JavaScript</li>
@@ -68,18 +63,16 @@
                                 <li>HTML</li>
                             </ul>
                         </div>
+                        <button class="btn">View Project</button>
                     </div>
                 </div>
-                <div class="artifact">
-                    <div class="col-1" data-aos="fade-up" data-aos-duration="1000">
-                        <a class="image-hover" href="#" title="NUTTRI Health App">
-                            <img src="images/project-filler.jpg" alt="NUTTRI App">
-                            <div>
-                                <p>Coming Soon</p>
-                            </div>
+                <div class="artifact" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="col-1">
+                        <a href="#" title="NUTTRI Health App">
+                            <img src="" alt="Coming Soon">
                         </a>
                     </div>
-                    <div class="col-2" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="col-2">
                         <div class="desc">
                             <p>/ Health & Nutrition App</p>
                             <h3>NUTTRI</h3>
