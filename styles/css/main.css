@@ -550,7 +550,7 @@ body main {
   line-height: 1.5;
 }
 .home-landing .btn {
-  margin-top: 1em;
+  margin-top: 2em;
   text-transform: uppercase;
 }
 .home-landing h1 {
@@ -592,7 +592,6 @@ body main {
 .artifact a img {
   width: 100%;
   border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
 .artifact a p {
   display: none;
@@ -658,7 +657,7 @@ body main {
 }
 
 .proj-landing {
-  height: 650px;
+  height: 800px;
   gap: 2em;
 }
 .proj-landing h1 {
@@ -667,13 +666,16 @@ body main {
 .proj-landing img {
   width: 100%;
   border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+  cursor: default;
 }
 
 .intro {
   display: flex;
   flex-direction: column;
   gap: 0.5em;
+}
+.intro p {
+  line-height: 1.8;
 }
 .intro p:nth-of-type(1) {
   color: rgb(160, 160, 160);
@@ -721,7 +723,7 @@ body main {
     max-width: 450px;
   }
   .proj-landing {
-    height: 95vh;
+    height: 90vh;
   }
   .btn-group.is-flex {
     flex-direction: row;
@@ -753,6 +755,10 @@ body main {
   }
   .about .col-2.is-flex {
     gap: 2em;
+  }
+  .proj-landing img {
+    width: 75%;
+    margin: 0 auto;
   }
 }
 @media (min-width: 576px) {
@@ -800,6 +806,7 @@ body main {
     margin: 0 auto;
   }
   .proj-landing {
+    min-height: 100vh;
     gap: 2.5em;
   }
   .info {
@@ -920,7 +927,7 @@ body main {
     width: 70%;
   }
   .proj-landing {
-    height: 85vh;
+    height: 100vh;
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
@@ -1015,6 +1022,15 @@ body main {
   .about .col-2 {
     flex-basis: 40%;
     max-width: 40%;
+  }
+  .proj-landing {
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .proj-landing img {
+    flex-basis: 55%;
+    max-width: 55%;
   }
   footer img:hover {
     transform: translateY(-4px);

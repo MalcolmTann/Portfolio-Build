@@ -106,6 +106,16 @@
         }
     }
 
+    .proj-landing {
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        img {
+            flex-basis: 55%;
+            max-width: 55%;
+        } 
+    }
+
     footer {
         img:hover {
             transform: translateY(-4px);

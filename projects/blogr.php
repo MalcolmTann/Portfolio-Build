@@ -13,9 +13,9 @@
             <?php 
                 $landing_title = 'Blogr';
                 $landing_sub_title = '/ Landing Page Design';
-                $landing_img_src = '../images/project-filler.jpg';
-                $landing_img_alt = 'Project in desktop and mobile view';
-                $landing_desc = 'A mobile-first modern restaurant design for a fictitious client. Built using a Bootstrap and custom SASS styling.';
+                $landing_img_src = '../images/blogr.png';
+                $landing_img_alt = 'Blogr desktop view';
+                $landing_desc = 'A Front-end Mentor Challenge. Blogr is a responsive single page design built with HTML and JavaScript and styled with SASS. The objective was to develop a site that mirrors the given design as close as possible.';
                 include('../partials/projects/landing.php'); 
             ?>
             <?php 

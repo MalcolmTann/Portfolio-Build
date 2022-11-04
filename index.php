@@ -30,8 +30,8 @@
             <section id="work" class="projects">
                 <div class="artifact">
                     <div class="col-1" data-aos="fade-up" data-aos-duration="1000">
-                        <a class="image-hover" href="projects/malsathome.php" title="Blogr Landing Page">
-                            <img src="images/project-filler.jpg" alt="Blogr">
+                        <a class="image-hover" href="projects/blogr.php" title="Blogr Landing Page">
+                            <img src="images/blogr.png" alt="Blogr">
                             <div>
                                 <p>Coming Soon</p>
                             </div>
@@ -51,8 +51,8 @@
                 </div>
                 <div class="artifact">
                     <div class="col-1" data-aos="fade-up" data-aos-duration="1000">
-                        <a class="image-hover" href="..." title="ToDo Task Manager">
-                            <img src="images/project-filler.jpg" alt="ToDo App">
+                        <a class="image-hover" href="#" title="ToDo Task Manager">
+                            <img src="images/todo.png" alt="ToDo App">
                             <div>
                                 <p>Coming Soon</p>
                             </div>
@@ -72,7 +72,7 @@
                 </div>
                 <div class="artifact">
                     <div class="col-1" data-aos="fade-up" data-aos-duration="1000">
-                        <a class="image-hover" href="..." title="NUTTRI Health App">
+                        <a class="image-hover" href="#" title="NUTTRI Health App">
                             <img src="images/project-filler.jpg" alt="NUTTRI App">
                             <div>
                                 <p>Coming Soon</p>
