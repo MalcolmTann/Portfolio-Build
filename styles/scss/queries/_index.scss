@@ -1,6 +1,6 @@
-@forward '../queries/320px';
-@forward '../queries/450px';
-@forward '../queries/576px';
-@forward '../queries/768px';
-@forward '../queries/992px';
-@forward '../queries/1280px';
+@use '../queries/xxsmall';
+@use '../queries/xsmall';
+@use '../queries/small';
+@use '../queries/medium';
+@use '../queries/large';
+@use '../queries/xlarge';

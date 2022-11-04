@@ -1,5 +1,5 @@
-@forward '../components/burger';
-@forward '../components/nav';
-@forward '../components/containers';
-@forward '../components/buttons';
-@forward '../components/helper';
+@use '../components/burger';
+@use '../components/nav';
+@use '../components/containers';
+@use '../components/buttons';
+@use '../components/helper';
