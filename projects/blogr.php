@@ -18,10 +18,6 @@
                 $landing_desc = 'A Front-end Mentor Challenge. Blogr is a responsive single page design built with HTML and JavaScript and styled with SASS. The objective was to develop a site that mirrors the given design as close as possible.';
                 include('../partials/projects/landing.php'); 
             ?>
-            <?php 
-                $info_date = '01/01/21';
-                include('../partials/projects/info.php'); 
-            ?>
             <iframe src="https://codesandbox.io/embed/blogr-landing-page-6fkkzy?fontsize=14&hidenavigation=1&theme=dark"
                 style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden; padding:3em"
                 title="Blogr Landing Page"

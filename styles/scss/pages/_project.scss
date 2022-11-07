@@ -4,6 +4,7 @@
 // Landing
 
 .proj-landing {
+    padding-top: 70px;
     min-height: 100vh;
     gap: 2em;
     h1 {
@@ -44,25 +45,4 @@
         color: #000;
     }
 }
-
-// Info 
-
-.info {
-    height: max-content;
-    padding: 2em 1em;
-    margin-bottom: 3em;
-    h4 {
-        font-size: $small;
-        font-weight: $xBold;
-        text-transform: uppercase;
-    }
-    .is-flex {
-        flex-direction: column;
-        gap: 2em;
-        div {
-            display: flex;
-            flex-direction: column;
-            gap: 1em;
-        }
-    }
-}
+ 

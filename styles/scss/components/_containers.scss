@@ -3,22 +3,22 @@
 body {
     background-color: $white;
     font-family: $fontFam;
+    padding: 0 1em;
     main {
         overflow: hidden;
     }
 }
 
-.home-landing, .projects, .about, .proj-landing, .skills, .overview, .more-projects {
+.home-landing, .projects, .about, .proj-landing {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 0 1em;
     margin-right: auto;
     margin-left: auto;
 }
 
 .nav-container {
-    max-width: 1140px;
+    max-width: 1280px;
     margin: 0 auto;
     display: flex;
 }

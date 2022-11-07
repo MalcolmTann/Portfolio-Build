@@ -442,12 +442,6 @@ footer .nav-container p {
   background: rgba(255, 255, 255, 0);
 }
 
-.nav-container {
-  max-width: 1140px;
-  margin: 0 auto;
-  display: flex;
-}
-
 .gn {
   position: absolute;
   top: 50px;
@@ -502,22 +496,22 @@ footer .nav-container p {
 body {
   background-color: #fff;
   font-family: "Poppins";
+  padding: 0 1em;
 }
 body main {
   overflow: hidden;
 }
 
-.home-landing, .projects, .about, .proj-landing, .skills, .overview, .more-projects {
+.home-landing, .projects, .about, .proj-landing {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 0 1em;
   margin-right: auto;
   margin-left: auto;
 }
 
 .nav-container {
-  max-width: 1140px;
+  max-width: 1280px;
   margin: 0 auto;
   display: flex;
 }
@@ -544,11 +538,10 @@ body main {
 }
 
 .home-landing {
-  height: 90vh;
+  min-height: 90vh;
   gap: 1em;
   position: relative;
   line-height: 1.4;
-  padding: 1em;
 }
 .home-landing .btn {
   margin-top: 2em;
@@ -665,6 +658,7 @@ body main {
 }
 
 .proj-landing {
+  padding-top: 70px;
   min-height: 100vh;
   gap: 2em;
 }
@@ -706,29 +700,9 @@ body main {
   color: #000;
 }
 
-.info {
-  height: max-content;
-  padding: 2em 1em;
-  margin-bottom: 3em;
-}
-.info h4 {
-  font-size: 1rem;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-.info .is-flex {
-  flex-direction: column;
-  gap: 2em;
-}
-.info .is-flex div {
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-}
-
 @media (min-width: 320px) {
   .proj-landing {
-    height: 90vh;
+    min-height: 90vh;
   }
   .btn-group.is-flex {
     flex-direction: row;
@@ -760,10 +734,6 @@ body main {
   }
   .about .col-2.is-flex {
     gap: 2em;
-  }
-  .proj-landing img {
-    width: 75%;
-    margin: 0 auto;
   }
 }
 @media (min-width: 576px) {
@@ -808,15 +778,6 @@ body main {
     min-height: 100vh;
     gap: 2.5em;
   }
-  .info {
-    margin: 0 auto 3em auto;
-    padding: 2em 1em;
-  }
-  .info .is-flex {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
   footer .nav-container {
     flex-direction: row-reverse;
     align-items: center;
@@ -828,6 +789,12 @@ body main {
   }
 }
 @media (min-width: 768px) {
+  header {
+    padding: 1em 2em;
+  }
+  body {
+    padding: 0 2em;
+  }
   .nav-container {
     align-items: center;
   }
@@ -936,9 +903,6 @@ body main {
   .btn-group.is-flex {
     margin-top: 3em;
   }
-  .info .is-flex {
-    justify-content: space-around;
-  }
 }
 @media (min-width: 992px) {
   header h2:hover {
@@ -1020,8 +984,14 @@ body main {
   }
 }
 @media (min-width: 1280px) {
+  header {
+    padding: 1em 3em;
+  }
+  body {
+    padding: 0 3em;
+  }
   .home-landing, .projects, .about, .proj-landing, .info, .overview, .more-projects {
-    max-width: 1180px;
+    max-width: 1280px;
   }
   .home-landing h1 {
     font-size: 3.5rem;

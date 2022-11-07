@@ -2,8 +2,16 @@
 
 @media (min-width: 1280px) {
     
+    header {
+        padding: 1em 3em;
+    }
+
+    body {
+        padding: 0 3em;
+    }
+
     .home-landing, .projects, .about, .proj-landing, .info, .overview, .more-projects {
-       max-width: 1180px;
+       max-width: 1280px;
     }
 
     .home-landing {

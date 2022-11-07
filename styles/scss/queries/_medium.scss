@@ -3,6 +3,14 @@
     
 @media (min-width: 768px) {
 
+    header {
+        padding: 1em 2em;
+    }
+
+    body {
+        padding: 0 2em;
+    }
+
     .nav-container {
         align-items: center;
     }
@@ -120,11 +128,5 @@
 
     .btn-group.is-flex {
         margin-top: 3em;
-    }
-
-    .info {
-        .is-flex {
-            justify-content: space-around;
-        }
     }
 }

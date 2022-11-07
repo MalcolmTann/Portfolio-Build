@@ -4,11 +4,10 @@
 // Landing
 
 .home-landing {
-    height: 90vh;
+    min-height: 90vh;
     gap: 1em;
     position: relative;
     line-height: 1.4;
-    padding: 1em;
     .btn {
         margin-top: 2em;
     }
