@@ -1,10 +1,6 @@
 @use '../utilities' as *;
 
 @media (min-width: 320px) {
-    
-    .home-landing, .projects, .about, .proj-landing, .info {
-        max-width: 450px;
-    }
 
     .proj-landing {
         height: 90vh;

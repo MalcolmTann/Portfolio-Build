@@ -52,8 +52,8 @@
 }
 
 .artifact {
-    background-color: rgb(249, 249, 249);
-    padding: 1em;
+    background-color: rgb(251, 251, 251);
+    padding: 2em 1em;
     border-radius: 8px;
     margin-bottom: 5em;
     a {
@@ -97,7 +97,7 @@
 .about {
     height: max-content;
     gap: 3em;
-    margin: 4em auto;
+    margin-bottom: 4em;
     .col-1 {
         text-align: center;
         img {
@@ -112,9 +112,9 @@
             display: block;
             position: absolute;
             top: -3px;
-            left: -6px;
+            left: 8px;
             height: 103%;
-            width: 105%;
+            width: 95%;
             border-radius: 50% 25%;
             background-color: #9fd3e8;
             opacity: 0.2;

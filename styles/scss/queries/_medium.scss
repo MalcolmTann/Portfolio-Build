@@ -44,10 +44,6 @@
         border-left: none;
     }
 
-    .home-landing, .projects, .about, .proj-landing, .info {
-        max-width: 740px;
-    }
-
     .home-landing {
         margin-top: 2em;
         h1 {
@@ -88,7 +84,7 @@
             flex-basis: 50%;
             max-width: 50%;
             .desc {
-                margin-bottom: 4em;
+                margin-bottom: 3em;
             }
         }
     }
@@ -112,7 +108,7 @@
     }
 
     .proj-landing {
-        height: 100vh;
+        min-height: 90vh;
         flex-direction: row-reverse;
         justify-content: center;
         align-items: center;

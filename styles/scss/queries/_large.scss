@@ -17,10 +17,6 @@
         }
     }
     
-    .home-landing, .projects, .about, .proj-landing, .info {
-        max-width: 970px;
-    }
-    
     .btn:hover {
         color: #fff;
         transform: translateY(-4px);
@@ -31,7 +27,7 @@
             font-size: 1.2rem;
         }
         .btn {
-            margin-top: 3em;
+            margin-top: 3.5em;
             font-size: 1.1rem;
         }
         &:before {
@@ -51,12 +47,6 @@
         .col-1 {
             flex-basis: 55%;
             max-width: 55%;
-            img {
-                transition: .3s ease-in;
-                &:hover {
-                    transform: scale(1.02);
-                }
-            }
         }
         .col-2 {
             flex-basis: 45%;

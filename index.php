@@ -38,13 +38,10 @@
                         <div class="desc">
                             <p>Landing Page Design</p>
                             <h3>Blogr</h3>
-                            <ul>
-                                <li>Bootstrap</li>
-                                <li>CSS/SCSS</li>
-                                <li>HTML</li>
-                            </ul>
                         </div>
-                        <button class="btn">View Project</button>
+                        <a href="projects/blogr.php" title="View Project">
+                            <button class="btn">View Project</button>
+                        </a>
                     </div>
                 </div>
                 <div class="artifact" data-aos="fade-up" data-aos-duration="1000">
@@ -57,13 +54,10 @@
                         <div class="desc">
                             <p>Task Manager</p>
                             <h3>Todo App</h3>
-                            <ul>
-                                <li>JavaScript</li>
-                                <li>CSS</li>
-                                <li>HTML</li>
-                            </ul>
                         </div>
-                        <button class="btn">View Project</button>
+                        <a href="#" title="View Project">
+                            <button class="btn">View Project</button>
+                        </a>
                     </div>
                 </div>
                 <div class="artifact" data-aos="fade-up" data-aos-duration="1000">
@@ -76,9 +70,6 @@
                         <div class="desc">
                             <p>/ Health & Nutrition App</p>
                             <h3>NUTTRI</h3>
-                            <ul>
-                                <li>React.Js</li>
-                            </ul>
                         </div>
                     </div>
                 </div>
@@ -88,7 +79,8 @@
                     <img src="images/portrait.jpg" alt="Malcolm Tan">
                 </div>
                 <div class="is-flex col-2" data-aos="fade-left" data-aos-duration="950">
-                    <p>I code because I love the process of turning web ideas into functional applications and taking on challenges that allow me to exercise my creativity. Curiosity drives me to be a proactive and passionate learner, always seeking to acquire new skills, technical knowledge and experiences in pursuit of continuous slef-improvement and growth. During my free time, I enjoy film-photography, music, sports, and spending quality time with friends and loved ones.</p>
+                    <p>I code because I love the process of turning web ideas into functional applications and taking on challenges that allow me to exercise my creativity. Curiosity drives me to be a proactive and passionate learner, always seeking to acquire new skills, technical knowledge and experiences in pursuit of continuous slef-improvement and growth.</p>
+                    <p>When I'm not coding, I enjoy film-photography, music, sports, and spending quality time with friends and family.</p>
                     <button class="btn">View Resume</button>
                 </div>
             </section> 

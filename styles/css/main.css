@@ -590,8 +590,8 @@ body main {
 }
 
 .artifact {
-  background-color: rgb(249, 249, 249);
-  padding: 1em;
+  background-color: rgb(251, 251, 251);
+  padding: 2em 1em;
   border-radius: 8px;
   margin-bottom: 5em;
 }
@@ -631,7 +631,7 @@ body main {
 .about {
   height: max-content;
   gap: 3em;
-  margin: 4em auto;
+  margin-bottom: 4em;
 }
 .about .col-1 {
   text-align: center;
@@ -648,9 +648,9 @@ body main {
   display: block;
   position: absolute;
   top: -3px;
-  left: -6px;
+  left: 8px;
   height: 103%;
-  width: 105%;
+  width: 95%;
   border-radius: 50% 25%;
   background-color: #9fd3e8;
   opacity: 0.2;
@@ -727,9 +727,6 @@ body main {
 }
 
 @media (min-width: 320px) {
-  .home-landing, .projects, .about, .proj-landing, .info {
-    max-width: 450px;
-  }
   .proj-landing {
     height: 90vh;
   }
@@ -770,12 +767,6 @@ body main {
   }
 }
 @media (min-width: 576px) {
-  header {
-    padding: 1em 1.7em;
-  }
-  .home-landing, .projects, .about, .proj-landing, .info {
-    max-width: 550px;
-  }
   .home-landing h1 {
     font-size: 2.5rem;
   }
@@ -875,9 +866,6 @@ body main {
     background-color: #fff;
     border-left: none;
   }
-  .home-landing, .projects, .about, .proj-landing, .info {
-    max-width: 740px;
-  }
   .home-landing {
     margin-top: 2em;
   }
@@ -918,7 +906,7 @@ body main {
     max-width: 50%;
   }
   .artifact .col-2 .desc {
-    margin-bottom: 4em;
+    margin-bottom: 3em;
   }
   .about {
     margin-top: 9em;
@@ -936,7 +924,7 @@ body main {
     width: 70%;
   }
   .proj-landing {
-    height: 100vh;
+    min-height: 90vh;
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
@@ -962,9 +950,6 @@ body main {
   .gn img:hover {
     transform: translateY(-4px);
   }
-  .home-landing, .projects, .about, .proj-landing, .info {
-    max-width: 970px;
-  }
   .btn:hover {
     color: #fff;
     transform: translateY(-4px);
@@ -973,7 +958,7 @@ body main {
     font-size: 1.2rem;
   }
   .home-landing .btn {
-    margin-top: 3em;
+    margin-top: 3.5em;
     font-size: 1.1rem;
   }
   .home-landing:before {
@@ -990,12 +975,6 @@ body main {
   .artifact .col-1 {
     flex-basis: 55%;
     max-width: 55%;
-  }
-  .artifact .col-1 img {
-    transition: 0.3s ease-in;
-  }
-  .artifact .col-1 img:hover {
-    transform: scale(1.02);
   }
   .artifact .col-2 {
     flex-basis: 45%;
@@ -1042,7 +1021,7 @@ body main {
 }
 @media (min-width: 1280px) {
   .home-landing, .projects, .about, .proj-landing, .info, .overview, .more-projects {
-    max-width: 1170px;
+    max-width: 1180px;
   }
   .home-landing h1 {
     font-size: 3.5rem;
@@ -1086,9 +1065,6 @@ body main {
   .proj-landing .col-2 {
     flex-basis: 40%;
     min-width: 40%;
-  }
-  .proj-landing .col-2 p:first-of-type {
-    font-size: 1.2rem;
   }
   .proj-landing .col-2 .btn {
     margin-top: 3em;
