@@ -1,22 +1,20 @@
 
 @media (min-width: 450px) {
     
-   .home-landing {
-        &:before {
-            height: 9rem;
-            width: 9rem;
-            top: 80%;
+    header {
+        padding: 1em 1.5em;
+    }
+
+    body {
+        padding: 0 1.5em;
+    }
+
+    .home-landing {
+        height: 700px;
+        img {
+            width: 70%;
         }
-        &:after {
-            height: 10rem;
-            width: 10rem;
-            top: 69%;
-            right: 15%;
-        }
-        h1 {
-            width: 100%;
-        }
-    } 
+    }
 
     .about {
         .col-1 {
@@ -25,7 +23,7 @@
                 width: 64%;
             }
             img {
-                width: 60%;
+                width: 18em;
             }
         }
         .col-2.is-flex {

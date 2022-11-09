@@ -62,7 +62,7 @@ const menuSlider = () => {
 }
 menuSlider();
 
-// Shows the navigation depending on viewport width
+// Show navigation depending on viewport width
 function showMenu(){
     // greater than 768px, show navbar
     if(window.innerWidth >= 768) {
@@ -83,3 +83,34 @@ function showMenu(){
 showMenu();
 window.addEventListener('resize', showMenu);
 
+
+
+// Smooth Scroll
+$(document).ready(function() {
+    $('a[href*=#]').bind('click', function(e) {
+            e.preventDefault(); // prevent hard jump, the default behavior
+
+            var target = $(this).attr("href"); // Set the target as variable
+
+            // perform animated scrolling by getting top-position of target-element and set it as scroll target
+            $('html, body').stop().animate({
+                    scrollTop: $(target).offset().top
+            }, 600, function() {
+                    location.hash = target; //attach the hash (#jumptarget) to the pageurl
+            });
+
+            return false;
+    });
+});
+
+$(window).scroll(function() {
+    var scrollDistance = $(window).scrollTop();
+
+    // Assign active class to nav links while scolling
+    $('.section').each(function(i) {
+            if ($(this).position().top <= scrollDistance) {
+                    $('.gn a.active').removeClass('active');
+                    $('.gn a').eq(i).addClass('active');
+            }
+    });
+}).scroll();

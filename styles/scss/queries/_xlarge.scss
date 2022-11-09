@@ -1,6 +1,6 @@
 @use '../utilities' as *;
 
-@media (min-width: 1280px) {
+@media (min-width: 1200px) {
     
     header {
         padding: 1em 3em;
@@ -16,18 +16,11 @@
 
     .home-landing {
         h1 {
-            font-size: 3.5rem;
+            font-size: 4.5rem;
+            max-width: 700px;
         }
-        &:before {
-            height: 15rem;
-            width: 15rem;
-            top: 65%;
-        }
-        &:after {
-            height: 16rem;
-            width: 16rem;
-            top: 47%;
-            right: 9%;
+        img {
+            padding-top: 5em;
         }
     }
 
@@ -52,7 +45,7 @@
                 width: 72%; 
             }
             img {
-                width: 65%;
+                width: 25em;
             }
         }
         .col-2 {

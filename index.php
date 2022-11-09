@@ -10,7 +10,7 @@
         <meta name="keywords" content="Malcolm Tan, Malcolm Tan portfolio, Front-end Developer, Web Devloper, BCIT New Media Web Design and Development, Vancouver BC">
         <meta name="author" content="Malcolm Tan">
         <meta property="og:type" content="website">
-        <meta property="og:url" content="https://malcolmtan24.com">
+        <meta property="og:url" content="https://malcolm-tan.com">
         <meta property="og:title" content="Malcolm Tan | Front-End Devloper">
         <meta property="og:description" content="Malcolm Tan | Turning Ideas Into Reality Through Code.">
         <?php include('partials/links.php'); ?>
@@ -18,16 +18,17 @@
     <body>
         <?php include('partials/header.php'); ?>
         <main>
-            <section class="home-landing">
+            <section id="landing" class="home-landing">
                 <p data-aos="fade" data-aos-delay="500" data-aos-duration="2000">Front-end Developer</p>
-                <div>
-                    <h1 data-aos="fade" data-aos-duration="2000">Turning ideas into reality through code</h1>
+                <div class="is-flex">
+                    <h1 data-aos="fade" data-aos-duration="2000">Turning ideas into reality <span>through code</span></h1>
+                    <img src="images/banner.svg" alt="Coding Animation">
                 </div>
                 <a href="#work" data-aos="fade" data-aos-delay="1000" data-aos-duration="2000" title="View Projects" >
                     <button class="btn">See My Projects</button>
                 </a>
             </section>
-            <section id="work" class="projects">
+            <section id="work" class="projects section">
                 <div class="artifact" data-aos="fade-up" data-aos-duration="1000">
                     <div class="col-1">
                         <a href="projects/blogr.php" title="Blogr Landing Page">
@@ -46,7 +47,7 @@
                 </div>
                 <div class="artifact" data-aos="fade-up" data-aos-duration="1000">
                     <div class="col-1">
-                        <a href="#" title="ToDo Task Manager">
+                        <a href="projects/todo.php" title="ToDo Task Manager">
                             <img src="images/todo.png" alt="ToDo App">
                         </a>
                     </div>
@@ -55,7 +56,7 @@
                             <p>Task Manager</p>
                             <h3>Todo App</h3>
                         </div>
-                        <a href="#" title="View Project">
+                        <a href="projects/todo.php" title="View Project">
                             <button class="btn">View Project</button>
                         </a>
                     </div>
@@ -74,14 +75,13 @@
                     </div>
                 </div>
             </section>
-            <section id="about" class="about">
+            <section id="about" class="about section">
                 <div class="col-1" data-aos="fade-right" data-aos-duration="950">
                     <img src="images/portrait.jpg" alt="Malcolm Tan">
                 </div>
                 <div class="is-flex col-2" data-aos="fade-left" data-aos-duration="950">
                     <p>I code because I love the process of turning web ideas into functional applications and taking on challenges that allow me to exercise my creativity. Curiosity drives me to be a proactive and passionate learner, always seeking to acquire new skills, technical knowledge and experiences in pursuit of continuous slef-improvement and growth.</p>
                     <p>When I'm not coding, I enjoy film-photography, music, sports, and spending quality time with friends and family.</p>
-                    <button class="btn">View Resume</button>
                 </div>
             </section> 
         </main> 

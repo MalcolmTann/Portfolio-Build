@@ -4,10 +4,10 @@
         <button title="menu" class="gn-trig" data-open="0">
             <div class="burger"></div>
         </button>
-        <nav class="gn">
+        <nav id="gn" class="gn">
             <ul class="gn-items js-menu-bg">
-                <li><a class="js-menu-item" href="index.php#work" title="Projects">Projects</a></li>
-                <li><a class="js-menu-item" href="index.php#about" title="About">About</a></li>
+                <li><a class="js-menu-item" href="#work" title="Projects">Projects</a></li>
+                <li><a class="js-menu-item" href="#about" title="About">About</a></li>
                 <ul class="is-flex">
                     <li>
                         <a class="js-menu-item" href="mailto:malcolmtan20@gmail.com" title="Email Me">

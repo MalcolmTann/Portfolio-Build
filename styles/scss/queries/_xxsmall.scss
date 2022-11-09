@@ -1,6 +1,10 @@
 @use '../utilities' as *;
 
-@media (min-width: 320px) {
+@media (min-width: 375px) {
+
+    .projects {
+        gap: 4em;
+    }
 
     .proj-landing {
         min-height: 90vh;

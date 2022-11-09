@@ -1,4 +1,11 @@
+@use '../utilities' as *;
+
 a {
     text-decoration: none;
     display: block;
+    transition: .3s;
+}
+
+.active {
+    color: $blue !important;
 }

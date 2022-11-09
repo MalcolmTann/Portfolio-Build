@@ -53,21 +53,11 @@
     }
 
     .home-landing {
-        margin-top: 2em;
         h1 {
-            font-size: 3rem;
-            max-width: 800px;
+            font-size: 3em;
         }
-        &:before {
-            height: 12rem;
-            width: 12rem;
-            top: 75%;
-        }
-        &:after {
-            height: 13rem;
-            width: 13rem;
-            top: 61%;
-            right: 12%;
+        img {
+            max-width: 60%;
         }
     }
     
@@ -81,12 +71,20 @@
         flex-direction: row-reverse;
         align-items: center;
         padding: 1em 0.5em;
+        &:nth-child(2) {
+            flex-direction: row;
+            .col-2 {
+                padding-right: 1.5em;
+                padding-left: 0;
+                text-align: right;
+            }
+        }
         .col-1 {
             flex-basis: 50%;
             max-width: 50%;
-            img {
-                width: 100%;
-            }
+            // img {
+            //     width: 100%;
+            // }
         }
         .col-2 {
             flex-basis: 50%;
@@ -98,16 +96,12 @@
     }
 
     .about {
-        margin-top: 9em;
         .col-1 {
             &:before {
                 top: 2px;
                 left: 28%;
                 height: 100%;
                 width: 44%; 
-            }
-            img {
-                width: 40%; 
             }
         }
         .col-2 {
