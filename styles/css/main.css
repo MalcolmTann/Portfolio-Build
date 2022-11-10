@@ -562,14 +562,8 @@ body main {
   line-height: 1.4;
   text-align: center;
 }
-.home-landing h1 {
-  font-size: 2rem;
-}
 .home-landing p {
   color: rgb(160, 160, 160);
-}
-.home-landing img {
-  margin: 0 auto;
 }
 .home-landing .btn {
   margin-top: 2em;
@@ -577,6 +571,12 @@ body main {
 .home-landing .is-flex {
   flex-direction: column;
   gap: 1.5em;
+}
+.home-landing .is-flex h1 {
+  font-size: 2rem;
+}
+.home-landing .is-flex img {
+  margin: 0 auto;
 }
 
 .projects {
@@ -714,7 +714,7 @@ body main {
   .home-landing {
     height: 700px;
   }
-  .home-landing img {
+  .home-landing .is-flex img {
     width: 70%;
   }
   .about .col-1:before {
@@ -736,11 +736,11 @@ body main {
   .home-landing {
     height: 750px;
   }
-  .home-landing h1 {
-    font-size: 2.5rem;
-  }
   .home-landing .is-flex {
     gap: 2em;
+  }
+  .home-landing .is-flex h1 {
+    font-size: 2.5rem;
   }
   .projects {
     padding-top: 5em;
@@ -767,7 +767,6 @@ body main {
     gap: 2.5em;
   }
   footer .nav-container {
-    height: 15em;
     align-items: center;
     justify-content: center;
   }
@@ -818,10 +817,10 @@ body main {
     background-color: #fff;
     border-left: none;
   }
-  .home-landing h1 {
+  .home-landing .is-flex h1 {
     font-size: 3em;
   }
-  .home-landing img {
+  .home-landing .is-flex img {
     max-width: 60%;
   }
   .projects {
@@ -896,27 +895,29 @@ body main {
   .home-landing {
     text-align: left;
   }
-  .home-landing h1 {
-    font-size: 3.5rem;
-    line-height: 1.3;
-    max-width: 550px;
-  }
   .home-landing p {
     font-size: 1.2rem;
   }
   .home-landing .btn {
     font-size: 1.1rem;
   }
-  .home-landing img {
-    padding-top: 4.5em;
-    width: 45%;
-    margin-left: 0;
-    margin-right: 0;
-  }
   .home-landing .is-flex {
     flex-direction: row;
     justify-content: space-between;
     gap: 0;
+  }
+  .home-landing .is-flex h1 {
+    font-size: 3.5rem;
+    line-height: 1.3;
+    flex-basis: 60%;
+    max-width: 60%;
+  }
+  .home-landing .is-flex img {
+    padding-top: 4.5em;
+    margin-left: 0;
+    margin-right: 0;
+    flex-basis: 45%;
+    max-width: 45%;
   }
   .artifact .col-1 {
     flex-basis: 55%;
@@ -969,14 +970,13 @@ body main {
   }
   .home-landing, .projects, .about, .proj-landing, .info, .overview, .more-projects {
     max-width: 1280px;
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 3em;
+    padding-right: 3em;
   }
-  .home-landing h1 {
-    font-size: 4.5rem;
-    max-width: 700px;
+  .home-landing .is-flex h1 {
+    font-size: 4.2rem;
   }
-  .home-landing img {
+  .home-landing .is-flex img {
     padding-top: 5em;
   }
   .projects {

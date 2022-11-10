@@ -9,14 +9,8 @@
     gap: 1em;
     line-height: 1.4;
     text-align: center;
-    h1 {
-        font-size: $lrg;
-    }
     p {
         color: rgb(160, 160, 160);
-    }
-    img {
-        margin: 0 auto;
     }
     .btn {
         margin-top: 2em;
@@ -24,6 +18,12 @@
     .is-flex {
         flex-direction: column;
         gap: 1.5em;
+        h1 {
+            font-size: $lrg;
+        }
+        img {
+            margin: 0 auto;
+        }
     }
 }
 

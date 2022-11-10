@@ -51,11 +51,13 @@
     }
 
     .home-landing {
-        h1 {
-            font-size: 3em;
-        }
-        img {
-            max-width: 60%;
+        .is-flex {
+            h1 {
+                font-size: 3em;
+            }
+            img {
+                max-width: 60%;
+            }
         }
     }
     

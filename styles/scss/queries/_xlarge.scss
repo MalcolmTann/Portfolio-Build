@@ -8,17 +8,18 @@
 
     .home-landing, .projects, .about, .proj-landing, .info, .overview, .more-projects {
        max-width: 1280px;
-       padding-left: 0;
-       padding-right: 0;
+       padding-left: 3em;
+       padding-right: 3em;
     }
 
     .home-landing {
-        h1 {
-            font-size: 4.5rem;
-            max-width: 700px;
-        }
-        img {
-            padding-top: 5em;
+        .is-flex {
+            h1 {
+                font-size: 4.2rem;
+            }
+            img {
+                padding-top: 5em;
+            }
         }
     }
 
