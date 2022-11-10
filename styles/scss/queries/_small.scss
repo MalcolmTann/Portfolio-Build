@@ -2,6 +2,13 @@
 
 @media (min-width: 576px) {
 
+    .gn {
+        img {
+            height: 1.4em;
+            padding: 0 0.5em;
+        }
+    }
+
     .home-landing {
         height: 750px;
         h1 {
@@ -48,10 +55,9 @@
 
     footer {
         .nav-container {
-            flex-direction: row-reverse;
+            height: 15em;
             align-items: center;
-            justify-content: space-around;
-            padding: 1em; 
+            justify-content: center;
             p {
                 font-size: $small;
             }

@@ -24,8 +24,8 @@
                     <h1 data-aos="fade" data-aos-duration="2000">Turning ideas into reality <span>through code</span></h1>
                     <img src="images/banner.svg" alt="Coding Animation">
                 </div>
-                <a href="#work" data-aos="fade" data-aos-delay="1000" data-aos-duration="2000" title="View Projects" >
-                    <button class="btn">See My Projects</button>
+                <a href="#connect" data-aos="fade" data-aos-delay="1000" data-aos-duration="2000" title="View Projects" >
+                    <button class="btn">Connect with me</button>
                 </a>
             </section>
             <section id="work" class="projects section">

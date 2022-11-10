@@ -1,6 +1,8 @@
-<footer>
+<footer id="connect">
     <div class="nav-container">
-        <div class="is-flex">
+        <div>
+            <h2>Connect with me</h2>
+            <div class="is-flex">
             <a href="mailto:malcolmtan20@gmai.com" title="Email Me">
                 <img src="../images/email.svg" alt="Email">
             </a>
@@ -11,6 +13,7 @@
                 <img src="../images/linkedin.svg" alt="Linkedin Logo">
             </a>
         </div>
+    </div>
         <p>Built by Malcolm Tan</p>
     </div>
 </footer>

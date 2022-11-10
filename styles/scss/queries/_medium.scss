@@ -7,13 +7,11 @@
         padding: 1em 2em;
     }
 
-    body {
-        padding: 0 2em;
+    .home-landing, .projects, .about {
+        padding-left:  2em;
+        padding-right: 2em;
     }
 
-    .nav-container {
-        align-items: center;
-    }
     .gn {
         display: block;
         position: static;
@@ -123,4 +121,5 @@
     .btn-group.is-flex {
         margin-top: 3em;
     }
+
 }
