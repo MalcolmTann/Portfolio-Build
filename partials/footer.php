@@ -3,7 +3,7 @@
         <div>
             <h2>Connect with me</h2>
             <div class="is-flex">
-            <a href="mailto:malcolmtan20@gmai.com" title="Email Me">
+            <a href="mailto:malcolmtan20@gmai.com" title="Email">
                 <img src="../images/email.svg" alt="Email">
             </a>
             <a href="https://github.com/MalcolmTann" title="Github" target="_blank">

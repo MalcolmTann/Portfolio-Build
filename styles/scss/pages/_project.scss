@@ -4,8 +4,8 @@
 // Landing
 
 .proj-landing {
-    padding-top: 70px;
-    min-height: 100vh;
+    margin-top: 5em;
+    height: 750px;
     gap: 2em;
     h1 {
         font-size: $lrg;
@@ -35,7 +35,7 @@
 .btn-group.is-flex {
     flex-direction: column;
     gap: 1em;
-    margin-top: 2em;
+    margin: 2em 0 6em 0;
     .filled {
         padding: 0.5em 1.8em;
     }
@@ -44,5 +44,9 @@
         border: 1px solid #9fd3e8;
         color: #000;
     }
+}
+
+.sb {
+    display: none;
 }
  

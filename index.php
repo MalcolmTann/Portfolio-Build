@@ -40,8 +40,8 @@
                             <p>Landing Page Design</p>
                             <h3>Blogr</h3>
                         </div>
-                        <a href="projects/blogr.php" title="View Project">
-                            <button class="btn">View Project</button>
+                        <a href="projects/blogr.php" title="View Blogr">
+                            <button class="btn">View Details</button>
                         </a>
                     </div>
                 </div>
@@ -56,12 +56,12 @@
                             <p>Task Manager</p>
                             <h3>Todo App</h3>
                         </div>
-                        <a href="projects/todo.php" title="View Project">
-                            <button class="btn">View Project</button>
+                        <a href="projects/todo.php" title="View Todo App">
+                            <button class="btn">View Details</button>
                         </a>
                     </div>
                 </div>
-                <div class="artifact" data-aos="fade-up" data-aos-duration="1000">
+                <!-- <div class="artifact" data-aos="fade-up" data-aos-duration="1000">
                     <div class="col-1">
                         <a href="#" title="NUTTRI Health App">
                             <img src="" alt="Coming Soon">
@@ -72,12 +72,15 @@
                             <p>/ Health & Nutrition App</p>
                             <h3>NUTTRI</h3>
                         </div>
+                        <a href="projects/todo.php" title="View Project">
+                            <button class="btn">View Details</button>
+                        </a>
                     </div>
-                </div>
+                </div> -->
             </section>
             <section id="about" class="about section">
                 <div class="col-1" data-aos="fade-right" data-aos-duration="950">
-                    <img src="images/portrait.jpg" alt="Malcolm Tan">
+                    <img src="images/portrait01.jpg" alt="Malcolm Tan">
                 </div>
                 <div class="is-flex col-2" data-aos="fade-left" data-aos-duration="950">
                     <p>I code because I love the process of turning web ideas into functional applications and taking on challenges that allow me to exercise my creativity. Curiosity drives me to be a proactive and passionate learner, always seeking to acquire new skills, technical knowledge and experiences in pursuit of continuous slef-improvement and growth.</p>
