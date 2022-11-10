@@ -788,7 +788,7 @@ body main {
   header {
     padding: 1em 2em;
   }
-  .home-landing, .projects, .about {
+  .home-landing, .projects, .about, .proj-landing, .sb {
     padding-left: 2em;
     padding-right: 2em;
   }
@@ -844,20 +844,6 @@ body main {
   }
   .about .col-2 {
     width: 70%;
-  }
-  .proj-landing {
-    height: 650px;
-    flex-direction: row-reverse;
-    justify-content: center;
-    align-items: center;
-  }
-  .proj-landing img {
-    flex-basis: 55%;
-    max-width: 55%;
-  }
-  .btn-group.is-flex {
-    margin-top: 3em;
-    margin-bottom: 0;
   }
   .sb {
     display: block;
@@ -963,6 +949,7 @@ body main {
     max-width: 40%;
   }
   .proj-landing {
+    height: 700px;
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
@@ -970,6 +957,9 @@ body main {
   .proj-landing img {
     flex-basis: 55%;
     max-width: 55%;
+  }
+  .btn-group.is-flex {
+    margin-bottom: 0;
   }
   .btn-group.is-flex .outline:hover {
     color: #9fd3e8;

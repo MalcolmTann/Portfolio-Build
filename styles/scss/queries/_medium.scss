@@ -7,7 +7,7 @@
         padding: 1em 2em;
     }
 
-    .home-landing, .projects, .about {
+    .home-landing, .projects, .about, .proj-landing, .sb {
         padding-left:  2em;
         padding-right: 2em;
     }
@@ -83,21 +83,21 @@
         }
     }
 
-    .proj-landing {
-        height: 650px;
-        flex-direction: row-reverse;
-        justify-content: center;
-        align-items: center;
-        img {
-            flex-basis: 55%;
-            max-width: 55%;
-        } 
-    }
+    // .proj-landing {
+    //     height: 650px;
+    //     flex-direction: row-reverse;
+    //     justify-content: center;
+    //     align-items: center;
+    //     img {
+    //         flex-basis: 55%;
+    //         max-width: 55%;
+    //     } 
+    // }
 
-    .btn-group.is-flex {
-        margin-top: 3em;
-        margin-bottom: 0;
-    }
+    // .btn-group.is-flex {
+    //     margin-top: 3em;
+    //     margin-bottom: 0;
+    // }
 
     .sb {
         display: block;

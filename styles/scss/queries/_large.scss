@@ -110,6 +110,7 @@
     }
 
     .proj-landing {
+        height: 700px;
         flex-direction: row-reverse;
         justify-content: center;
         align-items: center;
@@ -120,6 +121,7 @@
     }
 
     .btn-group.is-flex {
+        margin-bottom: 0;
         .outline {
             &:hover {
                 color: $blue;
