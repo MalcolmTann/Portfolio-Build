@@ -12,6 +12,10 @@
         padding-right: 2em;
     }
 
+    .nav-container {
+        align-items: center;
+    }
+
     .gn {
         display: block;
         position: static;
@@ -43,7 +47,7 @@
     .gn-items {
         flex-direction: row;
         position: static;
-        height: 4vh;
+        height: 3vh;
         justify-content: flex-end;
         background-color: #fff;
         border-left: none;

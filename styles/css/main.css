@@ -598,15 +598,16 @@ main {
 
 .artifact {
   background-color: rgb(251, 251, 251);
-  padding: 2em 1em;
+  padding: 2em;
   border-radius: 8px;
+  text-align: center;
 }
 .artifact img {
   width: 100%;
   border-radius: 5px;
 }
 .artifact .col-2 {
-  margin-top: 1.5em;
+  margin-top: 2em;
 }
 .artifact .col-2 .desc {
   margin-bottom: 3em;
@@ -750,9 +751,6 @@ main {
   .artifact .col-1 {
     text-align: center;
   }
-  .artifact .col-2 {
-    padding-left: 1.5em;
-  }
   .artifact .col-2 .desc h3 {
     font-size: 2.5rem;
   }
@@ -779,6 +777,9 @@ main {
   .home-landing, .projects, .about, .proj-landing, .sb {
     padding-left: 2em;
     padding-right: 2em;
+  }
+  .nav-container {
+    align-items: center;
   }
   .gn {
     display: block;
@@ -809,7 +810,7 @@ main {
   .gn-items {
     flex-direction: row;
     position: static;
-    height: 4vh;
+    height: 3vh;
     justify-content: flex-end;
     background-color: #fff;
     border-left: none;
@@ -892,15 +893,6 @@ main {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    padding: 1em 0.5em;
-  }
-  .artifact:nth-child(2) {
-    flex-direction: row;
-  }
-  .artifact:nth-child(2) .col-2 {
-    padding-right: 1.5em;
-    padding-left: 0;
-    text-align: right;
   }
   .artifact .col-1 {
     flex-basis: 55%;
@@ -909,12 +901,22 @@ main {
   .artifact .col-2 {
     flex-basis: 45%;
     max-width: 45%;
+    text-align: left;
+    padding-left: 6em;
   }
   .artifact .col-2 .desc {
     margin-bottom: 3em;
   }
   .artifact .col-2 .desc .title {
     font-size: 3rem;
+  }
+  .artifact:nth-child(2) {
+    flex-direction: row;
+  }
+  .artifact:nth-child(2) .col-2 {
+    padding-right: 6em;
+    padding-left: 0;
+    text-align: right;
   }
   .about {
     min-height: 70vh;
@@ -927,7 +929,7 @@ main {
     max-width: 50%;
   }
   .about .col-1 img {
-    width: 20em;
+    width: 22em;
   }
   .about .col-2 {
     flex-basis: 40%;
