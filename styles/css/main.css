@@ -364,6 +364,7 @@ span {
 a {
   text-decoration: none;
   transition: 0.3s;
+  display: block;
 }
 
 header {
