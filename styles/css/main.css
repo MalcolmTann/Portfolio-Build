@@ -363,12 +363,7 @@ span {
 
 a {
   text-decoration: none;
-  display: block;
   transition: 0.3s;
-}
-
-.active {
-  color: #9fd3e8 !important;
 }
 
 header {
@@ -414,6 +409,7 @@ footer .nav-container p {
   color: rgb(160, 160, 160);
 }
 footer .nav-container .is-flex {
+  flex-direction: row-reverse;
   margin-top: 1em;
   gap: 2em;
 }
@@ -516,8 +512,10 @@ body {
   background-color: #fff;
   font-family: "Poppins";
 }
-body main {
+
+main {
   overflow: hidden;
+  min-height: calc(100vh - 240px);
 }
 
 .home-landing, .projects, .about, .proj-landing, .sandbox {
@@ -570,6 +568,9 @@ body main {
 .home-landing p {
   color: rgb(160, 160, 160);
 }
+.home-landing a {
+  margin: 0 auto;
+}
 .home-landing .btn {
   margin-top: 2em;
 }
@@ -580,8 +581,12 @@ body main {
 .home-landing .is-flex h1 {
   font-size: 2rem;
 }
+.home-landing .is-flex h1 br {
+  display: none;
+}
 .home-landing .is-flex img {
   margin: 0 auto;
+  cursor: default;
 }
 
 .projects {
@@ -631,19 +636,6 @@ body main {
   width: 14em;
   border-radius: 50%;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
-}
-.about .col-1:before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: -3px;
-  left: 2.5%;
-  height: 103%;
-  width: 95%;
-  border-radius: 50% 25%;
-  background-color: #9fd3e8;
-  opacity: 0.2;
-  z-index: -1;
 }
 .about .col-2.is-flex {
   flex-direction: column;
@@ -724,10 +716,6 @@ body main {
   .home-landing .is-flex img {
     width: 70%;
   }
-  .about .col-1:before {
-    left: 18%;
-    width: 64%;
-  }
   .about .col-1 img {
     width: 18em;
   }
@@ -801,7 +789,6 @@ body main {
     display: none;
   }
   .gn a {
-    margin-top: 0;
     padding: 0em 1.6em;
     font-size: 1rem;
     font-weight: 300;
@@ -822,7 +809,7 @@ body main {
   .gn-items {
     flex-direction: row;
     position: static;
-    height: 5vh;
+    height: 4vh;
     justify-content: flex-end;
     background-color: #fff;
     border-left: none;
@@ -835,12 +822,6 @@ body main {
   }
   .artifact .col-1 img {
     max-height: 40%;
-  }
-  .about .col-1:before {
-    top: 2px;
-    left: 28%;
-    height: 100%;
-    width: 44%;
   }
   .about .col-2 {
     width: 70%;
@@ -875,6 +856,10 @@ body main {
   .home-landing p {
     font-size: 1.2rem;
   }
+  .home-landing a {
+    margin: 0;
+    margin-right: auto;
+  }
   .home-landing .btn {
     font-size: 1.1rem;
   }
@@ -886,8 +871,11 @@ body main {
   .home-landing .is-flex h1 {
     font-size: 3.5rem;
     line-height: 1.3;
-    flex-basis: 60%;
-    max-width: 60%;
+    flex-basis: 55%;
+    max-width: 55%;
+  }
+  .home-landing .is-flex h1 br {
+    display: block;
   }
   .home-landing .is-flex img {
     padding-top: 4.5em;
@@ -937,10 +925,6 @@ body main {
     flex-basis: 50%;
     max-width: 50%;
   }
-  .about .col-1:before {
-    left: 10%;
-    width: 80%;
-  }
   .about .col-1 img {
     width: 20em;
   }
@@ -980,24 +964,14 @@ body main {
   .home-landing .is-flex h1 {
     font-size: 4.2rem;
   }
-  .home-landing .is-flex img {
-    padding-top: 5em;
-  }
   .projects {
     gap: 8em;
   }
   .artifact .col-2 .desc h3 {
     font-size: 3em;
   }
-  .about .col-1:before {
-    left: 14%;
-    width: 72%;
-  }
-  .about .col-1 img {
-    width: 25em;
-  }
   .about .col-2 {
-    margin-top: 1em;
+    margin-left: 0;
   }
   .about .col-2 h2 {
     font-size: 2rem;

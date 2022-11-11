@@ -3,9 +3,11 @@
 body {
     background-color: $white;
     font-family: $fontFam;
-    main {
-        overflow: hidden;
-    }
+}
+
+main {
+    overflow: hidden;
+    min-height: calc(100vh - 240px);
 }
 
 .home-landing, .projects, .about, .proj-landing, .sandbox {
@@ -22,3 +24,4 @@ body {
     margin: 0 auto;
     display: flex;
 }
+

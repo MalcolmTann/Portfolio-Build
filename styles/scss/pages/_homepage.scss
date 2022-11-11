@@ -12,6 +12,9 @@
     p {
         color: rgb(160, 160, 160);
     }
+    a {
+        margin: 0 auto;
+    }
     .btn {
         margin-top: 2em;
     }
@@ -20,9 +23,13 @@
         gap: 1.5em;
         h1 {
             font-size: $lrg;
+            br {
+                display: none;
+            }
         }
         img {
             margin: 0 auto;
+            cursor: default;
         }
     }
 }
@@ -35,6 +42,14 @@
     justify-content: space-evenly;
     gap: 3em;
 }
+
+// #work {
+//     position: relative;
+//     width: 3px;
+//     height: 3px;
+//     background-color: red;
+//     top: -300px;
+// }
 
 .artifact {
     background-color: rgb(251, 251, 251);
@@ -77,19 +92,19 @@
             border-radius: 50%;
             box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
         }
-        &:before {
-            content: '';
-            display: block;
-            position: absolute;
-            top: -3px;
-            left: 2.5%;
-            height: 103%;
-            width: 95%;
-            border-radius: 50% 25%;
-            background-color: #9fd3e8;
-            opacity: 0.2;
-            z-index: -1;
-        }
+        // &:before {
+        //     content: '';
+        //     display: block;
+        //     position: absolute;
+        //     top: -3px;
+        //     left: 2.5%;
+        //     height: 103%;
+        //     width: 95%;
+        //     border-radius: 50% 25%;
+        //     background-color: #9fd3e8;
+        //     opacity: 0.2;
+        //     z-index: -1;
+        // }
     }
     .col-2.is-flex {
         flex-direction: column;

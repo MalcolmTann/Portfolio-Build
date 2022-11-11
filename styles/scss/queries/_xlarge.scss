@@ -17,9 +17,6 @@
             h1 {
                 font-size: 4.2rem;
             }
-            img {
-                padding-top: 5em;
-            }
         }
     }
 
@@ -38,17 +35,8 @@
     }
 
     .about {
-        .col-1 {
-            &:before {
-                left: 14%;
-                width: 72%; 
-            }
-            img {
-                width: 25em;
-            }
-        }
         .col-2 {
-            margin-top: 1em;
+            margin-left:  0;
             h2 {
                 font-size: $lrg;
             }
