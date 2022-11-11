@@ -364,7 +364,6 @@ span {
 a {
   text-decoration: none;
   transition: 0.3s;
-  display: block;
 }
 
 header {
@@ -470,6 +469,7 @@ footer .nav-container .is-flex {
   font-size: 1.2rem;
   font-weight: 300;
   color: #000;
+  display: block;
 }
 .gn img {
   padding: 0 0.4em;
@@ -795,6 +795,7 @@ main {
     font-size: 1rem;
     font-weight: 300;
     transition: 0.3s ease;
+    display: inline;
   }
   .gn a:last-child {
     padding-right: 0;

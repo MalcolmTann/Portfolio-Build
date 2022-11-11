@@ -30,6 +30,7 @@
             font-size: $small;
             font-weight: $light;
             transition: .30s ease;  
+            display: inline;
             &:last-child {
                 padding-right: 0;
             }
