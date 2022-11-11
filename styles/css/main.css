@@ -851,6 +851,7 @@ main {
     transform: translateY(-4px);
   }
   .home-landing {
+    min-height: 80vh;
     text-align: left;
   }
   .home-landing p {
@@ -916,7 +917,7 @@ main {
     font-size: 3rem;
   }
   .about {
-    height: 700px;
+    min-height: 70vh;
     flex-direction: row;
     align-items: center;
     gap: 0;

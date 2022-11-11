@@ -80,7 +80,7 @@
             </section>
             <section id="about" class="about section">
                 <div class="col-1" data-aos="fade-right" data-aos-duration="950">
-                    <img src="images/portrait01.jpg" alt="Malcolm Tan">
+                    <img src="images/portrait.jpg" alt="Malcolm Tan">
                 </div>
                 <div class="is-flex col-2" data-aos="fade-left" data-aos-duration="950">
                     <p>I code because I love the process of turning web ideas into functional applications and taking on challenges that allow me to exercise my creativity. Curiosity drives me to be a proactive and passionate learner, always seeking to acquire new skills, technical knowledge and experiences in pursuit of continuous slef-improvement and growth.</p>

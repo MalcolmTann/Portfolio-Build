@@ -27,6 +27,7 @@
     }
 
     .home-landing {
+        min-height: 80vh;
         text-align: left;
         p {
             font-size: 1.2rem;
@@ -95,7 +96,7 @@
     }
 
     .about {
-        height: 700px;
+        min-height: 70vh;
         flex-direction: row;
         align-items: center;
         gap: 0; 
