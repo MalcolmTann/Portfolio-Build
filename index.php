@@ -47,16 +47,16 @@
                 </div>
                 <div class="artifact" data-aos="fade-up" data-aos-duration="1000">
                     <div class="col-1">
-                        <a href="projects/todo.php" title="ToDo Task Manager">
-                            <img src="images/todo.png" alt="ToDo App">
+                        <a href="projects/flyo.php" title="ToDo Task Manager">
+                            <img src="images/flyo.png" alt="ToDo App">
                         </a>
                     </div>
                     <div class="col-2">
                         <div class="desc">
-                            <p>Task Manager</p>
-                            <h3>Todo App</h3>
+                            <p>Landing Page Design</p>
+                            <h3>Flyo</h3>
                         </div>
-                        <a href="projects/todo.php" title="View Todo App">
+                        <a href="projects/flyo.php" title="View Flyo">
                             <button class="btn">View Details</button>
                         </a>
                     </div>

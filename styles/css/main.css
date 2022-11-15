@@ -555,10 +555,6 @@ main {
   background-color: #f0f8ff;
 }
 
-.sb {
-  display: none;
-}
-
 .home-landing {
   height: 600px;
   padding-top: 3em;
@@ -690,10 +686,6 @@ main {
   color: #000;
 }
 
-.sb {
-  display: none;
-}
-
 @media (min-width: 375px) {
   .projects {
     gap: 4em;
@@ -806,13 +798,13 @@ main {
     height: 1.2em;
     transition: 0.35s ease;
   }
-  .gn .is-flex li:nth-child(1) {
+  .gn .is-flex li:nth-child(3) {
     display: none;
   }
   .gn-items {
     flex-direction: row;
     position: static;
-    height: 3vh;
+    height: 2em;
     justify-content: flex-end;
     background-color: #fff;
     border-left: none;
@@ -828,12 +820,6 @@ main {
   }
   .about .col-2 {
     width: 70%;
-  }
-  .sb {
-    display: block;
-    padding: 0 1.5em 10em;
-    max-width: 1200px;
-    margin: 0 auto;
   }
 }
 @media (min-width: 992px) {

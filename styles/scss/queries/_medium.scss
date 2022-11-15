@@ -41,14 +41,14 @@
             height: 1.2em;
             transition: .35s ease;
         }
-        .is-flex li:nth-child(1) {
+        .is-flex li:nth-child(3) {
             display: none;
         }
     }
     .gn-items {
         flex-direction: row;
         position: static;
-        height: 3vh;
+        height: 2em;
         justify-content: flex-end;
         background-color: #fff;
         border-left: none;
@@ -77,13 +77,6 @@
         .col-2 {
             width: 70%;
         }
-    }
-
-    .sb {
-        display: block;
-        padding: 0 1.5em 10em;
-        max-width: 1200px;
-        margin: 0 auto;
     }
 
 }
