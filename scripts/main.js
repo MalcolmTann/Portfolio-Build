@@ -20,13 +20,13 @@ const menuSlider = () => {
             navTlIn.to('.js-menu-bg', {
                 opacity: 1,
                 x: 0,
-                duration: 0.5
+                duration: 0.45
             });
 
             navTlIn.to('.js-menu-item', {
                 opacity: 1, 
                 x: 0,
-                duration: 0.5,
+                duration: 0.45,
                 stagger: 0.1,
                 // Oncomplete, set dataset to 2
                 onComplete: function(){
@@ -40,7 +40,7 @@ const menuSlider = () => {
             navTlOut.to('.js-menu-item', {
                 opacity: 0, 
                 x: 90,
-                duration: 0.5,
+                duration: 0.45,
                 stagger: {
                     from: 'end',
                     each: 0.1
@@ -50,7 +50,7 @@ const menuSlider = () => {
             navTlOut.to('.js-menu-bg', {
                 opacity: 0,
                 x: '100%',
-                duration: 0.5,
+                duration: 0.45,
                 // onComplete, dataset is reset to 0 and burger is reset to orignal state
                 onComplete: function(){
                     burger.dataset.open = 0;

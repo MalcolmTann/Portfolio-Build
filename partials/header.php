@@ -2,7 +2,7 @@
     <div class="nav-container">
         <a href="index.php" title="Home"><h2>Mal</h2></a>
         <button title="menu" class="gn-trig" data-open="0">
-            <div class="burger"></div>
+            <span class="burger"></span>
         </button>
         <nav id="gn" class="gn">
             <ul class="gn-items js-menu-bg">
