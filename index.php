@@ -21,7 +21,7 @@
                 <p data-aos="fade" data-aos-delay="500" data-aos-duration="2000">Front-end Developer</p>
                 <div class="is-flex">
                     <h1 data-aos="fade" data-aos-duration="2000">Turning ideas into reality <span>through<br> code</span></h1>
-                    <img src="images/banner.svg" alt="Coding Animation">
+                    <img data-aos="fade" data-aos-duration="2000"src="images/banner.svg" alt="Coding Animation">
                 </div>
                 <a href="#connect" title="View Projects" data-aos="fade" data-aos-delay="1000" data-aos-duration="2000">
                     <button class="btn">Connect with me</button>
@@ -76,10 +76,10 @@
                 </div>
             </section>
             <section id="about" class="about section">
-                <div class="col-1" data-aos="fade-right" data-aos-duration="950">
+                <div class="col-1" data-aos="fade-right" data-aos-duration="1500">
                     <img src="images/portrait.jpg" alt="Malcolm Tan">
                 </div>
-                <div class="is-flex col-2" data-aos="fade-left" data-aos-duration="950">
+                <div class="is-flex col-2" data-aos="fade-left" data-aos-duration="1500">
                     <p>I code because I love the process of turning web ideas into functional applications and taking on challenges that allow me to exercise my creativity. Curiosity drives me to be a proactive and passionate learner, always seeking to acquire new skills, technical knowledge and experiences in pursuit of continuous self-improvement and growth.</p>
                     <p>When I'm not coding, I enjoy film-photography, music, sports, and spending quality time with friends and family.</p>
                 </div>
