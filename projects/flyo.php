@@ -24,7 +24,7 @@
                 $landing_img_src = '../images/flyo.png';
                 $landing_img_alt = 'Flyo desktop view';
                 $landing_desc = 'A Front-end Mentor Challenge. Flyo is a dark-themed responsive single page design built with Tailwindcss. The objective was to develop a site that mirrors the given design as close as possible.';
-                $landing_live_btn = '';
+                $landing_live_btn = 'https://malcolmtann.github.io/Flyo-Landing-Page/';
                 $landing_code_btn = 'https://github.com/MalcolmTann/Flyo-Landing-Page.git'; 
                 include('../partials/projects/landing.php'); 
             ?>
