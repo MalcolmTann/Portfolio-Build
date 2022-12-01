@@ -1,3 +1,6 @@
+// AOS library
+AOS.init();
+
 // burger menu icon
 const burger = document.querySelector('.gn-trig');
 
