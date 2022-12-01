@@ -28,7 +28,7 @@
                 </a>
             </section>
             <section id="work" class="projects section">
-                <div class="artifact" data-aos="fade-up" data-aos-duration="1000">
+                <div class="artifact" data-aos="fade-up" data-aos-duration="1500">
                     <div class="col-1">
                         <a href="projects/blogr.php" title="Blogr Landing Page">
                             <img src="images/blogr.png" alt="Blogr">
@@ -44,7 +44,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="artifact" data-aos="fade-up" data-aos-duration="1000">
+                <div class="artifact" data-aos="fade-up" data-aos-duration="1500">
                     <div class="col-1">
                         <a href="projects/flyo.php" title="ToDo Task Manager">
                             <img src="images/flyo.png" alt="ToDo App">
@@ -58,7 +58,7 @@
                         <a href="projects/flyo.php" title="View Flyo"><button class="btn">View Details</button></a>
                     </div>
                 </div>
-                <div class="artifact" data-aos="fade-up" data-aos-duration="1000">
+                <div class="artifact" data-aos="fade-up" data-aos-duration="1500">
                     <div class="col-1">
                         <!-- <a href="#" title="Todo App"> -->
                             <img src="images/todo.png" alt="Todo App">
