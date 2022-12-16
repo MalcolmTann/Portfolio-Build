@@ -1,6 +1,3 @@
-# My Portfolio Build Process
+## Overview
 
-Coded By Malcolm Tan
-
-
-
+Coded & Designed by Malcolm Tan
