@@ -18,12 +18,12 @@
         <?php include('partials/header.php'); ?>
         <main>
             <section id="landing" class="home-landing">
-                <p data-aos="fade" data-aos-delay="500" data-aos-duration="2000">Front-end Developer</p>
+                <p>Front-end Developer</p>
                 <div class="is-flex">
-                    <h1 data-aos="fade" data-aos-duration="2000">Turning ideas into reality <span>through<br> code</span></h1>
+                    <h1>Turning ideas into reality <span>through<br> code</span></h1>
                     <img data-aos="fade" data-aos-duration="2000" src="images/banner.svg" alt="Coding Animation">
                 </div>
-                <a href="#connect" title="View Projects" data-aos="fade" data-aos-delay="1000" data-aos-duration="2000">
+                <a href="#connect" title="View Projects">
                     <button class="btn">Connect with me</button>
                 </a>
             </section>
