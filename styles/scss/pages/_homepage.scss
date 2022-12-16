@@ -4,7 +4,7 @@
 // Landing
 
 .home-landing {
-    height: 100vh;
+    height: 600px;
     padding-top: 3em;
     gap: 1em;
     line-height: 1.4;
@@ -30,6 +30,7 @@
         img {
             margin: 0 auto;
             cursor: default;
+            height: fit-content;
         }
     }
 }
