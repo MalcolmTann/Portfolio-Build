@@ -584,7 +584,6 @@ main {
 .home-landing .is-flex img {
   margin: 0 auto;
   cursor: default;
-  height: fit-content;
 }
 
 .projects {
