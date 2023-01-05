@@ -60,18 +60,16 @@
                 </div>
                 <div class="artifact" data-aos="fade-up" data-aos-duration="1500">
                     <div class="col-1">
-                        <!-- <a href="#" title="Todo App"> -->
-                            <img src="images/todo.png" alt="Todo App">
-                        <!-- </a> -->
+                        <a href="projects/cmjsh.php" title="CMJSH Landing Page">
+                            <img src="images/cmjsh.png" alt="CMJSH Landing Page">
+                        </a>
                     </div>
                     <div class="col-2">
                         <div class="desc">
-                            <p>Task Manager</p>
-                            <h3>Todo App</h3>
+                            <p>2-page Website Design</p>
+                            <h3>CMJSH</h3>
                         </div>
-                        <!-- <a href="projects/todo.php" title="View Project"> -->
-                        <p>- Coming Soon</p>
-                        <!-- </a> -->
+                        <a href="projects/cmjsh.php" title="View Project"><button class="btn">View Details</button></a>
                     </div>
                 </div>
             </section>
